@@ -24,4 +24,6 @@
     };
   };
 
+  editorconfig.enable = true;
+
 }
