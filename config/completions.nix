@@ -16,17 +16,11 @@
       "<CR>" = "cmp.mapping.confirm({ select = true })";
       "<C-p>" = {
         action = "cmp.mapping.select_prev_item()";
-        modes = [
-          "i"
-          "s"
-        ];
+        modes = [ "i" "s" ];
       };
       "<C-n>" = {
         action = "cmp.mapping.select_next_item()";
-        modes = [
-          "i"
-          "s"
-        ];
+        modes = [ "i" "s" ];
       };
     };
   };
