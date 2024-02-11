@@ -5,8 +5,9 @@
     sources = [
       { name = "nvim_lsp"; }
       { name = "buffer"; }
-      { name = "path"; }
+      # FIXME: luasnip is not working with nvim-cmp
       { name = "luasnip"; }
+      { name = "path"; }
     ];
     mapping = {
       "<C-Space>" = "cmp.mapping.complete()";
