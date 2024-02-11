@@ -4,7 +4,7 @@
     ./options.nix
     ./bufferline.nix
     ./lualine.nix
-    # ./lsp.nix
+    ./lsp.nix
     ./themes.nix
   ];
 
