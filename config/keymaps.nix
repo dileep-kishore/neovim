@@ -99,13 +99,13 @@
 
     # Move text up and down
     {
-      action = "<cmd>m .+1<CR>==";
+      action = "<cmd>move .+1<CR>==";
       key = "<A-j>";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
     {
-      action = "<cmd>m .-2<CR>==";
+      action = "<cmd>move .-2<CR>==";
       key = "<A-k>";
       mode = "n";
       options = { noremap = true; silent = true; };
@@ -138,6 +138,40 @@
       action = "<cmd>q<CR>";
       key = "<C-q>";
       mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+
+    # Stay in visual mode while indenting
+    {
+      action = "<gv";
+      key = "<";
+      mode = "v";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = ">gv";
+      key = ">";
+      mode = "v";
+      options = { noremap = true; silent = true; };
+    }
+    # Move text up and down in visual mode
+    {
+      action = ":move '>+1<CR>gv=gv";
+      key = "<A-j>";
+      mode = "v";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = ":move '<-2<CR>gv=gv";
+      key = "<A-k>";
+      mode = "v";
+      options = { noremap = true; silent = true; };
+    }
+    # Visual mode paste
+    {
+      action = ''"_dP'';
+      key = "p";
+      mode = "v";
       options = { noremap = true; silent = true; };
     }
 
