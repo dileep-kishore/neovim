@@ -5,6 +5,7 @@
     ./bufferline.nix
     ./lualine.nix
     ./lsp.nix
+    ./completions.nix
     ./themes.nix
   ];
 
