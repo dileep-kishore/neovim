@@ -10,6 +10,7 @@
     ./lsp.nix
     ./completions.nix
     ./snippets.nix
+    ./alpha.nix
     ./telescope.nix
     ./themes.nix
     ./plugins.nix
