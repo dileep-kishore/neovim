@@ -12,6 +12,7 @@
     ./snippets.nix
     ./telescope.nix
     ./themes.nix
+    ./plugins.nix
   ];
 
   clipboard = {

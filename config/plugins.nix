@@ -1,3 +1,7 @@
 {
-  plugins = { };
+  plugins = {
+    tmux-navigator = {
+      enable = true;
+    };
+  };
 }

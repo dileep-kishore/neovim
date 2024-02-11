@@ -175,7 +175,36 @@
       options = { noremap = true; silent = true; };
     }
 
-    # Plugins
+    ## Plugins
+
+    # Vim-tmux-navigator
+    {
+      action = "<cmd><C-U>TmuxNavigateLeft<CR>";
+      key = "<C-h>";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd><C-U>TmuxNavigateDown<CR>";
+      key = "<C-j>";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd><C-U>TmuxNavigateUp<CR>";
+      key = "<C-k>";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd><C-U>TmuxNavigateRight<CR>";
+      key = "<C-l>";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+
+
+    # Telescope
     {
       action = "<cmd>Telescope live_grep<CR>";
       key = "<leader>tg";
