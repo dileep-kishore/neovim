@@ -3,6 +3,7 @@
   imports = [
     ./options.nix
     ./keymaps.nix
+    ./autocmds.nix
     ./treesitter.nix
     ./bufferline.nix
     ./lualine.nix
