@@ -203,11 +203,42 @@
       options = { noremap = true; silent = true; };
     }
 
-
-    # Telescope
+    # nvim-hlslens
     {
-      action = "<cmd>Telescope live_grep<CR>";
-      key = "<leader>tg";
+      action = "<Cmd>execute('normal! ' . v:count1 . 'n')<CR><Cmd>lua require('hlslens').start()<CR>";
+      key = "n";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<Cmd>execute('normal! ' . v:count1 . 'N')<CR><Cmd>lua require('hlslens').start()<CR>";
+      key = "N";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "*<Cmd>lua require('hlslens').start()<CR>";
+      key = "*";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "#<Cmd>lua require('hlslens').start()<CR>";
+      key = "#";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "g*<Cmd>lua require('hlslens').start()<CR>";
+      key = "g*";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "g#<Cmd>lua require('hlslens').start()<CR>";
+      key = "g#";
+      mode = "n";
+      options = { noremap = true; silent = true; };
     }
   ];
 }
