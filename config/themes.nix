@@ -6,6 +6,10 @@
     disableItalic = false;
     background.dark = "mocha";
     background.light = "latte";
+    styles = {
+      functions = [ "italic" ];
+      types = [ "italic" ];
+    };
     integrations = {
       alpha = true;
       dap = {
