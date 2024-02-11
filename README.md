@@ -1,17 +1,14 @@
-# Nixvim template
+# My personal neovim flake
 
-This template gives you a good starting point for configuring nixvim standalone.
+This flake uses nixvim to configure neovim in a declarative manner.
 
-## Configuring
+## Running the flake
 
-To start configuring, just add or modify the nix files in `./config`.
-If you add a new configuration file, remember to add it to the
-[`config/default.nix`](./config/default.nix) file
-
-## Testing your new configuration
-
-To test your configuration simply run the following command
+To run this nix flake simply run the following command
 
 ```
 nix run .
 ```
+
+>NOTE:
+>You will need to install the nix package manager before you can run the previous command
