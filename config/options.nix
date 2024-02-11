@@ -34,6 +34,9 @@
     list = false;
     showbreak = "↳ ";
     foldmethod = "expr";
+    foldnestmax = 20;
+    foldminlines = 2;
+    foldlevel = 20;
     foldexpr = "nvim_treesitter#foldexpr()";
   };
 }
