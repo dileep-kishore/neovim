@@ -7,5 +7,10 @@
     separatorStyle = "thick"; # "slant" or "slope" or "thick" or "thin" or "none"
     showBufferCloseIcons = false;
     showTabIndicators = true;
+    highlights.bufferSelected.italic = true;
+    indicator = {
+      icon = "▎";
+      style = "underline";
+    };
   };
 }
