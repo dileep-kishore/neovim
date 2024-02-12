@@ -64,6 +64,14 @@
         action = "commands";
         desc = "Telescope Commands";
       };
+      "<leader>gb" = {
+        action = "git_branches";
+        desc = "Telescope git branches";
+      };
+      "<leader>gC" = {
+        action = "git_commits";
+        desc = "Telescope git commits";
+      };
     };
   };
 }

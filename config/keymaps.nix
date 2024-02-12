@@ -265,5 +265,82 @@
       options = { silent = true; };
     }
 
+    ## Git
+    # Fugitive
+    {
+      action = "<cmd>Gwrite<CR>";
+      key = "<leader>ga";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Git commit<CR>";
+      key = "<leader>gc";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    # Gitsigns
+    {
+      action = "<cmd>lua require('gitsigns').next_hunk()<cr>";
+      key = "]x";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require('gitsigns').prev_hunk()<cr>";
+      key = "[x";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require('gitsigns').preview_hunk()<cr>";
+      key = "<leader>gp";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require('gitsigns').stage_hunk()<cr>";
+      key = "<leader>gs";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require('gitsigns').undo_stage_hunk()<cr>";
+      key = "<leader>gu";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require('gitsigns').reset_hunk()<cr>";
+      key = "<leader>gr";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Gitsigns diffthis HEAD<cr>";
+      key = "<leader>gd";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    # Neogit
+    {
+      action = "<cmd>Neogit<CR>";
+      key = "<leader>gg";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    # Diffview
+    {
+      action = "<cmd>DiffviewOpen<CR>";
+      key = "<leader>gD";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>DiffviewFileHistory<CR>";
+      key = "<leader>gh";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
   ];
 }
