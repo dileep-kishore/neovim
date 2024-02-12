@@ -5,9 +5,7 @@
       enable = true;
       checkTs = true;
     };
-    tmux-navigator = {
-      enable = true;
-    };
+    tmux-navigator.enable = true;
     nvim-tree = {
       enable = true;
       diagnostics = {
@@ -18,12 +16,9 @@
       };
       renderer.indentMarkers.enable = true;
     };
-    trouble = {
-      enable = true;
-    };
-    todo-comments = {
-      enable = true;
-    };
+    trouble.enable = true;
+    todo-comments.enable = true;
+    comment-nvim.enable = true;
   };
 
   extraPackages = with pkgs; [
