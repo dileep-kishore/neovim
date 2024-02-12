@@ -241,18 +241,5 @@
       options = { noremap = true; silent = true; };
     }
 
-    # Formatting using conform.nvim
-    {
-      action = "<cmd>lua conform.format({lsp_fallback=true})<CR>";
-      key = "<Leader>cf";
-      mode = "n";
-      options = { noremap = true; silent = true; };
-    }
-    {
-      action = ":lua conform.format({lsp_fallback=true})<CR>";
-      key = "<Leader>cf";
-      mode = "v";
-      options = { noremap = true; silent = true; };
-    }
   ];
 }
