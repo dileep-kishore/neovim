@@ -252,11 +252,10 @@
     # Nvim-tree
     {
       action = "<cmd>NvimTreeToggle<CR>";
-      key = "<C-/>";
+      key = "<leader>/";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
 
-    # TODO: Continue with keymaps
   ];
 }
