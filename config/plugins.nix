@@ -14,6 +14,12 @@
       };
       renderer.indentMarkers.enable = true;
     };
+    trouble = {
+      enable = true;
+    };
+    todo-comments = {
+      enable = true;
+    };
   };
 
   extraPackages = with pkgs; [
@@ -25,7 +31,7 @@
     nixfmt
     nodePackages.jsonlint
     nodePackages.prettier
-    pylint
+    python311Packages.flake8
     ripgrep
     rstcheck
     ruff

@@ -349,5 +349,53 @@
       mode = "n";
       options = { noremap = true; silent = true; };
     }
+
+    ## LSP and diagnostics
+    # Trouble
+    {
+      action = "<cmd>TroubleToggle<CR>";
+      key = "<leader>dx";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Trouble workspace_diagnostics<cr>";
+      key = "<leader>dw";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Trouble document_diagnostics<cr>";
+      key = "<leader>dd";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Trouble loclist<cr>";
+      key = "<leader>dl";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Trouble quickfix<cr>";
+      key = "<leader>dq";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+
+    # Todo-comments
+    {
+      action = "<cmd>TodoTrouble<cr>";
+      key = "<leader>dt";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>TodoTelescope<CR>";
+      key = "<leader>st";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
   ];
+
 }
