@@ -7,14 +7,25 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
   };
 
-  outputs = { nixvim, flake-parts, ... }@inputs:
-    let config = import ./config; # import the module directly
-    in flake-parts.lib.mkFlake { inherit inputs; } {
+  outputs = { self, nixpkgs, nixvim, flake-parts, ... }@inputs:
+    let
+      config = import ./config; # import the module directly
+      # NOTE: Function to create a customized pkgs with `allowUnfree` set to true
+      mkPkgs = system: import nixpkgs {
+        inherit system;
+        config = {
+          allowUnfree = true; # Enable unfree packages
+          # You can set other Nixpkgs config options here as needed
+        };
+      };
+    in
+    flake-parts.lib.mkFlake { inherit inputs; } {
       systems =
         [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
 
-      perSystem = { pkgs, system, ... }:
+      perSystem = { system, ... }:
         let
+          pkgs = mkPkgs system; # NOTE: Use the custom pkgs with allowUnfree enabled
           nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
           nvim = nixvim'.makeNixvimWithModule {
@@ -25,12 +36,13 @@
               # inherit (inputs) foo;
             };
           };
-        in {
+        in
+        {
           checks = {
             # Run `nix flake check .` to verify that your config is not broken
             default = nixvimLib.check.mkTestDerivationFromNvim {
               inherit nvim;
-              name = "A nixvim configuration";
+              name = "My personal neovim configuration";
             };
           };
 
