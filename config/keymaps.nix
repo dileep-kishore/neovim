@@ -342,5 +342,12 @@
       mode = "n";
       options = { noremap = true; silent = true; };
     }
+    # LazyGit
+    {
+      action = "<cmd>LazyGit<CR>";
+      key = "<leader>gl";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
   ];
 }

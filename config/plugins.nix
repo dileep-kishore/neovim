@@ -18,12 +18,15 @@
 
   extraPackages = with pkgs; [
     eslint_d
+    fd
     hadolint
     isort
+    lazygit
     nixfmt
     nodePackages.jsonlint
     nodePackages.prettier
     pylint
+    ripgrep
     rstcheck
     ruff
     rustfmt
@@ -35,7 +38,9 @@
   ];
 
   extraPlugins = with pkgs.vimPlugins; [
+    plenary-nvim
     friendly-snippets
+    lazygit-nvim
     {
       plugin = nvim-hlslens;
       config = ''lua require("hlslens").setup()'';
