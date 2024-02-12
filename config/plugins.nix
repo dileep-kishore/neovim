@@ -25,9 +25,11 @@
     nodePackages.prettier
     pylint
     rstcheck
+    ruff
     rustfmt
     shfmt
     stylelint
+    stylua
     typstfmt
     vale
   ];
