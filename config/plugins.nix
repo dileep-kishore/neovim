@@ -4,6 +4,16 @@
     tmux-navigator = {
       enable = true;
     };
+    nvim-tree = {
+      enable = true;
+      diagnostics = {
+        enable = true;
+      };
+      git = {
+        enable = true;
+      };
+      renderer.indentMarkers.enable = true;
+    };
   };
 
   extraPackages = with pkgs; [

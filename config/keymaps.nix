@@ -241,5 +241,22 @@
       options = { noremap = true; silent = true; };
     }
 
+    # Alpha dashboard
+    {
+      action = "<cmd>Alpha<CR>";
+      key = "<Leader>a";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+
+    # Nvim-tree
+    {
+      action = "<cmd>NvimTreeToggle<CR>";
+      key = "<C-/>";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+
+    # TODO: Continue with keymaps
   ];
 }

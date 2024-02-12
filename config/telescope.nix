@@ -6,7 +6,7 @@
         action = "git_files";
         desc = "Telescope Git Files";
       };
-      "<leader>sg" = {
+      "<leader>fg" = {
         action = "live_grep";
         desc = "Telescope Live Grep";
       };
