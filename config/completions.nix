@@ -1,6 +1,9 @@
 {
   plugins.cmp-nvim-lsp.enable = true;
   plugins.cmp_luasnip.enable = true;
+  plugins.cmp-cmdline.enable = true;
+  plugins.cmp-git.enable = true;
+  plugins.cmp-tabnine.enable = true;
   plugins.nvim-cmp = {
     enable = true;
     autoEnableSources = true;
@@ -16,9 +19,12 @@
     };
     sources = [
       { name = "nvim_lsp"; }
+      { name = "cmp_tabnine"; }
       { name = "luasnip"; }
       { name = "path"; }
       { name = "buffer"; }
+      { name = "cmdline"; }
+      { name = "git"; }
     ];
     mapping = {
       "<C-Space>" = "cmp.mapping.complete()";

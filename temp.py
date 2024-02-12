@@ -12,3 +12,6 @@ c.most_common(10)
 
 
 p = pathlib.Path()
+
+def func(a: int):
+    return a * 2
