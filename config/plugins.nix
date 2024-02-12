@@ -1,6 +1,10 @@
 { self, pkgs, ... }:
 {
   plugins = {
+    nvim-autopairs = {
+      enable = true;
+      checkTs = true;
+    };
     tmux-navigator = {
       enable = true;
     };
