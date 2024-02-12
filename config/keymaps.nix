@@ -469,6 +469,14 @@
       mode = "n";
       options = { noremap = true; silent = true; };
     }
+
+    # Projects
+    {
+      action = "<cmd>Telescope projects<CR>";
+      key = "<leader>fp";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
   ];
 
 }

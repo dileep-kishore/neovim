@@ -19,6 +19,7 @@
     trouble.enable = true;
     todo-comments.enable = true;
     comment-nvim.enable = true;
+    project-nvim.enable = true;
   };
 
   extraPackages = with pkgs; [

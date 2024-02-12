@@ -6,6 +6,9 @@
         enable = true;
         caseMode = "smart_case";
       };
+      project-nvim = {
+        enable = true;
+      };
     };
     keymaps = {
       "<leader>ff" = {
