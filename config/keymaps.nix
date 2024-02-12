@@ -382,6 +382,79 @@
       mode = "n";
       options = { noremap = true; silent = true; };
     }
+    # LSP
+    {
+      action = "<cmd>lua vim.lsp.buf.code_action()<cr>";
+      key = "<leader>la";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Telescope lsp_document_diagnostics<cr>";
+      key = "<leader>ld";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Telescope lsp_workspace_diagnostics<cr>";
+      key = "<leader>lw";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua vim.lsp.buf.formatting()<cr>";
+      key = "<leader>lf";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>LspInfo<cr>";
+      key = "<leader>li";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>";
+      key = "]d";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>";
+      key = "[d";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua vim.lsp.codelens.run()<cr>";
+      key = "<leader>ll";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>";
+      key = "<leader>lq";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua vim.lsp.buf.rename()<cr>";
+      key = "<leader>lr";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Telescope lsp_document_symbols<cr>";
+      key = "<leader>ls";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>";
+      key = "<leader>lS";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
 
     # Todo-comments
     {
