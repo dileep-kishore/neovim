@@ -15,6 +15,7 @@
     ./alpha.nix
     ./telescope.nix
     ./themes.nix
+    ./whichkey.nix
     ./plugins.nix
   ];
 
