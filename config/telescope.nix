@@ -44,6 +44,26 @@
         action = "current_buffer_fuzzy_find";
         desc = "Telescope search current buffer";
       };
+      "<leader>hh" = {
+        action = "help_tags";
+        desc = "Telescope find help";
+      };
+      "<leader>hm" = {
+        action = "man_pages";
+        desc = "Telescope Man Pages";
+      };
+      "<leader>hk" = {
+        action = "keymaps";
+        desc = "Telescope Keymaps";
+      };
+      "<leader>ho" = {
+        action = "vim_options";
+        desc = "Telescope Vim options";
+      };
+      "<leader>hc" = {
+        action = "commands";
+        desc = "Telescope Commands";
+      };
     };
   };
 }
