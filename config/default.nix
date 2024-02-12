@@ -9,6 +9,7 @@
     ./lualine.nix
     ./lsp.nix
     ./formatter.nix
+    ./linter.nix
     ./completions.nix
     ./snippets.nix
     ./alpha.nix
