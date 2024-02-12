@@ -6,6 +6,7 @@
     ./autocmds.nix
     ./treesitter.nix
     ./bufferline.nix
+    ./git.nix
     ./lualine.nix
     ./lsp.nix
     ./formatter.nix
