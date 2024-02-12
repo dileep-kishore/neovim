@@ -9,6 +9,7 @@
     ./git.nix
     ./lualine.nix
     ./lsp.nix
+    ./dap.nix
     ./formatter.nix
     ./linter.nix
     ./snippets.nix

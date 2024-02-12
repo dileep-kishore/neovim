@@ -354,31 +354,31 @@
     # Trouble
     {
       action = "<cmd>TroubleToggle<CR>";
-      key = "<leader>dx";
+      key = "<leader>tx";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
     {
       action = "<cmd>Trouble workspace_diagnostics<cr>";
-      key = "<leader>dw";
+      key = "<leader>tw";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
     {
       action = "<cmd>Trouble document_diagnostics<cr>";
-      key = "<leader>dd";
+      key = "<leader>td";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
     {
       action = "<cmd>Trouble loclist<cr>";
-      key = "<leader>dl";
+      key = "<leader>tl";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
     {
       action = "<cmd>Trouble quickfix<cr>";
-      key = "<leader>dq";
+      key = "<leader>tq";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
@@ -459,7 +459,7 @@
     # Todo-comments
     {
       action = "<cmd>TodoTrouble<cr>";
-      key = "<leader>dt";
+      key = "<leader>tt";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
@@ -474,6 +474,26 @@
     {
       action = "<cmd>Telescope projects<CR>";
       key = "<leader>fp";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+
+    # DAP
+    {
+      action = "<cmd>lua require'dap'.toggle_breakpoint()<CR>";
+      key = "<leader>db";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require'dap'.continue()<CR>";
+      key = "<leader>dc";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require'dapui'.toggle()<CR>";
+      key = "<leader>do";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
