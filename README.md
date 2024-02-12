@@ -7,8 +7,8 @@ This flake uses nixvim to configure neovim in a declarative manner.
 To run this nix flake simply run the following command
 
 ```
-nix run .
+nix run ".#"
 ```
 
->NOTE:
->You will need to install the nix package manager before you can run the previous command
+> NOTE:
+> You will need to install the nix package manager before you can run the previous command

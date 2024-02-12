@@ -6,6 +6,15 @@
     };
   };
 
+  extraPackages = with pkgs; [
+    isort
+    nixfmt
+    nodePackages.prettier
+    shfmt
+    rustfmt
+    typstfmt
+  ];
+
   extraPlugins = with pkgs.vimPlugins; [
     {
       plugin = nvim-hlslens;

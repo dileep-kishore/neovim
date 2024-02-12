@@ -7,12 +7,13 @@
     };
     # Map of filetype to formatters
     formattersByFt =
-      # TODO: Do these need to be installed?
       {
         lua = [ "stylua" ];
-        # Conform will run multiple formatters sequentially
+        nix = [ "nixfmt" ];
+        sh = [ "shfmt" ];
+        go = [ "gofmt" ];
+        rust = [ "rustfmt" ];
         python = [ "isort" "ruff_format" ];
-        # Use a sub-list to run only the first available formatter
         javascript = [ "prettier" ];
         javascriptreact = [ "prettier" ];
         typescript = [ "prettier" ];
@@ -23,8 +24,9 @@
         json = [ "prettier" ];
         yaml = [ "prettier" ];
         markdown = [ "prettier" ];
+        typst = [ "typstfmt" ];
         # Use the "_" filetype to run formatters on filetypes that don't have other formatters configured.
-        "_" = [ "trim_whitespace" ];
+        "_" = [ "trim_newlines" "trim_whitespace" ];
         # # Use the "*" filetype to run formatters on all filetypes.
         # "*" = [ "codespell" ];
       };
