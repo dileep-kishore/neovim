@@ -8,7 +8,7 @@
     ./bufferline.nix
     ./lualine.nix
     ./lsp.nix
-    ./conform.nix
+    ./formatter.nix
     ./completions.nix
     ./snippets.nix
     ./alpha.nix
