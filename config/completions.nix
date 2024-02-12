@@ -1,13 +1,24 @@
 {
+  plugins.cmp-nvim-lsp.enable = true;
+  plugins.cmp_luasnip.enable = true;
   plugins.nvim-cmp = {
     enable = true;
     autoEnableSources = true;
+    experimental = {
+      ghost_text = true;
+    };
+    snippet = {
+      expand = "luasnip";
+    };
+    window = {
+      completion.border = "rounded";
+      documentation.border = "rounded";
+    };
     sources = [
       { name = "nvim_lsp"; }
-      { name = "buffer"; }
-      # FIXME: luasnip is not working with nvim-cmp
       { name = "luasnip"; }
       { name = "path"; }
+      { name = "buffer"; }
     ];
     mapping = {
       "<C-Space>" = "cmp.mapping.complete()";
@@ -16,11 +27,41 @@
       "<C-f>" = "cmp.mapping.scroll_docs(4)";
       "<CR>" = "cmp.mapping.confirm({ select = true })";
       "<C-p>" = {
-        action = "cmp.mapping.select_prev_item()";
+        action = ''
+          function(fallback)
+            local luasnip = require 'luasnip'
+            if cmp.visible() then
+                cmp.select_prev_item()
+            elseif luasnip.jumpable(-1) then
+                luasnip.jump(-1)
+            else
+                fallback()
+            end
+          end
+        '';
         modes = [ "i" "s" ];
       };
       "<C-n>" = {
-        action = "cmp.mapping.select_next_item()";
+        action = ''
+          function(fallback)
+            local luasnip = require 'luasnip'
+            local check_backspace = function()
+                local col = vim.fn.col "." - 1
+                return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
+            end
+            if cmp.visible() then
+              cmp.select_next_item()
+            elseif luasnip.expandable() then
+              luasnip.expand()
+            elseif luasnip.expand_or_jumpable() then
+              luasnip.expand_or_jump()
+            elseif check_backspace() then
+              fallback()
+            else
+              fallback()
+            end
+          end
+        '';
         modes = [ "i" "s" ];
       };
     };

@@ -33,6 +33,7 @@
   ];
 
   extraPlugins = with pkgs.vimPlugins; [
+    friendly-snippets
     {
       plugin = nvim-hlslens;
       config = ''lua require("hlslens").setup()'';

@@ -257,5 +257,13 @@
       options = { noremap = true; silent = true; };
     }
 
+    # Luasnip
+    {
+      action = "<cmd>lua require'luasnip'.expand()<CR>";
+      key = "<C-k>";
+      mode = "i";
+      options = { silent = true; };
+    }
+
   ];
 }

@@ -10,8 +10,8 @@
     ./lsp.nix
     ./formatter.nix
     ./linter.nix
-    ./completions.nix
     ./snippets.nix
+    ./completions.nix
     ./alpha.nix
     ./telescope.nix
     ./themes.nix
