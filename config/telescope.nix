@@ -2,16 +2,22 @@
   plugins.telescope = {
     enable = true;
     extraOptions = {
+      defaults = {
+        path_display = [ "truncate" ];
+        sorting_strategy = "ascending";
+        layout_config = {
+          horizontal = { prompt_position = "top"; };
+        };
+      };
       pickers = {
-        find_files = { theme = "dropdown"; };
-        git_files = { theme = "dropdown"; };
         buffers = { theme = "dropdown"; };
-        fd = { theme = "dropdown"; };
         marks = { theme = "dropdown"; };
         registers = { theme = "dropdown"; };
         jumplist = { theme = "dropdown"; };
         git_branches = { theme = "dropdown"; };
         git_commits = { theme = "dropdown"; };
+        live_grep = { theme = "ivy"; };
+        current_buffer_fuzzy_find = { theme = "ivy"; };
       };
     };
     extensions = {
