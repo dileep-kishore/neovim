@@ -20,6 +20,7 @@
     todo-comments.enable = true;
     comment-nvim.enable = true;
     project-nvim.enable = true;
+    surround.enable = true;
     toggleterm = {
       enable = true;
       direction = "float";
@@ -33,7 +34,7 @@
     indent-blankline = {
       enable = true;
       scope = {
-        enabled = true;
+        enabled = false;
         showEnd = false;
       };
     };

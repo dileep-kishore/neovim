@@ -549,6 +549,14 @@
       mode = "n";
       options = { noremap = true; silent = true; };
     }
+
+    # Mini
+    {
+      action = "<cmd>lua require('mini.files').open()<CR>";
+      key = "<leader>mf";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
   ];
 
 }

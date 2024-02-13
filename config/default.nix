@@ -3,9 +3,9 @@
   imports = [
     ./options.nix
     ./autocmds.nix
-    ./plugins.nix
     ./treesitter.nix
     ./bufferline.nix
+    ./mini.nix
     ./git.nix
     ./lualine.nix
     ./lsp.nix
@@ -18,6 +18,7 @@
     ./telescope.nix
     ./themes.nix
     ./keymaps.nix
+    ./plugins.nix
     ./whichkey.nix
   ];
 
