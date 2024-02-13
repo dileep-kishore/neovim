@@ -58,6 +58,14 @@
       notify.enabled = true;
       messages.enabled = true;
     };
+    yanky = {
+      enable = true;
+      picker.telescope = {
+        enable = true;
+        useDefaultMappings = true;
+      };
+      systemClipboard.syncWithRing = true;
+    };
   };
 
   extraPackages = with pkgs; [

@@ -623,6 +623,14 @@
       mode = "n";
       options = { noremap = true; silent = true; };
     }
+
+    # Yanky.nvim
+    {
+      action = "<cmd>lua require('telescope').extensions.yank_history.yank_history()<cr>";
+      key = "<leader>ty";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
   ];
 
 }
