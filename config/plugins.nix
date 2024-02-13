@@ -27,7 +27,7 @@
       floatOpts = {
         border = "single";
       };
-      openMapping = "<leader>tt";
+      openMapping = "<C-A-t>";
       terminalMappings = true;
     };
     illuminate.enable = true;
@@ -46,6 +46,15 @@
       enable = true;
       addDefaultMappings = true;
       caseSensitive = false;
+    };
+    noice = {
+      enable = true;
+      presets = {
+        bottom_search = false;
+        command_palette = true;
+        long_message_to_split = false;
+        lsp_doc_border = true;
+      };
     };
   };
 
@@ -78,10 +87,6 @@
     {
       plugin = nvim-hlslens;
       config = ''lua require("hlslens").setup()'';
-    }
-    {
-      plugin = lsp_signature-nvim;
-      config = ''lua require "lsp_signature".setup()'';
     }
     {
       plugin = nvim-spectre;
