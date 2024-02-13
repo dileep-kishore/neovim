@@ -609,6 +609,20 @@
       mode = "n";
       options = { noremap = true; silent = true; };
     }
+
+    # Folding
+    {
+      action = "<cmd>lua require('ufo').openAllFolds()<CR>";
+      key = "zR";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require('ufo').closeAllFolds()<CR>";
+      key = "zM";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
   ];
 
 }

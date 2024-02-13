@@ -17,7 +17,6 @@
         enabled = true;
       };
       cmp = true;
-      fidget = true;
       leap = true;
       gitsigns = true;
       harpoon = true;

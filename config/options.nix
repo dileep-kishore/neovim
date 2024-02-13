@@ -36,7 +36,9 @@
     foldmethod = "expr";
     foldnestmax = 20;
     foldminlines = 2;
-    foldlevel = 20;
+    foldlevel = 99;
+    foldlevelstart = 99;
+    foldenable = true;
     foldexpr = "nvim_treesitter#foldexpr()";
   };
 }

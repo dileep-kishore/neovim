@@ -16,6 +16,7 @@
     ./completions.nix
     ./alpha.nix
     ./telescope.nix
+    ./folding.nix
     ./themes.nix
     ./keymaps.nix
     ./plugins.nix
