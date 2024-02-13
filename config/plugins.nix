@@ -51,5 +51,9 @@
       plugin = nvim-hlslens;
       config = ''lua require("hlslens").setup()'';
     }
+    {
+      plugin = lsp_signature-nvim;
+      config = ''lua require "lsp_signature".setup()'';
+    }
   ];
 }
