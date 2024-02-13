@@ -33,6 +33,7 @@
     illuminate.enable = true;
     indent-blankline = {
       enable = true;
+      whitespace.removeBlanklineTrail = true;
       scope = {
         enabled = false;
         showEnd = false;
