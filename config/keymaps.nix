@@ -51,25 +51,25 @@
 
     # Resize window with Ctrl + arrow keys
     {
-      action = "<cmd>resize -4<CR>";
+      action = "<cmd>resize +4<CR>";
       key = "<C-Up>";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
     {
-      action = "<cmd>resize +4<CR>";
+      action = "<cmd>resize -4<CR>";
       key = "<C-Down>";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
     {
-      action = "<cmd>vertical resize -4<CR>";
+      action = "<cmd>vertical resize +4<CR>";
       key = "<C-Left>";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
     {
-      action = "<cmd>vertical resize +4<CR>";
+      action = "<cmd>vertical resize -4<CR>";
       key = "<C-Right>";
       mode = "n";
       options = { noremap = true; silent = true; };
