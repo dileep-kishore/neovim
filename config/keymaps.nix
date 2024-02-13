@@ -571,6 +571,45 @@
       mode = "n";
       options = { noremap = true; silent = true; };
     }
+
+    # Harpoon
+    {
+      action = "<cmd>lua require('harpoon'):list():append()<CR>";
+      key = "<leader>ha";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require('harpoon').ui:toggle_quick_menu(require('harpoon'):list())<CR>";
+      key = "<leader>hq";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require('harpoon'):list():prev()<CR>";
+      key = "<S-h>";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require('harpoon'):list():next()<CR>";
+      key = "<S-l>";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require('harpoon'):list():select(1)<CR>";
+      key = "<leader>h1";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require('harpoon'):list():select(2)<CR>";
+      key = "<leader>h2";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
   ];
 
 }
+

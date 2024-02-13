@@ -87,5 +87,9 @@
       plugin = nvim-spectre;
       config = ''lua require('spectre').setup()'';
     }
+    {
+      plugin = harpoon2;
+      config = ''lua require('harpoon').setup()'';
+    }
   ];
 }
