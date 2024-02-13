@@ -47,6 +47,10 @@
       addDefaultMappings = true;
       caseSensitive = false;
     };
+    notify = {
+      enable = true;
+      level = "info";
+    };
     noice = {
       enable = true;
       presets = {
