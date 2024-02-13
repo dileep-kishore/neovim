@@ -30,6 +30,16 @@
       terminalMappings = true;
     };
     illuminate.enable = true;
+    indent-blankline = {
+      enable = true;
+      scope = {
+        enabled = true;
+        showEnd = false;
+      };
+    };
+    rainbow-delimiters = {
+      enable = true;
+    };
   };
 
   extraPackages = with pkgs; [

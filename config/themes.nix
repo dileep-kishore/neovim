@@ -26,6 +26,10 @@
         enabled = true;
         lsp = true;
       };
+      indent_blankline = {
+        enabled = true;
+        colored_indent_levels = true;
+      };
       leap = true;
       lsp_saga = true;
       lsp_trouble = true;
