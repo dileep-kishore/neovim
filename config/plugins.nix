@@ -29,6 +29,7 @@
       openMapping = "<leader>tt";
       terminalMappings = true;
     };
+    illuminate.enable = true;
   };
 
   extraPackages = with pkgs; [
