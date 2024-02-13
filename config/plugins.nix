@@ -20,6 +20,15 @@
     todo-comments.enable = true;
     comment-nvim.enable = true;
     project-nvim.enable = true;
+    toggleterm = {
+      enable = true;
+      direction = "float";
+      floatOpts = {
+        border = "single";
+      };
+      openMapping = "<leader>tt";
+      terminalMappings = true;
+    };
   };
 
   extraPackages = with pkgs; [

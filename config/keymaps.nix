@@ -354,31 +354,31 @@
     # Trouble
     {
       action = "<cmd>TroubleToggle<CR>";
-      key = "<leader>tx";
+      key = "<leader>xx";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
     {
       action = "<cmd>Trouble workspace_diagnostics<cr>";
-      key = "<leader>tw";
+      key = "<leader>xw";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
     {
       action = "<cmd>Trouble document_diagnostics<cr>";
-      key = "<leader>td";
+      key = "<leader>xd";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
     {
       action = "<cmd>Trouble loclist<cr>";
-      key = "<leader>tl";
+      key = "<leader>xl";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
     {
       action = "<cmd>Trouble quickfix<cr>";
-      key = "<leader>tq";
+      key = "<leader>xq";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
@@ -496,7 +496,7 @@
     # Todo-comments
     {
       action = "<cmd>TodoTrouble<cr>";
-      key = "<leader>tt";
+      key = "<leader>xt";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
@@ -531,6 +531,21 @@
     {
       action = "<cmd>lua require'dapui'.toggle()<CR>";
       key = "<leader>do";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+
+    # Terminal
+    # NOTE: I have not set keybindings to toggle these terminals
+    {
+      action = "<cmd>ToggleTerm size=10 direction=horizontal<CR>";
+      key = "<leader>th";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>ToggleTerm size=80 direction=vertical<CR>";
+      key = "<leader>tv";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
