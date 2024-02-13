@@ -350,6 +350,14 @@
       options = { noremap = true; silent = true; };
     }
 
+    # Other telescope keymaps
+    {
+      action = "<cmd>Telescope find_files<cr>";
+      key = "<leader>o";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+
     ## LSP and diagnostics
     # Trouble
     {

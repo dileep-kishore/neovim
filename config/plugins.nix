@@ -107,5 +107,9 @@
       plugin = harpoon2;
       config = ''lua require('harpoon').setup()'';
     }
+    {
+      plugin = tint-nvim;
+      config = ''lua require("tint").setup()'';
+    }
   ];
 }
