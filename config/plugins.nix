@@ -42,6 +42,11 @@
     rainbow-delimiters = {
       enable = true;
     };
+    leap = {
+      enable = true;
+      addDefaultMappings = true;
+      caseSensitive = false;
+    };
   };
 
   extraPackages = with pkgs; [
@@ -67,6 +72,7 @@
 
   extraPlugins = with pkgs.vimPlugins; [
     plenary-nvim
+    vim-repeat
     friendly-snippets
     lazygit-nvim
     {
