@@ -631,6 +631,27 @@
       mode = "n";
       options = { noremap = true; silent = true; };
     }
+
+    # Refactor
+    {
+      action = "<cmd>lua require('refactoring').refactor('Extract Function')<cr>";
+      key = "<leader>re";
+      mode = "x";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require('refactoring').refactor('Extract Function To File')<cr>";
+      key = "<leader>rf";
+      mode = "x";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require('refactoring').refactor('Extract Variable')<cr>";
+      key = "<leader>rv";
+      mode = "x";
+      options = { noremap = true; silent = true; };
+    }
+
   ];
 
 }

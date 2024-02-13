@@ -66,6 +66,7 @@
       };
       systemClipboard.syncWithRing = true;
     };
+    refactoring.enable = true;
   };
 
   extraPackages = with pkgs; [
