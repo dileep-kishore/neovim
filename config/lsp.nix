@@ -40,6 +40,14 @@
       };
       ruff-lsp = {
         enable = true;
+        extraOptions = {
+          init_options = {
+            settings = {
+              fixAll = false;
+              organizeImports = false;
+            };
+          };
+        };
       };
       tsserver = {
         enable = true;
@@ -92,5 +100,22 @@
     cmp = {
       enable = true;
     };
+  };
+  plugins.lspsaga = {
+    enable = true;
+    beacon.enable = true;
+    implement = {
+      enable = true;
+      sign = false;
+    };
+    lightbulb = {
+      enable = true;
+      sign = true;
+      virtualText = false;
+    };
+    outline = {
+      layout = "float";
+    };
+    symbolInWinbar.enable = true;
   };
 }

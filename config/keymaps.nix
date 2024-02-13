@@ -384,7 +384,7 @@
     }
     # LSP
     {
-      action = "<cmd>lua vim.lsp.buf.code_action()<cr>";
+      action = "<cmd>Lspsaga code_action<cr>";
       key = "<leader>la";
       mode = "n";
       options = { noremap = true; silent = true; };
@@ -414,14 +414,14 @@
       options = { noremap = true; silent = true; };
     }
     {
-      action = "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>";
-      key = "]d";
+      action = "<cmd>Lspsaga diagnostic_jump_next<CR>";
+      key = "]e";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
     {
-      action = "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>";
-      key = "[d";
+      action = "<cmd>Lspsaga diagnostic_jump_prev<cr>";
+      key = "[e";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
@@ -438,8 +438,14 @@
       options = { noremap = true; silent = true; };
     }
     {
-      action = "<cmd>lua vim.lsp.buf.rename()<cr>";
+      action = "<cmd>Lspsaga rename<cr>";
       key = "<leader>lr";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Lspsaga lsp_rename ++project<cr>";
+      key = "<leader>lR";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
@@ -452,6 +458,37 @@
     {
       action = "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>";
       key = "<leader>lS";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Lspsaga outline<cr>";
+      key = "<leader>lo";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    # lspsaga
+    {
+      action = "<cmd>Lspsaga incoming_calls<cr>";
+      key = "<leader>Li";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Lspsaga outgoing_calls<cr>";
+      key = "<leader>Lo";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Lspsaga hover_doc<cr>";
+      key = "K";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Lspsaga goto_definition<cr>";
+      key = "gd";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
