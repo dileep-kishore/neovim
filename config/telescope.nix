@@ -1,6 +1,19 @@
 {
   plugins.telescope = {
     enable = true;
+    extraOptions = {
+      pickers = {
+        find_files = { theme = "dropdown"; };
+        git_files = { theme = "dropdown"; };
+        buffers = { theme = "dropdown"; };
+        fd = { theme = "dropdown"; };
+        marks = { theme = "dropdown"; };
+        registers = { theme = "dropdown"; };
+        jumplist = { theme = "dropdown"; };
+        git_branches = { theme = "dropdown"; };
+        git_commits = { theme = "dropdown"; };
+      };
+    };
     extensions = {
       fzf-native = {
         enable = true;

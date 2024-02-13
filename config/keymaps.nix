@@ -390,13 +390,13 @@
       options = { noremap = true; silent = true; };
     }
     {
-      action = "<cmd>Telescope lsp_document_diagnostics<cr>";
+      action = "<cmd>Telescope lsp_document_diagnostics theme=dropdown<cr>";
       key = "<leader>ld";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
     {
-      action = "<cmd>Telescope lsp_workspace_diagnostics<cr>";
+      action = "<cmd>Telescope lsp_workspace_diagnostics theme=dropdown<cr>";
       key = "<leader>lw";
       mode = "n";
       options = { noremap = true; silent = true; };
@@ -450,13 +450,13 @@
       options = { noremap = true; silent = true; };
     }
     {
-      action = "<cmd>Telescope lsp_document_symbols<cr>";
+      action = "<cmd>Telescope lsp_document_symbols theme=dropdown<cr>";
       key = "<leader>ls";
       mode = "n";
       options = { noremap = true; silent = true; };
     }
     {
-      action = "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>";
+      action = "<cmd>Telescope lsp_dynamic_workspace_symbols theme=dropdown<cr>";
       key = "<leader>lS";
       mode = "n";
       options = { noremap = true; silent = true; };
@@ -501,7 +501,7 @@
       options = { noremap = true; silent = true; };
     }
     {
-      action = "<cmd>TodoTelescope<CR>";
+      action = "<cmd>TodoTelescope theme=dropdown<CR>";
       key = "<leader>st";
       mode = "n";
       options = { noremap = true; silent = true; };
@@ -509,7 +509,7 @@
 
     # Projects
     {
-      action = "<cmd>Telescope projects<CR>";
+      action = "<cmd>Telescope projects theme=dropdown<CR>";
       key = "<leader>fp";
       mode = "n";
       options = { noremap = true; silent = true; };
