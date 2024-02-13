@@ -557,6 +557,20 @@
       mode = "n";
       options = { noremap = true; silent = true; };
     }
+
+    # Spectre
+    {
+      action = "<cmd>lua require('spectre').open_file_search()<CR>";
+      key = "<leader>sr";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>lua require('spectre').toggle()<CR>";
+      key = "<leader>sR";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
   ];
 
 }

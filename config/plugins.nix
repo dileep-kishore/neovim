@@ -77,5 +77,9 @@
       plugin = lsp_signature-nvim;
       config = ''lua require "lsp_signature".setup()'';
     }
+    {
+      plugin = nvim-spectre;
+      config = ''lua require('spectre').setup()'';
+    }
   ];
 }
