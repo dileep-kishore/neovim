@@ -135,5 +135,9 @@
       plugin = neoscroll-nvim;
       config = ''lua require('neoscroll').setup()'';
     }
+    {
+      plugin = octo-nvim;
+      config = ''lua require("octo").setup()'';
+    }
   ];
 }
