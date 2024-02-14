@@ -3,7 +3,18 @@
   plugins.cmp_luasnip.enable = true;
   plugins.cmp-cmdline.enable = true;
   plugins.cmp-git.enable = true;
-  plugins.cmp-tabnine.enable = true;
+  plugins.copilot-lua = {
+    enable = true;
+    panel = {
+      enabled = true;
+      layout.position = "bottom";
+    };
+    suggestion = {
+      enabled = true;
+      autoTrigger = true;
+      keymap.accept = "<Tab>";
+    };
+  };
   plugins.nvim-cmp = {
     enable = true;
     autoEnableSources = true;
@@ -19,7 +30,6 @@
     };
     sources = [
       { name = "nvim_lsp"; }
-      { name = "cmp_tabnine"; }
       { name = "luasnip"; }
       { name = "path"; }
       { name = "buffer"; }
