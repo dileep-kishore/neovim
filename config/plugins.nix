@@ -106,6 +106,8 @@
     friendly-snippets
     lazygit-nvim
     lspkind-nvim
+    zen-mode-nvim
+    twilight-nvim
     {
       plugin = nvim-hlslens;
       config = ''lua require("hlslens").setup()'';

@@ -652,6 +652,20 @@
       options = { noremap = true; silent = true; };
     }
 
+    # Zen mode and twilight
+    {
+      action = "<cmd>ZenMode<CR>";
+      key = "<leader>zz";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>Twilight<CR>";
+      key = "<leader>zt";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+
   ];
 
 }
