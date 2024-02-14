@@ -595,7 +595,7 @@
     }
     {
       action = "<cmd>lua require('harpoon').ui:toggle_quick_menu(require('harpoon'):list())<CR>";
-      key = "<leader>hq";
+      key = "<leader>hh";
       mode = "n";
       options = { noremap = true; silent = true; };
     }

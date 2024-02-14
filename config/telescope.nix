@@ -74,23 +74,23 @@
         action = "current_buffer_fuzzy_find";
         desc = "Telescope search current buffer";
       };
-      "<leader>hh" = {
+      "<leader>th" = {
         action = "help_tags";
         desc = "Telescope find help";
       };
-      "<leader>hm" = {
+      "<leader>tm" = {
         action = "man_pages";
         desc = "Telescope Man Pages";
       };
-      "<leader>hk" = {
+      "<leader>tk" = {
         action = "keymaps";
         desc = "Telescope Keymaps";
       };
-      "<leader>ho" = {
+      "<leader>to" = {
         action = "vim_options";
         desc = "Telescope Vim options";
       };
-      "<leader>hc" = {
+      "<leader>tc" = {
         action = "commands";
         desc = "Telescope Commands";
       };
