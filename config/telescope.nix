@@ -10,6 +10,9 @@
         };
       };
       pickers = {
+        find_files = { theme = "dropdown"; };
+        git_files = { theme = "dropdown"; };
+        fd = { theme = "dropdown"; };
         buffers = { theme = "dropdown"; };
         marks = { theme = "dropdown"; };
         registers = { theme = "dropdown"; };
@@ -18,6 +21,11 @@
         git_commits = { theme = "dropdown"; };
         live_grep = { theme = "ivy"; };
         current_buffer_fuzzy_find = { theme = "ivy"; };
+        help_tags = { theme = "dropdown"; };
+        man_pages = { theme = "ivy"; };
+        keymaps = { theme = "dropdown"; };
+        vim_options = { theme = "dropdown"; };
+        commands = { theme = "dropdown"; };
       };
     };
     extensions = {

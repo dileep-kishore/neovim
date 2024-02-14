@@ -509,7 +509,7 @@
       options = { noremap = true; silent = true; };
     }
     {
-      action = "<cmd>TodoTelescope theme=dropdown<CR>";
+      action = "<cmd>TodoTelescope theme=ivy<CR>";
       key = "<leader>st";
       mode = "n";
       options = { noremap = true; silent = true; };
