@@ -76,6 +76,7 @@
       keys = "<Esc>";
       mapping = [ "jk" ];
     };
+    nvim-colorizer.enable = true;
   };
 
   extraPackages = with pkgs; [
