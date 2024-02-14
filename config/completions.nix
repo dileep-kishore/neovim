@@ -25,9 +25,28 @@
       expand = "luasnip";
     };
     window = {
-      completion.border = "rounded";
       documentation.border = "rounded";
+      documentation.winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None";
+      completion = {
+        colOffset = -3;
+        sidePadding = 0;
+        winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None";
+        border = "rounded";
+      };
     };
+    formatting.fields = [ "kind" "abbr" "menu" ];
+    formatting.format = ''
+      function(entry, vim_item)
+        local colors = require("catppuccin.palettes").get_palette()
+        -- vim.api.nvim_set_hl(0, 'FloatBorder', { link = 'Normal' })
+        vim.api.nvim_set_hl(0, "CmpItemMenu", { fg = colors.mauve, bg = "NONE", italic = true })
+        local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50 })(entry, vim_item)
+        local strings = vim.split(kind.kind, "%s", { trimempty = true })
+        kind.kind = " " .. (strings[1] or "") .. " "
+        kind.menu = "    (" .. (strings[2] or "") .. ")"
+        return kind
+      end
+    '';
     sources = [
       { name = "nvim_lsp"; }
       { name = "luasnip"; }
@@ -82,4 +101,5 @@
       };
     };
   };
+
 }

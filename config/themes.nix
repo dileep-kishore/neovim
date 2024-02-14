@@ -38,6 +38,7 @@
       };
       native_lsp = {
         enabled = true;
+        inlay_hints.background = true;
       };
       neogit = true;
       neotest = true;
@@ -45,6 +46,7 @@
       notify = true;
       nvimtree = true;
       octo = true;
+      ufo = true;
       overseer = true;
       rainbow_delimiters = true;
       telescope = {

@@ -105,6 +105,7 @@
     vim-repeat
     friendly-snippets
     lazygit-nvim
+    lspkind-nvim
     {
       plugin = nvim-hlslens;
       config = ''lua require("hlslens").setup()'';

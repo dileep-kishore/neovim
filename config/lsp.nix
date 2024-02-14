@@ -94,15 +94,9 @@
       };
     };
   };
-  plugins.lspkind = {
-    enable = true;
-    mode = "symbol_text";
-    cmp = {
-      enable = true;
-    };
-  };
   plugins.lspsaga = {
     enable = true;
+    ui.border = "rounded";
     beacon.enable = true;
     implement = {
       enable = true;
