@@ -77,6 +77,7 @@
       mapping = [ "jk" ];
     };
     nvim-colorizer.enable = true;
+    marks.enable = true;
   };
 
   extraPackages = with pkgs; [
