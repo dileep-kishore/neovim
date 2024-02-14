@@ -41,6 +41,20 @@
       options = { noremap = true; silent = true; };
     }
 
+    # Tab navigation
+    {
+      action = "<cmd>tabprevious<CR>";
+      key = "[t";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+    {
+      action = "<cmd>tabnext<CR>";
+      key = "]t";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+
     # Resize window with Ctrl + arrow keys
     {
       action = "<cmd>resize +4<CR>";
