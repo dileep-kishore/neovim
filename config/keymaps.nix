@@ -13,15 +13,7 @@
         silent = true;
       };
     }
-    {
-      mode = "i";
-      key = "jk";
-      action = "<Esc>";
-      options = {
-        noremap = true;
-        silent = true;
-      };
-    }
+    # jk -> <Esc> keymap in better-escape plugin config
 
     # Window navigation
     {

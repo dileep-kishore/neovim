@@ -71,6 +71,11 @@
       systemClipboard.syncWithRing = true;
     };
     refactoring.enable = true;
+    better-escape = {
+      enable = true;
+      keys = "<Esc>";
+      mapping = [ "jk" ];
+    };
   };
 
   extraPackages = with pkgs; [
