@@ -76,6 +76,7 @@
       keys = "<Esc>";
       mapping = [ "jk" ];
     };
+    nvim-bqf.enable = true;
     nvim-colorizer.enable = true;
     marks.enable = true;
     markdown-preview = {
