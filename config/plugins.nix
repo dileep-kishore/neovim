@@ -78,6 +78,10 @@
     };
     nvim-colorizer.enable = true;
     marks.enable = true;
+    markdown-preview = {
+      enable = true;
+      theme = "dark";
+    };
   };
 
   extraPackages = with pkgs; [
