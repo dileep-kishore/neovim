@@ -130,5 +130,9 @@
       plugin = tint-nvim;
       config = ''lua require("tint").setup()'';
     }
+    {
+      plugin = neoscroll-nvim;
+      config = ''lua require('neoscroll').setup()'';
+    }
   ];
 }
