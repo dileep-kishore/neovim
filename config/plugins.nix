@@ -114,6 +114,7 @@
     lspkind-nvim
     zen-mode-nvim
     twilight-nvim
+    otter-nvim
     {
       plugin = nvim-hlslens;
       config = ''lua require("hlslens").setup()'';

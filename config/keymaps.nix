@@ -680,6 +680,14 @@
       options = { noremap = true; silent = true; };
     }
 
+    # Otter.nvim keymap
+    {
+      action = "<cmd>lua require'otter'.activate({'python', 'r', 'nix', 'sh'})<CR>";
+      key = "<leader>ot";
+      mode = "n";
+      options = { noremap = true; silent = true; };
+    }
+
   ];
 
 }
