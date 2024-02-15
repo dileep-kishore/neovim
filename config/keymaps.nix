@@ -995,7 +995,7 @@
     {
       action =
         "<cmd>lua require'otter'.activate({'python', 'r', 'nix', 'sh'})<CR>";
-      key = "<leader>ot";
+      key = "<leader>lt";
       mode = "n";
       options = {
         noremap = true;
