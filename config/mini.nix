@@ -5,10 +5,6 @@
       ai = { };
       animate = { };
       files = { };
-      indentscope = {
-        try_as_border = true;
-        symbol = "▎";
-      };
       splitjoin = { };
     };
   };

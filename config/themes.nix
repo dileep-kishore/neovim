@@ -25,10 +25,10 @@
         enabled = true;
         lsp = true;
       };
-      indent_blankline = {
-        enabled = true;
-        colored_indent_levels = true;
-      };
+      # indent_blankline = {
+      #   enabled = true;
+      #   colored_indent_levels = true;
+      # };
       lsp_saga = true;
       lsp_trouble = true;
       markdown = true;
@@ -60,6 +60,60 @@
   # Custom theming for Telescope
   extraConfigLua = ''
     local colors = require("catppuccin.palettes").get_palette()
+
+    local support_ft = {
+      "*.ts",
+      "*.tsx",
+      "*.js",
+      "*.jsx",
+      "*.html",
+      "*.json",
+      "*.go",
+      "*.c",
+      "*.py",
+      "*.cpp",
+      "*.rs",
+      "*.h",
+      "*.hpp",
+      "*.lua",
+      "*.vue",
+      "*.java",
+      "*.cs",
+      "*.dart",
+      "*.nix",
+      "*.css",
+    }
+
+    require('hlchunk').setup({
+      chunk = {
+        enable = true,
+        use_treesitter = true,
+        style = colors.mauve,
+        support_filetypes = support_ft,
+        chars = {
+            horizontal_line = "─",
+            vertical_line = "│",
+            left_top = "╭",
+            left_bottom = "╰",
+            right_arrow = "─",
+        },
+      },
+      indent = {
+        enable = false,
+        chars = { "│", "¦", "┆", "┊", },
+        user_treesitter = true,
+      },
+      line_num = {
+        enable = true,
+        use_treesitter = true,
+        style = colors.mauve,
+      },
+      blank = {
+        enable = false,
+        use_treesitter = true,
+      },
+    });
+
     local TelescopeColor = {
       -- TelescopeBorder = { fg = colors.surface0, bg = colors.mantle },
       -- TelescopeNormal = { bg = colors.mantle },

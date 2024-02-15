@@ -1,4 +1,17 @@
-{ self, pkgs, ... }: {
+{ self, pkgs, ... }:
+let
+  hlchunk = pkgs.vimUtils.buildVimPlugin {
+    pname = "hlchunk.nvim";
+    version = "2023-12-10";
+    src = builtins.fetchGit {
+      url = "https://github.com/shellRaining/hlchunk.nvim.git";
+      ref = "main";
+      rev = "882d1bc86d459fa8884398223c841fd09ea61b6b";
+    };
+    meta.homepage = "https://github.com/shellRaining/hlchunk.nvim";
+  };
+in
+{
   plugins = {
     nvim-autopairs = {
       enable = true;
@@ -26,10 +39,12 @@
     illuminate.enable = true;
     indent-blankline = {
       enable = true;
+      indent.char = "¦";
       whitespace.removeBlanklineTrail = true;
       scope = {
         enabled = false;
         showEnd = false;
+        showStart = false;
       };
     };
     rainbow-delimiters = { enable = true; };
@@ -106,6 +121,7 @@
     zen-mode-nvim
     twilight-nvim
     otter-nvim
+    hlchunk
     {
       plugin = scope-nvim;
       config = "lua require('scope').setup()";
