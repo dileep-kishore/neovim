@@ -583,7 +583,7 @@
       };
     }
     {
-      action = "<cmd>Telescope lsp_document_diagnostics theme=dropdown<cr>";
+      action = "<cmd>Telescope diagnostics theme=dropdown<cr>";
       key = "<leader>ld";
       mode = "n";
       options = {
@@ -592,8 +592,8 @@
       };
     }
     {
-      action = "<cmd>Telescope lsp_workspace_diagnostics theme=dropdown<cr>";
-      key = "<leader>lw";
+      action = "<cmd>Lspsaga peek_definition<cr>";
+      key = "<leader>lp";
       mode = "n";
       options = {
         noremap = true;
@@ -601,7 +601,7 @@
       };
     }
     {
-      action = "<cmd>lua vim.lsp.buf.formatting()<cr>";
+      action = "<cmd>Lspsaga finder<cr>";
       key = "<leader>lf";
       mode = "n";
       options = {
@@ -646,15 +646,6 @@
       };
     }
     {
-      action = "<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>";
-      key = "<leader>lq";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-      };
-    }
-    {
       action = "<cmd>Lspsaga rename<cr>";
       key = "<leader>lr";
       mode = "n";
@@ -682,8 +673,7 @@
       };
     }
     {
-      action =
-        "<cmd>Telescope lsp_dynamic_workspace_symbols theme=dropdown<cr>";
+      action = "<cmd>Telescope lsp_dynamic_workspace_symbols theme=dropdown<cr>";
       key = "<leader>lS";
       mode = "n";
       options = {
