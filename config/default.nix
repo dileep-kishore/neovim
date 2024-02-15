@@ -14,6 +14,7 @@
     ./linter.nix
     ./snippets.nix
     ./completions.nix
+    ./gpt.nix
     ./alpha.nix
     ./telescope.nix
     ./folding.nix
