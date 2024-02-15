@@ -151,10 +151,6 @@ in
       config = ''lua require("tint").setup()'';
     }
     {
-      plugin = neoscroll-nvim;
-      config = "lua require('neoscroll').setup()";
-    }
-    {
       plugin = octo-nvim;
       config = ''lua require("octo").setup()'';
     }
