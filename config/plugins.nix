@@ -89,6 +89,7 @@ in
       enable = true;
       theme = "dark";
     };
+    persistence.enable = true;
   };
 
   extraPackages = with pkgs; [

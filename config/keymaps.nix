@@ -1003,6 +1003,26 @@
       };
     }
 
+    # persistence
+    {
+      action = "<cmd>lua require('persistence').load()<cr>";
+      key = "<leader>qs";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>lua require('persistence').load({ last = true })<cr>";
+      key = "<leader>ql";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+
   ];
 
 }
