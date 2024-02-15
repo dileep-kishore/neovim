@@ -12,11 +12,12 @@
     suggestion = {
       enabled = true;
       autoTrigger = true;
-      keymap.accept = "<Tab>";
+      keymap.accept = "<C-l>";
     };
   };
   plugins.nvim-cmp = {
     enable = true;
+    preselect = "None";
     autoEnableSources = true;
     experimental = {
       ghost_text = true;
@@ -61,7 +62,7 @@
       "<C-d>" = "cmp.mapping.scroll_docs(-4)";
       "<C-e>" = "cmp.mapping.close()";
       "<C-f>" = "cmp.mapping.scroll_docs(4)";
-      "<CR>" = "cmp.mapping.confirm({ select = true })";
+      "<CR>" = "cmp.mapping.confirm({ select = false })";
       "<C-p>" = {
         action = ''
           function(fallback)
