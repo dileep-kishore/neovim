@@ -134,5 +134,9 @@
       plugin = octo-nvim;
       config = ''lua require("octo").setup()'';
     }
+    {
+      plugin = headlines-nvim;
+      config = "lua require('headlines').setup()";
+    }
   ];
 }
