@@ -25,7 +25,14 @@ in
       renderer.indentMarkers.enable = true;
     };
     trouble.enable = true;
-    todo-comments.enable = true;
+    todo-comments = {
+      enable = true;
+      highlight = {
+        before = "fg";
+        after = "fg";
+        keyword = "bg";
+      };
+    };
     comment-nvim.enable = true;
     project-nvim.enable = true;
     surround.enable = true;
