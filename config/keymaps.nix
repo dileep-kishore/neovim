@@ -1023,6 +1023,44 @@
       };
     }
 
+    # ChatGPT
+    {
+      action = "<cmd>ChatGPT<cr>";
+      key = "<leader>cg";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>ChatGPTActAs<cr>";
+      key = "<leader>ca";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>ChatGPTEditWithInstruction<cr>";
+      key = "<leader>ce";
+      mode = "v";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>ChatGPTRun ";
+      key = "<leader>cr";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+
   ];
 
 }

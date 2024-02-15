@@ -155,5 +155,9 @@ in
       plugin = headlines-nvim;
       config = "lua require('headlines').setup()";
     }
+    {
+      plugin = ChatGPT-nvim;
+      config = "lua require('chatgpt').setup()";
+    }
   ];
 }
