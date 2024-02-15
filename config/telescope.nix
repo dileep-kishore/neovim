@@ -5,9 +5,7 @@
       defaults = {
         path_display = [ "truncate" ];
         sorting_strategy = "ascending";
-        layout_config = {
-          horizontal = { prompt_position = "top"; };
-        };
+        layout_config = { horizontal = { prompt_position = "top"; }; };
       };
       pickers = {
         find_files = { theme = "dropdown"; };
@@ -33,9 +31,7 @@
         enable = true;
         caseMode = "smart_case";
       };
-      project-nvim = {
-        enable = true;
-      };
+      project-nvim = { enable = true; };
     };
     keymaps = {
       "<leader>ff" = {
@@ -45,10 +41,6 @@
       "<leader>fg" = {
         action = "git_files";
         desc = "Telescope Git Files";
-      };
-      "<leader>fb" = {
-        action = "buffers";
-        desc = "Telescope Buffers";
       };
       "<leader>fd" = {
         action = "fd";
@@ -104,4 +96,7 @@
       };
     };
   };
+  extraConfigLua = ''
+    require("telescope").load_extension("scope")
+  '';
 }

@@ -1,5 +1,4 @@
-{ self, pkgs, ... }:
-{
+{ self, pkgs, ... }: {
   plugins = {
     nvim-autopairs = {
       enable = true;
@@ -8,12 +7,8 @@
     tmux-navigator.enable = true;
     nvim-tree = {
       enable = true;
-      diagnostics = {
-        enable = true;
-      };
-      git = {
-        enable = true;
-      };
+      diagnostics = { enable = true; };
+      git = { enable = true; };
       renderer.indentMarkers.enable = true;
     };
     trouble.enable = true;
@@ -24,9 +19,7 @@
     toggleterm = {
       enable = true;
       direction = "float";
-      floatOpts = {
-        border = "single";
-      };
+      floatOpts = { border = "single"; };
       openMapping = "<C-A-t>";
       terminalMappings = true;
     };
@@ -39,9 +32,7 @@
         showEnd = false;
       };
     };
-    rainbow-delimiters = {
-      enable = true;
-    };
+    rainbow-delimiters = { enable = true; };
     leap = {
       enable = true;
       addDefaultMappings = true;
@@ -116,16 +107,20 @@
     twilight-nvim
     otter-nvim
     {
+      plugin = scope-nvim;
+      config = "lua require('scope').setup()";
+    }
+    {
       plugin = nvim-hlslens;
       config = ''lua require("hlslens").setup()'';
     }
     {
       plugin = nvim-spectre;
-      config = ''lua require('spectre').setup()'';
+      config = "lua require('spectre').setup()";
     }
     {
       plugin = harpoon2;
-      config = ''lua require('harpoon').setup()'';
+      config = "lua require('harpoon').setup()";
     }
     {
       plugin = tint-nvim;
@@ -133,7 +128,7 @@
     }
     {
       plugin = neoscroll-nvim;
-      config = ''lua require('neoscroll').setup()'';
+      config = "lua require('neoscroll').setup()";
     }
     {
       plugin = octo-nvim;
