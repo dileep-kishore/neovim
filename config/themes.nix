@@ -79,11 +79,15 @@
     	TelescopeResultsBorder = { bg = colors.surface0, fg = colors.surface0 },
     	TelescopeResultsNormal = { bg = colors.surface0 },
     	TelescopeResultsTitle = { bg = colors.pink, fg = colors.mantle },
-
     }
 
     for hl, col in pairs(TelescopeColor) do
     	vim.api.nvim_set_hl(0, hl, col)
     end
+
+    -- change bufferline highlights
+    vim.cmd [[ highlight BufferLineFill guibg=colors.base ]]
+    vim.cmd [[ highlight BufferLineIndicatorSelected guifg=colors.teal ]]
+
   '';
 }
