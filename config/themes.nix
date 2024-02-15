@@ -34,7 +34,7 @@
       };
       native_lsp = {
         enabled = true;
-        inlay_hints.background = false;
+        inlay_hints.background = true;
       };
       neogit = true;
       neotest = true;

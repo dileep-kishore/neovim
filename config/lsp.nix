@@ -129,11 +129,12 @@
         local config = {
             -- enable virtual text
             virtual_text = true,
+            -- disable update while in insert mode
+            update_in_insert = false,
             -- show signs
             signs = {
                 active = signs,
             },
-            update_in_insert = true,
             underline = true,
             severity_sort = true,
             float = {
