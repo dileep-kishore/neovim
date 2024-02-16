@@ -1064,7 +1064,7 @@
     # Neogen
     {
       action = "<cmd>lua require('neogen').generate()<cr>";
-      key = "<leader>nf";
+      key = "<leader>dg";
       mode = "n";
       options = {
         noremap = true;
@@ -1134,6 +1134,17 @@
     {
       action = "<cmd>QuartoPreview<CR>";
       key = "<leader>qp";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+
+    # New file at current location
+    {
+      action = "<cmd>:e %:h/";
+      key = "<leader>nf";
       mode = "n";
       options = {
         noremap = true;
