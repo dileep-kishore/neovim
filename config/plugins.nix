@@ -10,6 +10,16 @@ let
     };
     meta.homepage = "https://github.com/shellRaining/hlchunk.nvim";
   };
+  devdocs-nvim = pkgs.vimUtils.buildVimPlugin {
+    pname = "nvim-devdocs";
+    version = "2023-12-22";
+    src = builtins.fetchGit {
+      url = "https://github.com/luckasRanarison/nvim-devdocs.git";
+      ref = "master";
+      rev = "521d24661ffe6d1ba025debea2675c765a9c1ee1";
+    };
+    meta.homepage = "https://github.com/luckasRanarison/nvim-devdocs";
+  };
 in
 {
   plugins = {
@@ -131,6 +141,7 @@ in
     otter-nvim
     bufdelete-nvim
     hlchunk
+    devdocs-nvim
     {
       plugin = scope-nvim;
       config = "lua require('scope').setup()";

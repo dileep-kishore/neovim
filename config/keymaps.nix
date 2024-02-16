@@ -1063,6 +1063,17 @@
       };
     }
 
+    # Devdocs telescope
+    {
+      action = "<cmd>DevdocsOpenCurrentFloat<cr>";
+      key = "<leader>td";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+
   ];
 
 }

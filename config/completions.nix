@@ -126,4 +126,8 @@
     };
   };
 
+  extraConfigLua = ''
+    require("nvim-devdocs").setup()
+  '';
+
 }
