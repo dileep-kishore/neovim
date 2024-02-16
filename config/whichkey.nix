@@ -14,7 +14,7 @@
       };
     };
     registrations = {
-      "<Leader>a" = "Alpha dashboard";
+      "<Leader>aa" = "Alpha dashboard";
       "<leader>/" = "Toggle NvimTree";
       "<C-k>" = "Expand luasnip";
       "<leader>ga" = "Gwrite";
@@ -80,8 +80,8 @@
       "<leader>zz" = "ZenMode";
       "<leader>zt" = "Twilight";
       "<leader>lt" = "Otter activate lsp";
-      "<leader>qs" = "Persistence load (curr)";
-      "<leader>ql" = "Persistence load (prev)";
+      "<leader>as" = "Persistence load (curr)";
+      "<leader>al" = "Persistence load (prev)";
       "<leader>cg" = "ChatGPT";
       "<leader>ca" = "ChatGPTActAs";
       "<leader>ce" = "ChatGPTEditWithInstruction";

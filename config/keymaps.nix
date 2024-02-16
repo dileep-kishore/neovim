@@ -363,7 +363,7 @@
     # Alpha dashboard
     {
       action = "<cmd>Alpha<CR>";
-      key = "<Leader>a";
+      key = "<Leader>aa";
       mode = "n";
       options = {
         noremap = true;
@@ -1006,7 +1006,7 @@
     # persistence
     {
       action = "<cmd>lua require('persistence').load()<cr>";
-      key = "<leader>qs";
+      key = "<leader>as";
       mode = "n";
       options = {
         noremap = true;
@@ -1015,7 +1015,7 @@
     }
     {
       action = "<cmd>lua require('persistence').load({ last = true })<cr>";
-      key = "<leader>ql";
+      key = "<leader>al";
       mode = "n";
       options = {
         noremap = true;
