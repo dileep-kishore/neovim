@@ -12,7 +12,7 @@
     suggestion = {
       enabled = true;
       autoTrigger = true;
-      keymap.accept = "<C-l>";
+      keymap.accept = "<C-Space>";
     };
   };
   plugins.nvim-cmp = {
@@ -58,7 +58,7 @@
       { name = "git"; }
     ];
     mapping = {
-      "<C-Space>" = "cmp.mapping.complete()";
+      # "<C-Space>" = "cmp.mapping.complete()";
       "<C-d>" = "cmp.mapping.scroll_docs(-4)";
       "<C-e>" = "cmp.mapping.close()";
       "<C-f>" = "cmp.mapping.scroll_docs(4)";
