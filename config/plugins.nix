@@ -131,13 +131,14 @@ in
     eslint_d
     fd
     hadolint
+    imagemagick
     isort
     lazygit
     mypy
     nixfmt
     nodePackages.jsonlint
     nodePackages.prettier
-    imagemagick
+    quarto
     ripgrep
     rstcheck
     ruff
@@ -196,6 +197,10 @@ in
     {
       plugin = highlight-undo-nvim;
       config = "lua require('highlight-undo').setup()";
+    }
+    {
+      plugin = quarto-nvim;
+      config = "lua require('quarto').setup()";
     }
   ];
 }

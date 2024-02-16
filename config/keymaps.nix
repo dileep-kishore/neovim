@@ -1130,6 +1130,17 @@
       };
     }
 
+    # Quarto
+    {
+      action = "<cmd>QuartoPreview<CR>";
+      key = "<leader>qp";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+
   ];
 
 }
