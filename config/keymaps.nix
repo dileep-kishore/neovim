@@ -1052,6 +1052,17 @@
       };
     }
 
+    # Neogen
+    {
+      action = "<cmd>lua require('neogen').generate()<cr>";
+      key = "<leader>nf";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+
   ];
 
 }
