@@ -62,7 +62,7 @@
       "<leader>do" = "DAP UI toggle";
       "<leader>th" = "ToggleTerm (horizontal)";
       "<leader>tv" = "ToggleTerm (vertical)";
-      "<leader>mf" = "Mini files";
+      "<leader>tf" = "Mini files";
       "<leader>sr" = "Spectre replace";
       "<leader>sR" = "Spectre toggle";
       "<leader>ha" = "Harpoon add";
@@ -86,6 +86,11 @@
       "<leader>ca" = "ChatGPTActAs";
       "<leader>ce" = "ChatGPTEditWithInstruction";
       "<leader>cr" = "ChatGPTRun";
+      "<leader>mi" = "Molten Init";
+      "<leader>me" = "Molten Evaluate Operator";
+      "<leader>ml" = "Molten Evaluate Line";
+      "<leader>mr" = "Molten Reevaluate Cell";
+      "<leader>mv" = "Molten Evaluate Visual";
     };
   };
 }
