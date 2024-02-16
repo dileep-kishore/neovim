@@ -61,7 +61,7 @@
         installRustc = true;
       };
       pyright = {
-        enable = true;
+        enable = false;
       };
       svelte = {
         enable = true;

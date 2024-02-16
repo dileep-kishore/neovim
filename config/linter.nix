@@ -10,7 +10,7 @@
       css = [ "stylelint" ];
       scss = [ "stylelint" ];
       dockerfile = [ "hadolint" ];
-      python = [ "flake8" "ruff" ];
+      python = [ "mypy" ];
       javascript = [ "eslint_d" ];
       typescript = [ "eslint_d" ];
       javascriptreact = [ "eslint_d" ];

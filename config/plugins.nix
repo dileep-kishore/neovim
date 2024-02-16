@@ -105,10 +105,10 @@ in
     hadolint
     isort
     lazygit
+    mypy
     nixfmt
     nodePackages.jsonlint
     nodePackages.prettier
-    python311Packages.flake8
     ripgrep
     rstcheck
     ruff
