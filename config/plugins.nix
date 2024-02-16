@@ -119,6 +119,14 @@ in
     };
   };
 
+  extraPython3Packages = ps: with ps; [
+    jupyter-client
+    pynvim
+    pyperclip
+    pnglatex
+    nbformat
+  ];
+
   extraPackages = with pkgs; [
     eslint_d
     fd
@@ -129,6 +137,7 @@ in
     nixfmt
     nodePackages.jsonlint
     nodePackages.prettier
+    imagemagick
     ripgrep
     rstcheck
     ruff

@@ -21,6 +21,7 @@
     ./themes.nix
     ./keymaps.nix
     ./plugins.nix
+    ./literate.nix
     ./whichkey.nix
   ];
 
