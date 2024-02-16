@@ -8,7 +8,7 @@
     showTabIndicators = true;
     highlights.bufferSelected.italic = true;
     indicator = {
-      icon = "";
+      icon = "▎";
       style = "icon";
     };
   };
