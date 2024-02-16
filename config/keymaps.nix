@@ -295,8 +295,7 @@
 
     # nvim-hlslens
     {
-      action =
-        "<Cmd>execute('normal! ' . v:count1 . 'n')<CR><Cmd>lua require('hlslens').start()<CR>";
+      action = "<Cmd>execute('normal! ' . v:count1 . 'n')<CR><Cmd>lua require('hlslens').start()<CR>";
       key = "n";
       mode = "n";
       options = {
@@ -305,8 +304,7 @@
       };
     }
     {
-      action =
-        "<Cmd>execute('normal! ' . v:count1 . 'N')<CR><Cmd>lua require('hlslens').start()<CR>";
+      action = "<Cmd>execute('normal! ' . v:count1 . 'N')<CR><Cmd>lua require('hlslens').start()<CR>";
       key = "N";
       mode = "n";
       options = {
@@ -851,8 +849,7 @@
       };
     }
     {
-      action =
-        "<cmd>lua require('harpoon').ui:toggle_quick_menu(require('harpoon'):list())<CR>";
+      action = "<cmd>lua require('harpoon').ui:toggle_quick_menu(require('harpoon'):list())<CR>";
       key = "<leader>hh";
       mode = "n";
       options = {
@@ -919,8 +916,7 @@
 
     # Yanky.nvim
     {
-      action =
-        "<cmd>lua require('telescope').extensions.yank_history.yank_history()<cr>";
+      action = "<cmd>lua require('telescope').extensions.yank_history.yank_history()<cr>";
       key = "<leader>ty";
       mode = "n";
       options = {
@@ -931,8 +927,7 @@
 
     # Refactor
     {
-      action =
-        "<cmd>lua require('refactoring').refactor('Extract Function')<cr>";
+      action = "<cmd>lua require('refactoring').refactor('Extract Function')<cr>";
       key = "<leader>re";
       mode = "x";
       options = {
@@ -941,8 +936,7 @@
       };
     }
     {
-      action =
-        "<cmd>lua require('refactoring').refactor('Extract Function To File')<cr>";
+      action = "<cmd>lua require('refactoring').refactor('Extract Function To File')<cr>";
       key = "<leader>rf";
       mode = "x";
       options = {
@@ -951,8 +945,7 @@
       };
     }
     {
-      action =
-        "<cmd>lua require('refactoring').refactor('Extract Variable')<cr>";
+      action = "<cmd>lua require('refactoring').refactor('Extract Variable')<cr>";
       key = "<leader>rv";
       mode = "x";
       options = {
@@ -983,8 +976,7 @@
 
     # Otter.nvim keymap
     {
-      action =
-        "<cmd>lua require'otter'.activate({'python', 'r', 'nix', 'sh'})<CR>";
+      action = "<cmd>lua require'otter'.activate({'python', 'r', 'nix', 'sh'})<CR>";
       key = "<leader>lt";
       mode = "n";
       options = {
