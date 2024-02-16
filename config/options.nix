@@ -8,6 +8,7 @@
     hlsearch = true;
     incsearch = true;
     mouse = "a";
+    ignorecase = true;
     smartcase = true;
     smartindent = true;
     splitbelow = true;
