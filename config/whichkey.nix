@@ -1,14 +1,17 @@
 {
   plugins.which-key = {
     enable = true;
-    layout = {
-      align = "center";
-    };
+    layout = { align = "center"; };
     window = {
       border = "rounded";
       position = "bottom";
       winblend = 10;
-      margin = { top = 1; right = 1; bottom = 2; left = 1; };
+      margin = {
+        top = 1;
+        right = 1;
+        bottom = 2;
+        left = 1;
+      };
     };
     registrations = {
       "<Leader>a" = "Alpha dashboard";

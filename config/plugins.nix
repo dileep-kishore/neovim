@@ -174,5 +174,9 @@ in
       plugin = ChatGPT-nvim;
       config = "lua require('chatgpt').setup()";
     }
+    {
+      plugin = highlight-undo-nvim;
+      config = "lua require('highlight-undo').setup()";
+    }
   ];
 }
