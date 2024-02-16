@@ -20,8 +20,7 @@ let
     };
     meta.homepage = "https://github.com/luckasRanarison/nvim-devdocs";
   };
-in
-{
+in {
   plugins = {
     nvim-autopairs = {
       enable = true;
@@ -119,13 +118,14 @@ in
     };
   };
 
-  extraPython3Packages = ps: with ps; [
-    jupyter-client
-    pynvim
-    pyperclip
-    pnglatex
-    nbformat
-  ];
+  extraPython3Packages = ps:
+    with ps; [
+      jupyter-client
+      pynvim
+      pyperclip
+      pnglatex
+      nbformat
+    ];
 
   extraPackages = with pkgs; [
     eslint_d
@@ -168,7 +168,7 @@ in
     }
     {
       plugin = nvim-hlslens;
-      config = ''lua require("hlslens").setup()'';
+      config = ''lua require("hlslens").setup({calm_down={default=true}})'';
     }
     {
       plugin = nvim-spectre;
