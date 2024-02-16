@@ -20,7 +20,7 @@
     preselect = "None";
     autoEnableSources = true;
     experimental = {
-      ghost_text = true;
+      ghost_text = false;
     };
     snippet = {
       expand = "luasnip";
