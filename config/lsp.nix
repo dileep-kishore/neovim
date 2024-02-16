@@ -39,7 +39,7 @@
         enable = true;
       };
       ruff-lsp = {
-        enable = true;
+        enable = false;
         extraOptions = {
           init_options = {
             settings = {
@@ -61,7 +61,7 @@
         installRustc = true;
       };
       pyright = {
-        enable = false;
+        enable = true;
       };
       svelte = {
         enable = true;

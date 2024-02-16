@@ -183,10 +183,19 @@
         silent = true;
       };
     }
-    # Close buffer
+    # Close buffers
     {
-      action = "<cmd>bdelete<CR>";
+      action = "<cmd>Bdelete<CR>";
       key = "<C-x>";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>Bwipeout<CR>";
+      key = "<C-S-x>";
       mode = "n";
       options = {
         noremap = true;

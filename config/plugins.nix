@@ -129,6 +129,7 @@ in
     zen-mode-nvim
     twilight-nvim
     otter-nvim
+    bufdelete-nvim
     hlchunk
     {
       plugin = scope-nvim;
