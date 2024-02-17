@@ -95,7 +95,7 @@
         elseif count[2] > 0 then 
             return vim.bo[buf].modified and "" or ""
         end
-        return vim.bo[buf].modified and "" or ""
+        return vim.bo[buf].modified and "" or ""
     end
 
 
