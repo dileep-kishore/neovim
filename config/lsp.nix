@@ -2,42 +2,18 @@
   plugins.lsp = {
     enable = true;
     servers = {
-      astro = {
-        enable = true;
-      };
-      bashls = {
-        enable = true;
-      };
-      dockerls = {
-        enable = true;
-      };
-      eslint = {
-        enable = true;
-      };
-      gopls = {
-        enable = true;
-      };
-      hls = {
-        enable = true;
-      };
-      jsonls = {
-        enable = true;
-      };
-      julials = {
-        enable = true;
-      };
-      ltex = {
-        enable = true;
-      };
-      texlab = {
-        enable = true;
-      };
-      marksman = {
-        enable = true;
-      };
-      rnix-lsp = {
-        enable = true;
-      };
+      astro = { enable = true; };
+      bashls = { enable = true; };
+      dockerls = { enable = true; };
+      eslint = { enable = true; };
+      gopls = { enable = true; };
+      hls = { enable = true; };
+      jsonls = { enable = true; };
+      julials = { enable = true; };
+      ltex = { enable = true; };
+      texlab = { enable = true; };
+      marksman = { enable = true; };
+      rnix-lsp = { enable = true; };
       ruff-lsp = {
         enable = false;
         extraOptions = {
@@ -49,36 +25,20 @@
           };
         };
       };
-      tsserver = {
-        enable = true;
-      };
-      lua-ls = {
-        enable = true;
-      };
+      tsserver = { enable = true; };
+      lua-ls = { enable = true; };
       rust-analyzer = {
         enable = true;
         installCargo = true;
         installRustc = true;
       };
-      pyright = {
-        enable = true;
-      };
-      svelte = {
-        enable = true;
-      };
-      tailwindcss = {
-        enable = true;
-      };
-      typst-lsp = {
-        enable = true;
-      };
+      pyright = { enable = true; };
+      svelte = { enable = true; };
+      tailwindcss = { enable = true; };
+      typst-lsp = { enable = true; };
       # vscode extracted
-      cssls = {
-        enable = true;
-      };
-      html = {
-        enable = true;
-      };
+      cssls = { enable = true; };
+      html = { enable = true; };
     };
     keymaps = {
       diagnostic = {
@@ -99,7 +59,7 @@
     ui.border = "rounded";
     beacon.enable = true;
     implement = {
-      enable = true;
+      enable = false;
       sign = false;
     };
     lightbulb = {
@@ -107,10 +67,17 @@
       sign = true;
       virtualText = false;
     };
-    outline = {
-      layout = "float";
-    };
-    symbolInWinbar.enable = true;
+    outline = { layout = "float"; };
+    symbolInWinbar.enable = false;
+  };
+  plugins.barbecue = {
+    enable = true;
+    attachNavic = true;
+    createAutocmd = true;
+    showDirname = true;
+    showBasename = true;
+    showNavic = true;
+    showModified = false;
   };
 
   # Custom diagnostic signs for LSP
