@@ -4,7 +4,7 @@
     ./options.nix
     ./autocmds.nix
     ./treesitter.nix
-    ./bufferline.nix
+    ./tabby.nix
     ./mini.nix
     ./git.nix
     ./lualine.nix
@@ -27,9 +27,7 @@
 
   clipboard = {
     register = "unnamedplus";
-    providers = {
-      wl-copy = { enable = true; };
-    };
+    providers = { wl-copy = { enable = true; }; };
   };
 
   editorconfig.enable = true;

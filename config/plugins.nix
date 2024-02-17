@@ -154,6 +154,7 @@ in {
     plenary-nvim
     vim-repeat
     friendly-snippets
+    tabby-nvim
     lazygit-nvim
     lspkind-nvim
     zen-mode-nvim

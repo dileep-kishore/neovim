@@ -1,12 +1,6 @@
-# My personal neovim flake
+# My neovim flake configuration ❄️
 
-<!--toc:start-->
-
-- [My personal neovim flake](#my-personal-neovim-flake)
-  - [Running the flake](#running-the-flake)
-  <!--toc:end-->
-
-This flake uses nixvim to configure neovim in a declarative manner.
+This flake uses [nixvim](https://github.com/nix-community/nixvim) to configure neovim in a declarative manner.
 
 ## Running the flake
 
