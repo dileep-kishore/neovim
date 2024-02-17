@@ -1144,7 +1144,7 @@
 
     # New file at current location
     {
-      action = "<cmd>:e %:h/";
+      action = ":e %:h/";
       key = "<leader>nf";
       mode = "n";
       options = {
