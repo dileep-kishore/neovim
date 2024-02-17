@@ -128,6 +128,7 @@
             line.sep('', theme.win, theme.fill),
             win.is_current() and '' or '',
             win.buf_name(),
+            "",
             lsp_diag(win.buf().id),
             line.sep('', theme.win, theme.fill),
             hl = theme.win,
