@@ -5,13 +5,15 @@
     -- Save and restore tabpages
     vim.opt.sessionoptions = 'curdir,folds,globals,help,tabpages,terminal,winsize'
 
+    local colors = require("catppuccin.palettes").get_palette()
+
     local theme = {
       fill = "TabLineFill",
-      head = "TabLine",
-      current_tab = "TabLineSel",
-      tab = "TabLine",
-      win = "TabLine",
-      tail = "TabLine",
+      head = { fg = colors.crust, bg = colors.green, style = "bold" },
+      current_tab = { fg = colors.crust, bg = colors.blue, style = "bold" },
+      tab = { fg = colors.text, bg = colors.surface0,  },
+      win = { fg = colors.text, bg = colors.surface0, },
+      tail = { fg = colors.crust, bg = colors.green, style = "bold"},
     }
 
     local open_tabs = {}
@@ -54,7 +56,7 @@
     local tab_count = function()
       local num_tabs = #vim.api.nvim_list_tabpages()
 
-      if num_tabs > 1 then
+      if num_tabs >= 1 then
         local tabpage_number = tostring(vim.api.nvim_tabpage_get_number(0))
         return tabpage_number .. "/" .. tostring(num_tabs)
       end
@@ -77,40 +79,69 @@
     local window_count = function(tab)
       local api = require "tabby.module.api"
       local win_count = #api.get_tab_wins(tab.id)
-      if win_count == 1 then
-        return ""
-      else
-        return "[" .. win_count .. "]"
-      end
+      -- return "[  " .. win_count .. " ]"
+      return "[" .. win_count .. "W]"
     end
+
+    function lsp_diag(buf) 
+        diagnostics = vim.diagnostic.get(buf)
+        local count = {0, 0, 0, 0}
+        
+        for _, diagnostic in ipairs(diagnostics) do
+            count[diagnostic.severity] = count[diagnostic.severity] + 1
+        end
+        if count[1] > 0 then
+            return vim.bo[buf].modified and "" or ""
+        elseif count[2] > 0 then 
+            return vim.bo[buf].modified and "" or ""
+        end
+        return vim.bo[buf].modified and "" or ""
+    end
+
 
     require('tabby.tabline').set(function(line)
       return {
         {
-          { " 󰓩  ", hl = theme.head },
+          { '  ', hl = theme.head },
           { tab_count(), hl = theme.head },
-          -- line.sep(" ", theme.head, theme.fill),
-          line.sep(" ", theme.head, theme.fill),
+          line.sep('', theme.head, theme.fill),
         },
         line.tabs().foreach(function(tab)
           local hl = tab.is_current() and theme.current_tab or theme.tab
           return {
-            -- line.sep("", hl, theme.fill),
-            line.sep("", hl, theme.fill),
+            line.sep('', hl, theme.fill),
             tab.is_current() and "" or "",
-            tab_name(tab),
-            -- tab.close_btn("󰅖 "),
-            -- window_count(tab),
-            -- change_mark(tab),
-            -- line.sep(" ", hl, theme.fill),
-            line.sep(" ", hl, theme.fill),
+            tab.number(),
+            "",
+            -- tab_name(tab),
+            window_count(tab),
+            -- tab.close_btn(''), -- show a close button
+            line.sep('', hl, theme.fill),
             hl = hl,
-            margin = " ",
+            margin = ' ',
           }
         end),
+        line.spacer(),
+        -- shows list of windows in tab
+        line.wins_in_tab(line.api.get_current_tab()).foreach(function(win)
+          return {
+            line.sep('', theme.win, theme.fill),
+            win.is_current() and '' or '',
+            win.buf_name(),
+            lsp_diag(win.buf().id),
+            line.sep('', theme.win, theme.fill),
+            hl = theme.win,
+            margin = ' ',
+          }
+        end),
+        {
+          line.sep('', theme.tail, theme.fill),
+          { '  ', hl = theme.tail },
+        },
         hl = theme.fill,
       }
       end, { buf_name = { mode = "unique", }, }
     )
+
   '';
 }

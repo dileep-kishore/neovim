@@ -164,10 +164,6 @@ in {
     hlchunk
     devdocs-nvim
     {
-      plugin = scope-nvim;
-      config = "lua require('scope').setup()";
-    }
-    {
       plugin = nvim-hlslens;
       config = ''lua require("hlslens").setup({calm_down={default=true}})'';
     }

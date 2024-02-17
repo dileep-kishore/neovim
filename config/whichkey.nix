@@ -30,7 +30,7 @@
       "<leader>gD" = "Open Diffview";
       "<leader>gh" = "FileHistory Diffview";
       "<leader>gl" = "LazyGit";
-      "<leader>fb" = "Tele scope buffers";
+      "<leader>fb" = "Tele buffers";
       "<leader>o" = "Tele find_files";
       "<leader>xx" = "Trouble toggle";
       "<leader>xw" = "Trouble diagnostics (workspace)";

@@ -516,7 +516,7 @@
 
     # Other telescope keymaps
     {
-      action = "<cmd>Telescope scope buffers theme=dropdown<CR>";
+      action = "<cmd>Telescope buffers theme=dropdown<CR>";
       key = "<leader>fb";
       mode = "n";
       options = {

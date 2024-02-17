@@ -29,9 +29,7 @@
       lsp_trouble = true;
       markdown = true;
       mason = true;
-      mini = {
-        enabled = true;
-      };
+      mini = { enabled = true; };
       native_lsp = {
         enabled = true;
         inlay_hints.background = true;
@@ -45,9 +43,7 @@
       ufo = true;
       overseer = true;
       rainbow_delimiters = true;
-      telescope = {
-        enabled = true;
-      };
+      telescope = { enabled = true; };
       symbols_outline = true;
       which_key = true;
     };
@@ -134,10 +130,6 @@
     for hl, col in pairs(TelescopeColor) do
     	vim.api.nvim_set_hl(0, hl, col)
     end
-
-    -- change bufferline highlights
-    vim.cmd [[ highlight BufferLineFill guibg=colors.base ]]
-    vim.cmd [[ highlight BufferLineIndicatorSelected guifg=colors.teal ]]
 
   '';
 }
