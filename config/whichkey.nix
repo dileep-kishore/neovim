@@ -65,8 +65,8 @@
       "<leader>tf" = "Mini files";
       "<leader>sr" = "Spectre replace";
       "<leader>sR" = "Spectre toggle";
-      "<leader>ha" = "Harpoon add";
-      "<leader>hh" = "Harpoon list";
+      "<S-m>" = "Harpoon add";
+      "<S-o>" = "Harpoon list";
       "<S-h>" = "Harpoon prev";
       "<S-l>" = "Harpoon next";
       "<leader>h1" = "Harpoon 1";

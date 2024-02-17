@@ -852,8 +852,9 @@
 
     # Harpoon
     {
-      action = "<cmd>lua require('harpoon'):list():append()<CR>";
-      key = "<leader>ha";
+      action =
+        "<cmd>lua require('harpoon'):list():append()<CR><cmd>lua vim.notify('Added to harpoon', 'info')<CR>";
+      key = "<S-m>";
       mode = "n";
       options = {
         noremap = true;
@@ -863,7 +864,7 @@
     {
       action =
         "<cmd>lua require('harpoon').ui:toggle_quick_menu(require('harpoon'):list())<CR>";
-      key = "<leader>hh";
+      key = "<S-o>";
       mode = "n";
       options = {
         noremap = true;
