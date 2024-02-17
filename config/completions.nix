@@ -12,22 +12,19 @@
     suggestion = {
       enabled = true;
       autoTrigger = true;
-      keymap.accept = "<C-Space>";
+      keymap.accept = "<C-l>";
     };
   };
   plugins.nvim-cmp = {
     enable = true;
     preselect = "None";
     autoEnableSources = true;
-    experimental = {
-      ghost_text = false;
-    };
-    snippet = {
-      expand = "luasnip";
-    };
+    experimental = { ghost_text = false; };
+    snippet = { expand = "luasnip"; };
     window = {
       documentation.border = "rounded";
-      documentation.winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None";
+      documentation.winhighlight =
+        "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None";
       completion = {
         colOffset = -3;
         sidePadding = 0;
@@ -108,21 +105,9 @@
     enablePlaceholders = true;
     snippetEngine = "luasnip";
     languages = {
-      python = {
-        template = {
-          annotation_convention = "numpydoc";
-        };
-      };
-      typescript = {
-        template = {
-          annotation_convention = "tsdoc";
-        };
-      };
-      typescriptreact = {
-        template = {
-          annotation_convention = "tsdoc";
-        };
-      };
+      python = { template = { annotation_convention = "numpydoc"; }; };
+      typescript = { template = { annotation_convention = "tsdoc"; }; };
+      typescriptreact = { template = { annotation_convention = "tsdoc"; }; };
     };
   };
 
