@@ -134,6 +134,12 @@ in {
       fader.builtin = "pulse_fader";
       resizer.builtin = "shrink_resizer";
     };
+    vim-matchup = {
+      enable = true;
+      enableSurround = true;
+      enableTransmute = true;
+      treesitterIntegration.enable = true;
+    };
   };
 
   extraPython3Packages = ps:
