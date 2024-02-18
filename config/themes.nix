@@ -83,36 +83,6 @@
       "*.css",
     }
 
-    require('hlchunk').setup({
-      chunk = {
-        enable = true,
-        use_treesitter = true,
-        style = colors.mauve,
-        support_filetypes = support_ft,
-        chars = {
-            horizontal_line = "─",
-            vertical_line = "│",
-            left_top = "╭",
-            left_bottom = "╰",
-            right_arrow = "─",
-        },
-      },
-      indent = {
-        enable = false,
-        chars = { "│", "¦", "┆", "┊", },
-        user_treesitter = true,
-      },
-      line_num = {
-        enable = true,
-        use_treesitter = true,
-        style = colors.mauve,
-      },
-      blank = {
-        enable = false,
-        use_treesitter = true,
-      },
-    });
-
     local TelescopeColor = {
       -- TelescopeBorder = { fg = colors.surface0, bg = colors.mantle },
       -- TelescopeNormal = { bg = colors.mantle },

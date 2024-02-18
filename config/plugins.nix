@@ -1,15 +1,5 @@
 { self, pkgs, ... }:
 let
-  hlchunk = pkgs.vimUtils.buildVimPlugin {
-    pname = "hlchunk.nvim";
-    version = "2023-12-10";
-    src = builtins.fetchGit {
-      url = "https://github.com/shellRaining/hlchunk.nvim.git";
-      ref = "main";
-      rev = "882d1bc86d459fa8884398223c841fd09ea61b6b";
-    };
-    meta.homepage = "https://github.com/shellRaining/hlchunk.nvim";
-  };
   devdocs-nvim = pkgs.vimUtils.buildVimPlugin {
     pname = "nvim-devdocs";
     version = "2023-12-22";
@@ -187,7 +177,6 @@ in {
     twilight-nvim
     otter-nvim
     bufdelete-nvim
-    hlchunk
     devdocs-nvim
     {
       plugin = nvim-hlslens;
