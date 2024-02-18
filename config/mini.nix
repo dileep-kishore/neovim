@@ -8,7 +8,7 @@
       indentscope = {
         try_as_border = true;
         border = "both";
-        symbol = "▎";
+        symbol = "¦";
       };
     };
   };
