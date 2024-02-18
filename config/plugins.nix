@@ -142,6 +142,7 @@ in {
     ];
 
   extraPackages = with pkgs; [
+    alejandra
     eslint_d
     fd
     hadolint
@@ -149,7 +150,6 @@ in {
     isort
     lazygit
     mypy
-    nixfmt
     nodePackages.jsonlint
     nodePackages.prettier
     quarto
