@@ -56,7 +56,7 @@ And then install it by adding `inputs.neovim.packages.${system}.default` to your
 | :----------------------------------------------: |
 |           ![files](./assets/files.png)           |
 
-|                   _Autocompletions_              |     |
+|                   _Autocompletions_              |
 | :----------------------------------------------: |
 | ![autocompletions](./assets/autocompletions.png) |
 
