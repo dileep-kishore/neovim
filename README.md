@@ -51,15 +51,19 @@ And then install it by adding `inputs.neovim.packages.${system}.default` to your
 |                   _Dashboard_                    |
 | :----------------------------------------------: |
 |       ![dashboard](./assets/dashboard.png)       |
-|                   _Files_                    |
+
+|                   _Files_                        |
 | :----------------------------------------------: |
 |           ![files](./assets/files.png)           |
-|                   _Autocompletions_                    |
+
+|                   _Autocompletions_              |     |
 | :----------------------------------------------: |
 | ![autocompletions](./assets/autocompletions.png) |
-|                   _Git_                    |
+
+|                   _Git_                          |
 | :----------------------------------------------: |
 |             ![git](./assets/git.png)             |
+
 |                   _Telescope_                    |
 | :----------------------------------------------: |
 |       ![telescope](./assets/telescope.png)       |
