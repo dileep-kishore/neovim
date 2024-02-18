@@ -15,7 +15,7 @@
     };
     registrations = {
       "<Leader>aa" = "Alpha dashboard";
-      "<leader>/" = "Toggle NvimTree";
+      "<leader>/" = "Toggle Oil";
       "<C-k>" = "Expand luasnip";
       "<leader>ga" = "Gwrite";
       "<leader>gc" = "Git commit";
@@ -62,7 +62,6 @@
       "<leader>do" = "DAP UI toggle";
       "<leader>th" = "ToggleTerm (horizontal)";
       "<leader>tv" = "ToggleTerm (vertical)";
-      "<leader>tf" = "Mini files";
       "<leader>sr" = "Spectre replace";
       "<leader>sR" = "Spectre toggle";
       "<S-m>" = "Harpoon add";

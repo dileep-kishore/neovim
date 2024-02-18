@@ -27,11 +27,29 @@ in {
       checkTs = true;
     };
     tmux-navigator.enable = true;
-    nvim-tree = {
+    oil = {
       enable = true;
-      diagnostics = { enable = true; };
-      git = { enable = true; };
-      renderer.indentMarkers.enable = true;
+      defaultFileExplorer = true;
+      deleteToTrash = false;
+      promptSaveOnSelectNewEntry = true;
+      skipConfirmForSimpleEdits = true;
+      keymaps = { "<C-x>" = "actions.select_split"; };
+      columns = { icon.enable = true; };
+      float = {
+        border = "rounded";
+        maxHeight = 20;
+        maxWidth = 60;
+      };
+      preview = {
+        border = "rounded";
+        maxHeight = 20;
+        maxWidth = 60;
+      };
+      progress = {
+        border = "rounded";
+        maxHeight = 20;
+        maxWidth = 60;
+      };
     };
     trouble.enable = true;
     todo-comments = {

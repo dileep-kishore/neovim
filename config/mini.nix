@@ -4,7 +4,6 @@
     modules = {
       ai = { };
       animate = { };
-      files = { };
       splitjoin = { };
     };
   };

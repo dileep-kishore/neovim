@@ -371,9 +371,9 @@
       };
     }
 
-    # Nvim-tree
+    # Oil
     {
-      action = "<cmd>NvimTreeToggle<CR>";
+      action = "<cmd>Oil --float<CR>";
       key = "<leader>/";
       mode = "n";
       options = {
@@ -812,17 +812,6 @@
     {
       action = "<cmd>ToggleTerm size=80 direction=vertical<CR>";
       key = "<leader>tv";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-      };
-    }
-
-    # Mini
-    {
-      action = "<cmd>lua require('mini.files').open()<CR>";
-      key = "<leader>tf";
       mode = "n";
       options = {
         noremap = true;
