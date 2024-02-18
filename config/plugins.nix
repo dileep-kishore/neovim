@@ -180,6 +180,7 @@ in {
     friendly-snippets
     lualine-nvim
     tabby-nvim
+    alpha-nvim
     lazygit-nvim
     lspkind-nvim
     zen-mode-nvim
