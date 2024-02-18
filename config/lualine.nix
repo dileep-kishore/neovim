@@ -30,12 +30,13 @@
     local mode = {
         "mode",
         fmt = function(str) return " [" .. str:sub(1, 1) .. "]" end,
+        padding = { left = 1, right = 0 },
     }
 
     local filename = {
         "filename",
         file_status = true,
-        path = 1,
+        path = 0,
         cond = hide_in_width,
         symbols = { modified = " ", readonly = " ", unnamed = "[No Name]", newfile = "[New]" },
         separator = " ",
@@ -93,7 +94,7 @@
 
     local progress = {
        "progress",
-       separator = " ",
+       separator = "",
        padding = { left = 0, right = 0 }
     }
 
