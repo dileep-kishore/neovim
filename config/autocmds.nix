@@ -1,17 +1,17 @@
 {
   autoCmd = [
     {
-      event = [ "BufWinEnter" ];
+      event = ["BufWinEnter"];
       callback = {
         __raw = ''
           function()
               vim.cmd "set formatoptions-=cro"
-            end
+          end
         '';
       };
     }
     {
-      event = [ "FileType" ];
+      event = ["FileType"];
       pattern = [
         "netrw"
         "Jaq"
@@ -39,7 +39,7 @@
       };
     }
     {
-      event = [ "CmdWinEnter" ];
+      event = ["CmdWinEnter"];
       callback = {
         __raw = ''
           function()
@@ -49,41 +49,11 @@
       };
     }
     {
-      event = [ "VimResized" ];
+      event = ["VimResized"];
       callback = {
         __raw = ''
           function()
               vim.cmd "tabdo wincmd ="
-          end
-        '';
-      };
-    }
-    {
-      event = [ "FileType" ];
-      pattern = [ "gitcommit" "markdown" "NeogitCommitMessage" ];
-      callback = {
-        __raw = ''
-          function()
-              vim.cmd [[
-                  setlocal spell
-                  setlocal wrap
-              ]]
-          end
-        '';
-      };
-    }
-    {
-      event = [ "CursorHold" ];
-      callback = {
-        __raw = ''
-          function()
-              local status_ok, luasnip = pcall(require, "luasnip")
-              if not status_ok then
-                return
-              end
-              if luasnip.expand_or_jumpable() then
-                vim.cmd [[silent! lua require("luasnip").unlink_current()]]
-              end
           end
         '';
       };
