@@ -853,24 +853,6 @@
     {
       action =
         "<cmd>lua require('harpoon').ui:toggle_quick_menu(require('harpoon'):list())<CR>";
-      key = "<S-o>";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-      };
-    }
-    {
-      action = "<cmd>lua require('harpoon'):list():prev()<CR>";
-      key = "<S-h>";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-      };
-    }
-    {
-      action = "<cmd>lua require('harpoon'):list():next()<CR>";
       key = "<S-l>";
       mode = "n";
       options = {

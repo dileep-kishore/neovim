@@ -65,9 +65,7 @@
       "<leader>sr" = "Spectre replace";
       "<leader>sR" = "Spectre toggle";
       "<S-m>" = "Harpoon add";
-      "<S-o>" = "Harpoon list";
-      "<S-h>" = "Harpoon prev";
-      "<S-l>" = "Harpoon next";
+      "<S-l>" = "Harpoon list";
       "<leader>h1" = "Harpoon 1";
       "<leader>h2" = "Harpoon 2";
       "zR" = "UFO open all folds";
