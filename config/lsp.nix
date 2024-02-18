@@ -57,6 +57,7 @@
   plugins.lspsaga = {
     enable = true;
     ui.border = "rounded";
+    ui.codeAction = "";
     beacon.enable = true;
     implement = {
       enable = false;
