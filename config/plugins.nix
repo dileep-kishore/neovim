@@ -1,5 +1,8 @@
-{ self, pkgs, ... }:
-let
+{
+  self,
+  pkgs,
+  ...
+}: let
   devdocs-nvim = pkgs.vimUtils.buildVimPlugin {
     pname = "nvim-devdocs";
     version = "2023-12-22";
@@ -23,8 +26,8 @@ in {
       deleteToTrash = false;
       promptSaveOnSelectNewEntry = true;
       skipConfirmForSimpleEdits = true;
-      keymaps = { "<C-x>" = "actions.select_split"; };
-      columns = { icon.enable = true; };
+      keymaps = {"<C-x>" = "actions.select_split";};
+      columns = {icon.enable = true;};
       float = {
         border = "rounded";
         maxHeight = 20;
@@ -56,7 +59,7 @@ in {
     toggleterm = {
       enable = true;
       direction = "float";
-      floatOpts = { border = "single"; };
+      floatOpts = {border = "single";};
       openMapping = "<C-A-t>";
       terminalMappings = true;
     };
@@ -71,7 +74,7 @@ in {
         showStart = false;
       };
     };
-    rainbow-delimiters = { enable = true; };
+    rainbow-delimiters = {enable = true;};
     leap = {
       enable = true;
       addDefaultMappings = true;
@@ -104,7 +107,7 @@ in {
     better-escape = {
       enable = true;
       keys = "<Esc>";
-      mapping = [ "jk" ];
+      mapping = ["jk"];
     };
     nvim-bqf.enable = true;
     nvim-colorizer.enable = true;
@@ -178,10 +181,6 @@ in {
     otter-nvim
     bufdelete-nvim
     devdocs-nvim
-    {
-      plugin = nvim-hlslens;
-      config = ''lua require("hlslens").setup({calm_down={default=true}})'';
-    }
     {
       plugin = nvim-spectre;
       config = "lua require('spectre').setup()";

@@ -17,6 +17,7 @@
         colored = true,
         update_in_insert = false,
         always_visible = true,
+        padding = { left = 0, right = 0 },
     }
 
     local diff = {
@@ -37,6 +38,15 @@
         path = 1,
         cond = hide_in_width,
         symbols = { modified = " ", readonly = " ", unnamed = "[No Name]", newfile = "[New]" },
+        separator = " ",
+        padding = { left = 1, right = 0 },
+    }
+
+    local icononly_filetype = {
+        "filetype",
+        icon_only = true,
+        separator = "",
+        padding = { left = 1, right = 0 },
     }
 
     local function modified()
@@ -61,15 +71,18 @@
     local branch = {
         "b:gitsigns_head",
         icons_enabled = true,
-        icon = " ",
+        icon = "",
+        separator = "",
+        padding = { left = 1, right = 0 },
     }
 
-    local location = {
-        "location",
+    local cmd = {
+      function() return require("noice").api.status.command.get() end,
+      cond = function() return package.loaded["noice"] and require("noice").api.status.command.has() end,
     }
 
     -- cool function for progress
-    local progress = function()
+    local progress_custom = function()
         local current_line = vim.fn.line "."
         local total_lines = vim.fn.line "$"
         local chars = { "__", "▁▁", "▂▂", "▃▃", "▄▄", "▅▅", "▆▆", "▇▇", "██" }
@@ -77,6 +90,19 @@
         local index = math.ceil(line_ratio * #chars)
         return chars[index]
     end
+
+    local progress = {
+       "progress",
+       separator = " ",
+       padding = { left = 0, right = 0 }
+    }
+
+    local location = {
+        "location",
+        cond = hide_in_width,
+        separator = "",
+        padding = { left = 0, right = 0 },
+    }
 
     local spaces = function()
         return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
@@ -94,16 +120,15 @@
         sections = {
             lualine_a = { mode },
             lualine_b = { branch, diff },
-            lualine_c = { filename },
-            -- lualine_x = { "encoding", "fileformat", "filetype" },
-            lualine_x = { diagnostics, "encoding", filetype },
-            lualine_y = { location },
-            lualine_z = { progress },
+            lualine_c = { icononly_filetype, filename, diagnostics },
+            lualine_x = { cmd, "encoding"  },
+            lualine_y = { filetype },
+            lualine_z = { location, progress, progress_custom },
         },
         inactive_sections = {
             lualine_a = {},
             lualine_b = {},
-            lualine_c = { filename },
+            lualine_c = { icononly_filetype, filename },
             lualine_x = { location },
             lualine_y = {},
             lualine_z = {},
