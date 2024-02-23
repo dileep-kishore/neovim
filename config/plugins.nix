@@ -30,17 +30,17 @@ in {
       columns = {icon.enable = true;};
       float = {
         border = "rounded";
-        maxHeight = 20;
+        maxHeight = 60;
         maxWidth = 60;
       };
       preview = {
         border = "rounded";
-        maxHeight = 20;
+        maxHeight = 60;
         maxWidth = 60;
       };
       progress = {
         border = "rounded";
-        maxHeight = 20;
+        maxHeight = 60;
         maxWidth = 60;
       };
     };
