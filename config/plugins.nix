@@ -63,7 +63,10 @@ in {
       openMapping = "<C-A-t>";
       terminalMappings = true;
     };
-    illuminate.enable = true;
+    illuminate = {
+      enable = true;
+      underCursor = false;
+    };
     indent-blankline = {
       enable = true;
       indent.char = "¦";
