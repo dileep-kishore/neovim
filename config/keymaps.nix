@@ -262,6 +262,26 @@
       };
     }
 
+    # Macros
+    {
+      action = "@qj";
+      key = "Q";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = ":norm @q<CR>";
+      key = "Q";
+      mode = "x";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+
     ## Plugins
 
     # Vim-tmux-navigator
