@@ -10,7 +10,7 @@
     local theme = {
       fill = "TabLineFill",
       head = { fg = colors.crust, bg = colors.green, style = "bold" },
-      current_tab = { fg = colors.crust, bg = colors.blue, style = "bold" },
+      current_tab = { fg = colors.crust, bg = colors.peach, style = "bold" },
       tab = { fg = colors.text, bg = colors.surface0,  },
       win = { fg = colors.text, bg = colors.surface0, },
       tail = { fg = colors.crust, bg = colors.green, style = "bold"},
