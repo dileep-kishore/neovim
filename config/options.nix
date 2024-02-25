@@ -1,6 +1,7 @@
 {
   config.options = {
     termguicolors = true;
+    showmode = false;
     backup = false;
     cmdheight = 1;
     conceallevel = 1;

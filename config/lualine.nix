@@ -82,6 +82,12 @@
       cond = function() return package.loaded["noice"] and require("noice").api.status.command.has() end,
     }
 
+    local macro = {
+        require("noice").api.statusline.mode.get,
+        cond = require("noice").api.statusline.mode.has,
+        color = { fg = "#ff9e64" },
+    }
+
     -- cool function for progress
     local progress_custom = function()
         local current_line = vim.fn.line "."
@@ -122,7 +128,7 @@
             lualine_a = { mode },
             lualine_b = { branch, diff },
             lualine_c = { icononly_filetype, filename, diagnostics },
-            lualine_x = { cmd, "encoding"  },
+            lualine_x = { macro, cmd, "encoding"  },
             lualine_y = { filetype },
             lualine_z = { location, progress, progress_custom },
         },
