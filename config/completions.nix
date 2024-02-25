@@ -3,15 +3,16 @@
   plugins.cmp_luasnip.enable = true;
   plugins.cmp-cmdline.enable = true;
   plugins.cmp-git.enable = true;
+  plugins.copilot-cmp.enable = true;
   plugins.copilot-lua = {
     enable = true;
     panel = {
-      enabled = true;
+      enabled = false;
       layout.position = "bottom";
     };
     suggestion = {
-      enabled = true;
-      autoTrigger = true;
+      enabled = false;
+      autoTrigger = false;
       keymap.accept = "<C-l>";
     };
   };
@@ -19,12 +20,11 @@
     enable = true;
     preselect = "None";
     autoEnableSources = true;
-    experimental = { ghost_text = false; };
-    snippet = { expand = "luasnip"; };
+    experimental = {ghost_text = true;};
+    snippet = {expand = "luasnip";};
     window = {
       documentation.border = "rounded";
-      documentation.winhighlight =
-        "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None";
+      documentation.winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None";
       completion = {
         colOffset = -3;
         sidePadding = 0;
@@ -32,13 +32,13 @@
         border = "rounded";
       };
     };
-    formatting.fields = [ "kind" "abbr" "menu" ];
+    formatting.fields = ["kind" "abbr" "menu"];
     formatting.format = ''
       function(entry, vim_item)
         local colors = require("catppuccin.palettes").get_palette()
         -- vim.api.nvim_set_hl(0, 'FloatBorder', { link = 'Normal' })
         vim.api.nvim_set_hl(0, "CmpItemMenu", { fg = colors.mauve, bg = "NONE", italic = true })
-        local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50 })(entry, vim_item)
+        local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50, symbol_map = { Copilot = " " } })(entry, vim_item)
         local strings = vim.split(kind.kind, "%s", { trimempty = true })
         kind.kind = " " .. (strings[1] or "") .. " "
         kind.menu = "    (" .. (strings[2] or "") .. ")"
@@ -46,19 +46,20 @@
       end
     '';
     sources = [
-      { name = "nvim_lsp"; }
-      { name = "luasnip"; }
-      { name = "otter"; }
-      { name = "path"; }
-      { name = "buffer"; }
-      { name = "cmdline"; }
-      { name = "git"; }
+      {name = "copilot";}
+      {name = "nvim_lsp";}
+      {name = "luasnip";}
+      {name = "otter";}
+      {name = "path";}
+      {name = "buffer";}
+      {name = "cmdline";}
+      {name = "git";}
     ];
     mapping = {
-      # "<C-Space>" = "cmp.mapping.complete()";
-      "<C-d>" = "cmp.mapping.scroll_docs(-4)";
+      "<C-Space>" = "cmp.mapping.complete()";
       "<C-e>" = "cmp.mapping.close()";
       "<C-f>" = "cmp.mapping.scroll_docs(4)";
+      "<C-b>" = "cmp.mapping.scroll_docs(-4)";
       "<CR>" = "cmp.mapping.confirm({ select = false })";
       "<C-p>" = {
         action = ''
@@ -73,7 +74,7 @@
             end
           end
         '';
-        modes = [ "i" "s" ];
+        modes = ["i" "s"];
       };
       "<C-n>" = {
         action = ''
@@ -96,7 +97,7 @@
             end
           end
         '';
-        modes = [ "i" "s" ];
+        modes = ["i" "s"];
       };
     };
   };
@@ -105,14 +106,13 @@
     enablePlaceholders = true;
     snippetEngine = "luasnip";
     languages = {
-      python = { template = { annotation_convention = "numpydoc"; }; };
-      typescript = { template = { annotation_convention = "tsdoc"; }; };
-      typescriptreact = { template = { annotation_convention = "tsdoc"; }; };
+      python = {template = {annotation_convention = "numpydoc";};};
+      typescript = {template = {annotation_convention = "tsdoc";};};
+      typescriptreact = {template = {annotation_convention = "tsdoc";};};
     };
   };
 
   extraConfigLua = ''
     require("nvim-devdocs").setup()
   '';
-
 }
