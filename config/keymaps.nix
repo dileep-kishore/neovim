@@ -525,6 +525,15 @@
     }
     # LSP
     {
+      action = "<cmd>lua vim.diagnostic.open_float()<CR>";
+      key = "<leader>le";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
       action = "<cmd>Lspsaga code_action<cr>";
       key = "<leader>la";
       mode = "n";
