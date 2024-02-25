@@ -104,19 +104,19 @@
         {
           { " 󰓩  ", hl = theme.head },
           { tab_count(), hl = theme.head },
-          line.sep('', theme.head, theme.fill),
+          line.sep('█ ', theme.head, theme.fill),
         },
         line.tabs().foreach(function(tab)
           local hl = tab.is_current() and theme.current_tab or theme.tab
           return {
-            line.sep('', hl, theme.fill),
+            line.sep('█', hl, theme.fill),
             tab.is_current() and "" or "",
             tab.number(),
-            "",
+            ":",
             -- tab_name(tab),
             window_count(tab),
             -- tab.close_btn(''), -- show a close button
-            line.sep('', hl, theme.fill),
+            line.sep('█ ', hl, theme.fill),
             hl = hl,
             margin = ' ',
           }
@@ -126,19 +126,19 @@
         line.wins_in_tab(line.api.get_current_tab()).foreach(function(win)
           local hl = win.is_current() and theme.current_tab or theme.win
           return {
-            line.sep('', hl, theme.fill),
+            line.sep('█', hl, theme.fill),
             win.is_current() and '' or '',
             win.buf_name(),
-            "",
+            ":",
             lsp_diag(win.buf().id),
-            line.sep('', hl, theme.fill),
+            line.sep('█ ', hl, theme.fill),
             hl = hl,
             margin = ' ',
           }
         end),
         {
-          line.sep('', theme.tail, theme.fill),
-          { ' 󰈔 ', hl = theme.tail },
+          line.sep('█', theme.tail, theme.fill),
+          { '󰈔 ', hl = theme.tail },
         },
         hl = theme.fill,
       }
