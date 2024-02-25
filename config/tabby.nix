@@ -83,16 +83,16 @@
       return "[" .. win_count .. "W]"
     end
 
-    function lsp_diag(buf) 
+    function lsp_diag(buf)
         diagnostics = vim.diagnostic.get(buf)
         local count = {0, 0, 0, 0}
-        
+
         for _, diagnostic in ipairs(diagnostics) do
             count[diagnostic.severity] = count[diagnostic.severity] + 1
         end
         if count[1] > 0 then
             return vim.bo[buf].modified and "" or ""
-        elseif count[2] > 0 then 
+        elseif count[2] > 0 then
             return vim.bo[buf].modified and "" or ""
         end
         return vim.bo[buf].modified and "" or ""
@@ -124,20 +124,21 @@
         line.spacer(),
         -- shows list of windows in tab
         line.wins_in_tab(line.api.get_current_tab()).foreach(function(win)
+          local hl = win.is_current() and theme.current_tab or theme.win
           return {
-            line.sep('', theme.win, theme.fill),
+            line.sep('', hl, theme.fill),
             win.is_current() and '' or '',
             win.buf_name(),
             "",
             lsp_diag(win.buf().id),
-            line.sep('', theme.win, theme.fill),
-            hl = theme.win,
+            line.sep('', hl, theme.fill),
+            hl = hl,
             margin = ' ',
           }
         end),
         {
           line.sep('', theme.tail, theme.fill),
-          { '  ', hl = theme.tail },
+          { ' 󰈔 ', hl = theme.tail },
         },
         hl = theme.fill,
       }
