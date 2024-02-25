@@ -626,7 +626,7 @@
       };
     }
     {
-      action = "<cmd>Lspsaga rename<cr>";
+      action = ":IncRename ";
       key = "<leader>lr";
       mode = "n";
       options = {

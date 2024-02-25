@@ -14,10 +14,10 @@
       enable = true;
       lookahead = true;
       keymaps = {
-        "af" = { query = "@function.outer"; };
-        "if" = { query = "@function.inner"; };
-        "ac" = { query = "@class.outer"; };
-        "ic" = { query = "@class.inner"; };
+        "af" = {query = "@function.outer";};
+        "if" = {query = "@function.inner";};
+        "ac" = {query = "@class.outer";};
+        "ic" = {query = "@class.inner";};
       };
     };
     swap = {
@@ -39,20 +39,20 @@
       enable = true;
       setJumps = true;
       gotoNextStart = {
-        "]m" = { query = "@function.outer"; };
-        "]c" = { query = "@class.outer"; };
+        "]m" = {query = "@function.outer";};
+        "]c" = {query = "@class.outer";};
       };
       gotoNextEnd = {
-        "]M" = { query = "@function.outer"; };
-        "]C" = { query = "@class.outer"; };
+        "]M" = {query = "@function.outer";};
+        "]C" = {query = "@class.outer";};
       };
       gotoPreviousStart = {
-        "[m" = { query = "@function.outer"; };
-        "[c" = { query = "@class.outer"; };
+        "[m" = {query = "@function.outer";};
+        "[c" = {query = "@class.outer";};
       };
       gotoPreviousEnd = {
-        "[M" = { query = "@function.outer"; };
-        "[C" = { query = "@class.outer"; };
+        "[M" = {query = "@function.outer";};
+        "[C" = {query = "@class.outer";};
       };
     };
   };
