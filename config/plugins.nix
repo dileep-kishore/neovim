@@ -47,10 +47,13 @@ in {
     trouble.enable = true;
     todo-comments = {
       enable = true;
+      mergeKeywords = true;
       highlight = {
-        before = "fg";
         after = "fg";
         keyword = "bg";
+      };
+      keywords = {
+        QUESTION = {icon = "";};
       };
     };
     comment-nvim.enable = true;
