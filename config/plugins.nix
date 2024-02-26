@@ -80,7 +80,6 @@ in {
         showStart = false;
       };
     };
-    rainbow-delimiters = {enable = true;};
     leap = {
       enable = true;
       addDefaultMappings = true;
