@@ -26,7 +26,7 @@
     }
 
     local theme = {
-      fill = "TabLineFill",
+      fill = { fg = colors.base, bg = colors.base },
       head = { fg = colors.base, bg = colors.iris, style = "bold" },
       current_tab = { fg = colors.base, bg = colors.foam, style = "bold" },
       tab = { fg = colors.text, bg = colors.overlay,  },
@@ -76,7 +76,7 @@
 
       if num_tabs >= 1 then
         local tabpage_number = tostring(vim.api.nvim_tabpage_get_number(0))
-        return tabpage_number .. "/" .. tostring(num_tabs)
+        return tabpage_number .. "/" .. tostring(num_tabs) .. " "
       end
     end
 
@@ -122,19 +122,21 @@
         {
           { " 󰓩  ", hl = theme.head },
           { tab_count(), hl = theme.head },
-          line.sep('█ ', theme.head, theme.fill),
+          -- line.sep('█ ', theme.head, theme.fill),
+          line.sep('', theme.head, theme.fill),
         },
         line.tabs().foreach(function(tab)
           local hl = tab.is_current() and theme.current_tab or theme.tab
           return {
-            line.sep('█', hl, theme.fill),
+            -- line.sep('█', hl, theme.fill),
+            line.sep('', hl, theme.fill),
             tab.is_current() and "" or "",
             tab.number(),
-            ":",
+            -- ":",
             -- tab_name(tab),
             window_count(tab),
-            -- tab.close_btn(''), -- show a close button
-            line.sep('█ ', hl, theme.fill),
+            -- line.sep('█ ', hl, theme.fill),
+            line.sep('', hl, theme.fill),
             hl = hl,
             margin = ' ',
           }
@@ -144,19 +146,21 @@
         line.wins_in_tab(line.api.get_current_tab()).foreach(function(win)
           local hl = win.is_current() and theme.current_tab or theme.win
           return {
-            line.sep('█', hl, theme.fill),
+            -- line.sep('█', hl, theme.fill),
+            line.sep('', hl, theme.fill),
             win.is_current() and '' or '',
             win.buf_name(),
-            ":",
+            -- ":",
             lsp_diag(win.buf().id),
-            line.sep('█ ', hl, theme.fill),
+            -- line.sep('█ ', hl, theme.fill),
+            line.sep('', hl, theme.fill),
             hl = hl,
             margin = ' ',
           }
         end),
         {
-          line.sep('█', theme.tail, theme.fill),
-          { '󰈔 ', hl = theme.tail },
+          line.sep('', theme.tail, theme.fill),
+          { ' 󰈔 ', hl = theme.tail },
         },
         hl = theme.fill,
       }
