@@ -14,7 +14,7 @@
     mouse = "a";
     ignorecase = true;
     smartcase = true;
-    smartindent = true;
+    smartindent = false;
     splitbelow = true;
     splitright = true;
     splitkeep = "cursor";
