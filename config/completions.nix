@@ -20,7 +20,7 @@
     enable = true;
     preselect = "None";
     autoEnableSources = true;
-    experimental = {ghost_text = true;};
+    experimental = {ghost_text = false;};
     snippet = {expand = "luasnip";};
     window = {
       documentation.border = "rounded";
