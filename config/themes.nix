@@ -4,10 +4,13 @@
     style = "main";
     boldVerticalSplit = false;
     dimInactive = true;
-    disableItalics = false;
-    transparentBackground = false;
-    transparentFloat = false;
     highlightGroups = {
+      "@type" = {bold = true;};
+      "@variable" = {italic = false;};
+      "@keyword" = {italic = true;};
+      "@keyword.conditional" = {italic = true;};
+      "@function" = {italic = true;};
+      "@function.method.call" = {italic = true;};
       EndOfBuffer = {
         fg = "base";
         bg = "base";

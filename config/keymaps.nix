@@ -1086,5 +1086,16 @@
         silent = true;
       };
     }
+
+    # Get highlight at cursor
+    {
+      action = "<cmd>lua vim.notify(vim.inspect(vim.treesitter.get_captures_at_cursor(0)))<CR>";
+      key = "<leader>lh";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
   ];
 }
