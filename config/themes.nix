@@ -9,6 +9,7 @@
       "@variable" = {italic = false;};
       "@keyword" = {italic = true;};
       "@keyword.conditional" = {italic = true;};
+      "@keyword.repeat" = {italic = true;};
       "@function" = {italic = true;};
       "@function.method.call" = {italic = true;};
       EndOfBuffer = {
