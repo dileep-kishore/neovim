@@ -48,31 +48,31 @@ And then install it by adding `inputs.neovim.packages.${system}.default` to your
 
 ## Gallery
 
-|                   _Dashboard_                    |
-| :----------------------------------------------: |
-|       ![dashboard](./assets/dashboard.png)       |
+|             _Dashboard_              |
+| :----------------------------------: |
+| ![dashboard](./assets/dashboard.png) |
 
-|                   _Files_                        |
-| :----------------------------------------------: |
-|           ![files](./assets/files.png)           |
+|           _Files_            |
+| :--------------------------: |
+| ![files](./assets/files.png) |
 
-|                   _Autocompletions_              |
+|                _Autocompletions_                 |
 | :----------------------------------------------: |
 | ![autocompletions](./assets/autocompletions.png) |
 
-|                   _Git_                          |
-| :----------------------------------------------: |
-|             ![git](./assets/git.png)             |
+|          _Git_           |
+| :----------------------: |
+| ![git](./assets/git.png) |
 
-|                   _Telescope_                    |
-| :----------------------------------------------: |
-|       ![telescope](./assets/telescope.png)       |
+|             _Telescope_              |
+| :----------------------------------: |
+| ![telescope](./assets/telescope.png) |
 
 ## Features
 
 - Works out of the box without needing to install any external dependencies. This includes lsp servers, linters, formatters or other packages.
 - A lot of the default options and autocmds that you would find on a distribution like [LunarVim](lunarvim.org/) are configured out of the box
-- [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) syntax highlighting is enabled and [catppuccin](https://github.com/catppuccin/nvim) theme is set as the default
+- [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) syntax highlighting is enabled and [rose-pine](https://github.com/rose-pine/neovim) theme is set as the default
 - Uses custom statusline configured using [lualine.nvim](https://github.com/nvim-treesitter/nvim-treesitter)
 - Custom tabline configured using [tabby.nvim](https://github.com/nvim-treesitter/nvim-treesitter)
 - Includes [vim-fugitive](https://github.com/tpope/vim-fugitive), [neogit](https://github.com/NeogitOrg/neogit) and [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim) for working with git

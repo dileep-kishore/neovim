@@ -89,6 +89,7 @@ in {
     notify = {
       enable = true;
       level = "info";
+      backgroundColour = "#191724";
     };
     noice = {
       enable = true;
@@ -195,10 +196,6 @@ in {
     {
       plugin = harpoon2;
       config = "lua require('harpoon').setup()";
-    }
-    {
-      plugin = tint-nvim;
-      config = ''lua require("tint").setup()'';
     }
     {
       plugin = octo-nvim;

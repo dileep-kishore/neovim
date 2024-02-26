@@ -5,15 +5,33 @@
     -- Save and restore tabpages
     vim.opt.sessionoptions = 'curdir,folds,globals,help,tabpages,terminal,winsize'
 
-    local colors = require("catppuccin.palettes").get_palette()
+    local colors = {
+        _nc = "#16141f",
+        base = "#191724",
+        surface = "#1f1d2e",
+        overlay = "#26233a",
+        muted = "#6e6a86",
+        subtle = "#908caa",
+        text = "#e0def4",
+        love = "#eb6f92",
+        gold = "#f6c177",
+        rose = "#ebbcba",
+        pine = "#31748f",
+        foam = "#9ccfd8",
+        iris = "#c4a7e7",
+        highlight_low = "#21202e",
+        highlight_med = "#403d52",
+        highlight_high = "#524f67",
+        none = "NONE",
+    }
 
     local theme = {
       fill = "TabLineFill",
-      head = { fg = colors.crust, bg = colors.green, style = "bold" },
-      current_tab = { fg = colors.crust, bg = colors.peach, style = "bold" },
-      tab = { fg = colors.text, bg = colors.surface0,  },
-      win = { fg = colors.text, bg = colors.surface0, },
-      tail = { fg = colors.crust, bg = colors.green, style = "bold"},
+      head = { fg = colors.base, bg = colors.iris, style = "bold" },
+      current_tab = { fg = colors.base, bg = colors.foam, style = "bold" },
+      tab = { fg = colors.text, bg = colors.overlay,  },
+      win = { fg = colors.text, bg = colors.overlay, },
+      tail = { fg = colors.base, bg = colors.iris, style = "bold"},
     }
 
     local open_tabs = {}
