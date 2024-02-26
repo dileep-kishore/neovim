@@ -12,7 +12,6 @@ def main(input_file: pathlib.Path, output_file: pathlib.Path) -> None:
         lines = f.readlines()
     actions = []
     keys = []
-    dargoon: int = []
     for line in lines:
         if line.strip().startswith("action"):
             match = re.search(action_pattern, line.strip(), re.IGNORECASE)
