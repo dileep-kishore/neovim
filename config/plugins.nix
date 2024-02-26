@@ -13,6 +13,16 @@
     };
     meta.homepage = "https://github.com/luckasRanarison/nvim-devdocs";
   };
+  modes-nvim = pkgs.vimUtils.buildVimPlugin {
+    pname = "nvim-modes";
+    version = "2023-12-10";
+    src = builtins.fetchGit {
+      url = "https://github.com/mvllow/modes.nvim.git";
+      ref = "main";
+      rev = "4035a46aaabe43faf1b54740575af9dd5bb03809";
+    };
+    meta.homepage = "https://github.com/mvllow/modes.nvim";
+  };
 in {
   plugins = {
     nvim-autopairs = {
@@ -188,6 +198,7 @@ in {
     otter-nvim
     bufdelete-nvim
     devdocs-nvim
+    modes-nvim
     {
       plugin = nvim-spectre;
       config = "lua require('spectre').setup()";
