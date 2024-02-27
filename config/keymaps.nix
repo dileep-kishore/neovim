@@ -327,7 +327,7 @@
     # Oil
     {
       action = "<cmd>Oil --float<CR>";
-      key = "<leader>/";
+      key = "-";
       mode = "n";
       options = {
         noremap = true;

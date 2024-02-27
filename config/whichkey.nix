@@ -1,7 +1,7 @@
 {
   plugins.which-key = {
     enable = true;
-    layout = { align = "center"; };
+    layout = {align = "center";};
     window = {
       border = "rounded";
       position = "bottom";
@@ -15,7 +15,7 @@
     };
     registrations = {
       "<Leader>aa" = "Alpha dashboard";
-      "<leader>/" = "Toggle Oil";
+      "-" = "Toggle Oil";
       "<C-k>" = "Expand luasnip";
       "<leader>ga" = "Gwrite";
       "<leader>gc" = "Git commit";
