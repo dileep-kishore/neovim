@@ -7,7 +7,10 @@
     skipTsContextCommentStringModule = true;
   };
   plugins.ts-autotag.enable = true;
-  plugins.treesitter-context.enable = true;
+  plugins.treesitter-context = {
+    enable = true;
+    separator = "-";
+  };
   plugins.treesitter-textobjects = {
     enable = true;
     select = {

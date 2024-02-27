@@ -96,6 +96,7 @@
         fg = "surface";
         bg = "surface";
       };
+      TreeSitterContext = {bg = "highlight_low";};
       Headline1 = {bg = "#48454b";}; # iris
       Headline2 = {bg = "#434849";}; # foam
       Headline3 = {bg = "#4c4747";}; # rose
