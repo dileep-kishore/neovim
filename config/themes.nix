@@ -3,7 +3,7 @@
     enable = true;
     style = "main";
     boldVerticalSplit = false;
-    dimInactive = true;
+    dimInactive = false;
     highlightGroups = {
       "@type" = {bold = true;};
       "@variable" = {italic = false;};
@@ -12,6 +12,10 @@
       "@keyword.repeat" = {italic = true;};
       "@function" = {italic = true;};
       "@function.method.call" = {italic = true;};
+      "@markup.raw" = {
+        fg = "gold";
+        bg = "surface";
+      };
       EndOfBuffer = {
         fg = "base";
         bg = "base";
