@@ -609,7 +609,7 @@
     }
     {
       action = "<cmd>Lspsaga diagnostic_jump_next<CR>";
-      key = "]e";
+      key = "]d";
       mode = "n";
       options = {
         noremap = true;
@@ -618,7 +618,7 @@
     }
     {
       action = "<cmd>Lspsaga diagnostic_jump_prev<cr>";
-      key = "[e";
+      key = "[d";
       mode = "n";
       options = {
         noremap = true;
