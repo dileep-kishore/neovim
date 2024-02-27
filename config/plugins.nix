@@ -81,13 +81,34 @@ in {
     };
     indent-blankline = {
       enable = true;
-      indent.char = "¦";
+      indent.char = "│";
       whitespace.removeBlanklineTrail = true;
       scope = {
         enabled = false;
         showEnd = false;
         showStart = false;
       };
+      exclude.filetypes = [
+        "help"
+        "alpha"
+        "dashboard"
+        "neo-tree"
+        "Trouble"
+        "trouble"
+        "lazy"
+        "notify"
+        "toggleterm"
+        "lazyterm"
+        "lspinfo"
+        "packer"
+        "checkhealth"
+        "help"
+        "man"
+        "gitcommit"
+        "TelescopePrompt"
+        "TelescopeResults"
+        "\'\'"
+      ];
     };
     leap = {
       enable = true;
