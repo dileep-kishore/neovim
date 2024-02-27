@@ -1,6 +1,8 @@
 {
   plugins.cmp-nvim-lsp.enable = true;
   plugins.cmp_luasnip.enable = true;
+  plugins.cmp-path.enable = true;
+  plugins.cmp-buffer.enable = true;
   plugins.cmp-cmdline.enable = true;
   plugins.cmp-git.enable = true;
   plugins.copilot-cmp.enable = true;
