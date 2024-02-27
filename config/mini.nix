@@ -9,6 +9,7 @@
         border = "both";
         symbol = "¦";
       };
+      bufremove = {};
     };
   };
 }

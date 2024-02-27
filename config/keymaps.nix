@@ -185,17 +185,8 @@
     }
     # Close buffers
     {
-      action = "<cmd>Bdelete<CR>";
+      action = "<cmd>lua require('mini.bufremove').delete()<CR>";
       key = "<C-x>";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-      };
-    }
-    {
-      action = "<cmd>Bwipeout<CR>";
-      key = "<C-S-x>";
       mode = "n";
       options = {
         noremap = true;

@@ -195,7 +195,6 @@ in {
     zen-mode-nvim
     twilight-nvim
     otter-nvim
-    bufdelete-nvim
     devdocs-nvim
     modes-nvim
     headlines-nvim
