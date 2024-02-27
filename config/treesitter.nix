@@ -16,8 +16,12 @@
       keymaps = {
         "af" = {query = "@function.outer";};
         "if" = {query = "@function.inner";};
-        "ac" = {query = "@class.outer";};
-        "ic" = {query = "@class.inner";};
+        "ao" = {query = "@class.outer";};
+        "io" = {query = "@class.inner";};
+        "ac" = {query = "@conditional.outer";};
+        "ic" = {query = "@conditional.inner";};
+        "al" = {query = "@loop.outer";};
+        "il" = {query = "@loop.inner";};
       };
     };
     swap = {
@@ -39,20 +43,28 @@
       enable = true;
       setJumps = true;
       gotoNextStart = {
-        "]m" = {query = "@function.outer";};
-        "]c" = {query = "@class.outer";};
+        "]f" = {query = "@function.outer";};
+        "]c" = {query = "@conditional.outer";};
+        "]l" = {query = "@loop.outer";};
+        "]o" = {query = "@class.outer";};
       };
       gotoNextEnd = {
-        "]M" = {query = "@function.outer";};
-        "]C" = {query = "@class.outer";};
+        "]F" = {query = "@function.outer";};
+        "]C" = {query = "@conditional.outer";};
+        "]L" = {query = "@loop.outer";};
+        "]O" = {query = "@class.outer";};
       };
       gotoPreviousStart = {
-        "[m" = {query = "@function.outer";};
-        "[c" = {query = "@class.outer";};
+        "[f" = {query = "@function.outer";};
+        "[c" = {query = "@conditional.outer";};
+        "[l" = {query = "@loop.outer";};
+        "[o" = {query = "@class.outer";};
       };
       gotoPreviousEnd = {
-        "[M" = {query = "@function.outer";};
-        "[C" = {query = "@class.outer";};
+        "[F" = {query = "@function.outer";};
+        "[C" = {query = "@conditional.outer";};
+        "[L" = {query = "@loop.outer";};
+        "[O" = {query = "@class.outer";};
       };
     };
   };
