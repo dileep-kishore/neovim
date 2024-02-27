@@ -375,7 +375,7 @@
     # Gitsigns
     {
       action = "<cmd>lua require('gitsigns').next_hunk()<cr>";
-      key = "]x";
+      key = "]h";
       mode = "n";
       options = {
         noremap = true;
@@ -384,7 +384,7 @@
     }
     {
       action = "<cmd>lua require('gitsigns').prev_hunk()<cr>";
-      key = "[x";
+      key = "[h";
       mode = "n";
       options = {
         noremap = true;
@@ -392,8 +392,17 @@
       };
     }
     {
-      action = "<cmd>lua require('gitsigns').preview_hunk()<cr>";
+      action = "<cmd>lua require('gitsigns').preview_hunk_inline()<cr>";
       key = "<leader>gp";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>lua require('gitsigns').blame_line({full=true})<cr>";
+      key = "<leader>gb";
       mode = "n";
       options = {
         noremap = true;
