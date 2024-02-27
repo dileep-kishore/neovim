@@ -68,7 +68,6 @@ in {
     };
     comment-nvim.enable = true;
     project-nvim.enable = true;
-    surround.enable = true;
     toggleterm = {
       enable = true;
       direction = "float";
@@ -199,6 +198,10 @@ in {
     bufdelete-nvim
     devdocs-nvim
     modes-nvim
+    {
+      plugin = nvim-surround;
+      config = "lua require('nvim-surround').setup({move_cursor=false})";
+    }
     {
       plugin = nvim-spectre;
       config = "lua require('spectre').setup()";
