@@ -198,6 +198,7 @@ in {
     bufdelete-nvim
     devdocs-nvim
     modes-nvim
+    headlines-nvim
     {
       plugin = nvim-surround;
       config = "lua require('nvim-surround').setup({move_cursor=false})";
@@ -213,10 +214,6 @@ in {
     {
       plugin = octo-nvim;
       config = ''lua require("octo").setup()'';
-    }
-    {
-      plugin = headlines-nvim;
-      config = "lua require('headlines').setup()";
     }
     {
       plugin = ChatGPT-nvim;

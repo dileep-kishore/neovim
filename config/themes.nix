@@ -96,6 +96,11 @@
         fg = "surface";
         bg = "surface";
       };
+      Headline1 = {bg = "#48454b";}; # iris
+      Headline2 = {bg = "#434849";}; # foam
+      Headline3 = {bg = "#4c4747";}; # rose
+      Headline4 = {bg = "#4e4942";}; # gold
+      Headline5 = {bg = "#323b3e";}; # pine
     };
   };
   colorschemes.catppuccin = {
@@ -161,6 +166,12 @@
         set_cursor = true,
         set_cursorline = true,
         set_number = true,
+    })
+    require('headlines').setup({
+        markdown={headline_highlights={'Headline1', 'Headline2', 'Headline3', 'Headline4', 'Headline5'},},
+        rmd={headline_highlights={'Headline1', 'Headline2', 'Headline3', 'Headline4', 'Headline5'},},
+        norg={headline_highlights={'Headline1', 'Headline2', 'Headline3', 'Headline4', 'Headline5'},},
+        org={headline_highlights={'Headline1', 'Headline2', 'Headline3', 'Headline4', 'Headline5'},},
     })
   '';
 }
