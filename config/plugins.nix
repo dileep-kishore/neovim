@@ -249,7 +249,7 @@ in {
     }
     {
       plugin = quarto-nvim;
-      config = "lua require('quarto').setup()";
+      config = "lua require('quarto').setup({codeRunner={enabled=true,default_method='molten',}})";
     }
   ];
 }
