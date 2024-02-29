@@ -73,8 +73,8 @@
         "b:gitsigns_head",
         icons_enabled = true,
         icon = "",
-        separator = "",
-        padding = { left = 1, right = 0 },
+        separator = "|",
+        padding = { left = 1, right = 1 },
     }
 
     local cmd = {
@@ -107,7 +107,7 @@
     local location = {
         "location",
         cond = hide_in_width,
-        separator = "",
+        separator = "|",
         padding = { left = 0, right = 0 },
     }
 
