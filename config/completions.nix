@@ -84,7 +84,7 @@
       "<C-e>" = "cmp.mapping.close()";
       "<C-f>" = "cmp.mapping.scroll_docs(4)";
       "<C-b>" = "cmp.mapping.scroll_docs(-4)";
-      "<CR>" = "cmp.mapping.confirm({ select = false })";
+      "<CR>" = "cmp.mapping.confirm({ select = true })";
       "<C-p>" = {
         action = ''
           function(fallback)
