@@ -30,7 +30,7 @@ To run this nix flake simply run the following command
 nix run github:dileep-kishore/neovim
 ```
 
-> NOTE:
+> [!NOTE]
 > You will need to install the `nix` package manager before you can run the previous command
 
 Or you can use [home-manager](https://github.com/nix-community/home-manager) to add this flake to your setup like so:

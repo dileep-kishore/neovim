@@ -4,7 +4,7 @@
     showmode = false;
     backup = false;
     cmdheight = 1;
-    conceallevel = 1;
+    conceallevel = 0;
     encoding = "utf-8";
     fileencoding = "utf-8";
     title = true;
