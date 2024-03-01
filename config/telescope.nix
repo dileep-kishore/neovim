@@ -31,6 +31,11 @@
         enable = true;
         caseMode = "smart_case";
       };
+      frecency = {
+        enable = true;
+        showUnindexed = true;
+        defaultWorkspace = "CWD";
+      };
       project-nvim = {enable = true;};
     };
     keymaps = {

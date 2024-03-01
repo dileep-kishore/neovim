@@ -487,7 +487,7 @@
       };
     }
     {
-      action = "<cmd>Telescope git_files<cr>";
+      action = "<cmd>Telescope frecency theme=dropdown<cr>";
       key = "<leader>o";
       mode = "n";
       options = {
