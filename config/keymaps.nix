@@ -186,7 +186,7 @@
     # Close buffers
     {
       action = "<cmd>lua require('mini.bufremove').delete()<CR>";
-      key = "<C-x>";
+      key = "<Leader>qb";
       mode = "n";
       options = {
         noremap = true;
@@ -196,7 +196,7 @@
     # Close window
     {
       action = "<cmd>q<CR>";
-      key = "<C-q>";
+      key = "<Leader>qw";
       mode = "n";
       options = {
         noremap = true;
