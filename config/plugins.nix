@@ -23,6 +23,16 @@
     };
     meta.homepage = "https://github.com/mvllow/modes.nvim";
   };
+  incline-nvim = pkgs.vimUtils.buildVimPlugin {
+    pname = "nvim-incline";
+    version = "2024-02-28";
+    src = builtins.fetchGit {
+      url = "https://github.com/b0o/incline.nvim.git";
+      ref = "main";
+      rev = "2f5f6094089b29ee1e626cd9459fb42ce249e191";
+    };
+    meta.homepage = "https://github.com/b0o/incline.nvim";
+  };
 in {
   plugins = {
     nvim-autopairs = {
@@ -119,6 +129,11 @@ in {
       enable = true;
       level = "info";
       backgroundColour = "#191724";
+    };
+    navic = {
+      enable = true;
+      highlight = true;
+      lsp.autoAttach = true;
     };
     noice = {
       enable = true;
@@ -218,6 +233,7 @@ in {
     otter-nvim
     devdocs-nvim
     modes-nvim
+    incline-nvim
     headlines-nvim
     {
       plugin = tint-nvim;

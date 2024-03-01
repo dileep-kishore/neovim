@@ -26,6 +26,7 @@
     shiftwidth = 4;
     tabstop = 4;
     cursorline = true;
+    laststatus = 3;
     number = true;
     relativenumber = true;
     signcolumn = "yes";

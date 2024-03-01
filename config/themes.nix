@@ -117,12 +117,6 @@
     };
     integrations = {
       alpha = true;
-      barbecue = {
-        alt_background = false;
-        bold_basename = true;
-        dim_context = false;
-        dim_dirname = true;
-      };
       dap = {
         enable_ui = true;
         enabled = true;

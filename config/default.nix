@@ -5,6 +5,7 @@
     ./autocmds.nix
     ./treesitter.nix
     ./tabby.nix
+    ./incline.nix
     ./mini.nix
     ./git.nix
     ./lualine.nix
@@ -27,9 +28,8 @@
 
   clipboard = {
     register = "unnamedplus";
-    providers = { wl-copy = { enable = true; }; };
+    providers = {wl-copy = {enable = true;};};
   };
 
   editorconfig.enable = true;
-
 }

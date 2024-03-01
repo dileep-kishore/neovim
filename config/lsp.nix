@@ -72,15 +72,6 @@
     symbolInWinbar.enable = false;
   };
   plugins.inc-rename.enable = true;
-  plugins.barbecue = {
-    enable = true;
-    attachNavic = true;
-    createAutocmd = true;
-    showDirname = true;
-    showBasename = true;
-    showNavic = true;
-    showModified = false;
-  };
 
   # Custom diagnostic signs for LSP
   extraConfigLua = ''
