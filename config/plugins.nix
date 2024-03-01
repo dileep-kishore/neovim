@@ -214,6 +214,7 @@ in {
     lspkind-nvim
     zen-mode-nvim
     twilight-nvim
+    iron-nvim
     otter-nvim
     devdocs-nvim
     modes-nvim
