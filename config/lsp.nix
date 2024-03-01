@@ -17,6 +17,8 @@
       texlab = {enable = true;};
       marksman = {enable = true;};
       rnix-lsp = {enable = true;};
+      # Python
+      pyright = {enable = true;};
       ruff-lsp = {
         enable = false;
         extraOptions = {
@@ -35,7 +37,6 @@
         installCargo = true;
         installRustc = true;
       };
-      pyright = {enable = true;};
       svelte = {enable = true;};
       tailwindcss = {enable = true;};
       typst-lsp = {enable = true;};
