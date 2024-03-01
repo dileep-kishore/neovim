@@ -33,7 +33,8 @@
         repl_definition = {
           sh = {
             command = {"zsh"}
-          }
+          },
+          python = require("iron.fts.python").ipython,
         },
         repl_open_cmd = require('iron.view').bottom(40),
       },
