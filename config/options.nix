@@ -33,13 +33,12 @@
     scrolloff = 8;
     guifont = "Rec Mono Semicasual:h12";
     listchars = {
-      eol = "󰌑";
-      tab = " ";
+      tab = "󰌒 ";
       trail = "•";
       nbsp = "␣";
     };
-    list = false;
-    showbreak = "↳ ";
+    list = true;
+    showbreak = "↪ ";
     foldmethod = "expr";
     foldnestmax = 20;
     foldminlines = 2;
