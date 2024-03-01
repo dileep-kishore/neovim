@@ -85,11 +85,6 @@
       "<leader>cr" = "ChatGPTRun";
       "<leader>dg" = "Generate docstring";
       "<leader>td" = "Browse devdocs";
-      "<leader>mi" = "Molten Init";
-      "<leader>me" = "Molten Evaluate Operator";
-      "<leader>ml" = "Molten Evaluate Line";
-      "<leader>mr" = "Molten Reevaluate Cell";
-      "<leader>mv" = "Molten Evaluate Visual";
       "<leader>nf" = "New file (current dir)";
     };
   };

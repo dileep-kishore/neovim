@@ -1018,64 +1018,6 @@
       };
     }
 
-    # Molten
-    {
-      action = "<cmd>MoltenInit<CR>";
-      key = "<leader>mi";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-      };
-    }
-    {
-      action = "<cmd>MoltenEvaluateOperator<CR>";
-      key = "<leader>me";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-      };
-    }
-    {
-      action = "<cmd>MoltenEvaluateLine<CR>";
-      key = "<leader>ml";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-      };
-    }
-    {
-      action = "<cmd>MoltenReevaluateCell<CR>";
-      key = "<leader>mr";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-      };
-    }
-    {
-      action = "<cmd>MoltenEvaluateVisual<CR>gv";
-      key = "<leader>mv";
-      mode = "v";
-      options = {
-        noremap = true;
-        silent = true;
-      };
-    }
-
-    # Quarto
-    {
-      action = "<cmd>QuartoPreview<CR>";
-      key = "<leader>qp";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-      };
-    }
-
     # New file at current location
     {
       action = ":e %:h/";

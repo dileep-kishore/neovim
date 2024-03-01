@@ -177,7 +177,6 @@ in {
       jupyter-client
       pynvim
       pyperclip
-      pnglatex
       nbformat
     ];
 
@@ -246,10 +245,6 @@ in {
     {
       plugin = highlight-undo-nvim;
       config = "lua require('highlight-undo').setup()";
-    }
-    {
-      plugin = quarto-nvim;
-      config = "lua require('quarto').setup({codeRunner={enabled=true,default_method='molten',}})";
     }
   ];
 }
