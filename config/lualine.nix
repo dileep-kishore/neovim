@@ -17,7 +17,7 @@
         colored = true,
         update_in_insert = false,
         always_visible = true,
-        padding = { left = 0, right = 0 },
+        padding = { left = 1, right = 1 },
     }
 
     local diff = {
@@ -36,11 +36,11 @@
     local filename = {
         "filename",
         file_status = true,
-        path = 0,
+        path = 1,
         cond = hide_in_width,
         symbols = { modified = " ", readonly = " ", unnamed = "[No Name]", newfile = "[New]" },
-        separator = " ",
-        padding = { left = 1, right = 0 },
+        separator = "|",
+        padding = { left = 1, right = 1 },
     }
 
     local icononly_filetype = {
@@ -118,6 +118,7 @@
     lualine.setup {
         options = {
             icons_enabled = true,
+            globalstatus = true,
             theme = "rose-pine",
             component_separators = { left = "", right = "" },
             section_separators = { left = "", right = "" },
