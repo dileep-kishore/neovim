@@ -31,7 +31,7 @@
       "<leader>gh" = "FileHistory Diffview";
       "<leader>gl" = "LazyGit";
       "<leader>fb" = "Tele buffers";
-      "<leader>o" = "Tele find_files";
+      "<leader>o" = "Tele git_files";
       "<leader>xx" = "Trouble toggle";
       "<leader>xw" = "Trouble diagnostics (workspace)";
       "<leader>xd" = "Trouble diagnostics";

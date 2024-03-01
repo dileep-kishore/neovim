@@ -487,7 +487,7 @@
       };
     }
     {
-      action = "<cmd>Telescope find_files<cr>";
+      action = "<cmd>Telescope git_files<cr>";
       key = "<leader>o";
       mode = "n";
       options = {
