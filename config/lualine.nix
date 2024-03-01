@@ -64,6 +64,26 @@
         color = { fg = "#ca1243" },
     }
 
+    local function get_lsp_status()
+        local buf_clients = vim.lsp.buf_get_clients()
+        local buf_client_names = ""
+        for _, client in pairs(buf_clients) do
+            -- table.insert(buf_client_names, client.name)
+            if buf_client_names == "" then
+                buf_client_names =  client.name
+            else
+                buf_client_names = buf_client_names .. ", " .. client.name
+            end
+        end
+        -- return table.concat(buf_client_names, self.options.split)
+        return buf_client_names
+    end
+
+    local lsp_status = {
+        get_lsp_status,
+        separator = "|"
+    }
+
     local filetype = {
         "filetype",
         icons_enabled = true,
@@ -85,7 +105,7 @@
     local macro = {
         require("noice").api.statusline.mode.get,
         cond = require("noice").api.statusline.mode.has,
-        color = { fg = "#ff9e64" },
+        color = { fg = "#eb6f92" },
     }
 
     -- cool function for progress
@@ -130,7 +150,7 @@
             lualine_b = { branch, diff },
             lualine_c = { icononly_filetype, filename, diagnostics },
             lualine_x = { macro, cmd, "encoding"  },
-            lualine_y = { filetype },
+            lualine_y = { lsp_status, filetype },
             lualine_z = { location, progress, progress_custom },
         },
         inactive_sections = {
