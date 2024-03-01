@@ -10,7 +10,10 @@
       hls = {enable = true;};
       jsonls = {enable = true;};
       julials = {enable = true;};
-      ltex = {enable = true;};
+      ltex = {
+        enable = true;
+        settings.checkFrequency = "save";
+      };
       texlab = {enable = true;};
       marksman = {enable = true;};
       rnix-lsp = {enable = true;};
