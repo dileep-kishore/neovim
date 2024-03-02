@@ -7,7 +7,7 @@
   };
   plugins.neogit = {
     enable = true;
-    integrations = {
+    settings.integrations = {
       diffview = true;
     };
   };
