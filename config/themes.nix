@@ -12,6 +12,7 @@
       "@keyword.repeat" = {italic = true;};
       "@function" = {italic = true;};
       "@function.method.call" = {italic = true;};
+      "LeapBackdrop" = {link = "Comment";};
       "@markup.raw" = {
         fg = "gold";
         bg = "surface";
