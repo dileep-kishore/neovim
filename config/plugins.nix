@@ -69,8 +69,9 @@ in {
       enable = true;
       mergeKeywords = true;
       highlight = {
+        before = "";
         after = "fg";
-        keyword = "bg";
+        keyword = "wide";
       };
       keywords = {
         QUESTION = {icon = "";};
