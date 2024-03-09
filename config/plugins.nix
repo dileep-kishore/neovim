@@ -166,7 +166,7 @@ in {
     marks.enable = true;
     markdown-preview = {
       enable = true;
-      theme = "dark";
+      settings.theme = "dark";
     };
     persistence.enable = true;
     specs = {
