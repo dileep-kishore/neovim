@@ -18,74 +18,75 @@
       keymap.accept = "<C-l>";
     };
   };
-  plugins.nvim-cmp = {
+  plugins.cmp = {
     enable = true;
-    preselect = "None";
     autoEnableSources = true;
-    experimental = {ghost_text = true;};
-    snippet = {expand = "luasnip";};
-    window = {
-      documentation.border = "rounded";
-      documentation.winhighlight = "Normal:Pmenu,CursorLine:PmenuSel,Search:None";
-      completion = {
-        colOffset = -3;
-        sidePadding = 0;
-        winhighlight = "Normal:Pmenu,CursorLine:PmenuSel,Search:None";
-        border = "rounded";
+    settings = {
+      preselect = "None";
+      experimental = {ghost_text = true;};
+      snippet = {expand = "luasnip";};
+      window = {
+        documentation.border = "rounded";
+        documentation.winhighlight = "Normal:Pmenu,CursorLine:PmenuSel,Search:None";
+        completion = {
+          colOffset = -3;
+          sidePadding = 0;
+          winhighlight = "Normal:Pmenu,CursorLine:PmenuSel,Search:None";
+          border = "rounded";
+        };
       };
-    };
-    formatting.fields = ["kind" "abbr" "menu"];
-    formatting.format = ''
-      function(entry, vim_item)
-        local colors = {
-            _nc = "#16141f",
-            base = "#191724",
-            surface = "#1f1d2e",
-            overlay = "#26233a",
-            muted = "#6e6a86",
-            subtle = "#908caa",
-            text = "#e0def4",
-            love = "#eb6f92",
-            gold = "#f6c177",
-            rose = "#ebbcba",
-            pine = "#31748f",
-            foam = "#9ccfd8",
-            iris = "#c4a7e7",
-            highlight_low = "#21202e",
-            highlight_med = "#403d52",
-            highlight_high = "#524f67",
-            none = "NONE",
-        }
-        local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50, symbol_map = { Copilot = " " } })(entry, vim_item)
-        local strings = vim.split(kind.kind, "%s", { trimempty = true })
-        kind.kind = " " .. (strings[1] or "") .. " "
-        local menu_item = ""
-        if strings[2] == "" then
-          menu_item = "Copilot"
-        else
-          menu_item = strings[2]
+      formatting.fields = ["kind" "abbr" "menu"];
+      formatting.format = ''
+        function(entry, vim_item)
+          local colors = {
+              _nc = "#16141f",
+              base = "#191724",
+              surface = "#1f1d2e",
+              overlay = "#26233a",
+              muted = "#6e6a86",
+              subtle = "#908caa",
+              text = "#e0def4",
+              love = "#eb6f92",
+              gold = "#f6c177",
+              rose = "#ebbcba",
+              pine = "#31748f",
+              foam = "#9ccfd8",
+              iris = "#c4a7e7",
+              highlight_low = "#21202e",
+              highlight_med = "#403d52",
+              highlight_high = "#524f67",
+              none = "NONE",
+          }
+          local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50, symbol_map = { Copilot = " " } })(entry, vim_item)
+          local strings = vim.split(kind.kind, "%s", { trimempty = true })
+          kind.kind = " " .. (strings[1] or "") .. " "
+          local menu_item = ""
+          if strings[2] == "" then
+            menu_item = "Copilot"
+          else
+            menu_item = strings[2]
+          end
+          kind.menu = "    (" .. menu_item .. ")"
+          return kind
         end
-        kind.menu = "    (" .. menu_item .. ")"
-        return kind
-      end
-    '';
-    sources = [
-      {name = "copilot";}
-      {name = "nvim_lsp";}
-      {name = "luasnip";}
-      {name = "otter";}
-      {name = "path";}
-      {name = "buffer";}
-      {name = "git";}
-    ];
-    mapping = {
-      "<C-Space>" = "cmp.mapping.complete()";
-      "<C-e>" = "cmp.mapping.close()";
-      "<C-f>" = "cmp.mapping.scroll_docs(4)";
-      "<C-b>" = "cmp.mapping.scroll_docs(-4)";
-      "<CR>" = "cmp.mapping.confirm({ select = true })";
-      "<C-p>" = {
-        action = ''
+      '';
+      sources = [
+        {name = "copilot";}
+        {name = "nvim_lsp";}
+        {name = "luasnip";}
+        {name = "otter";}
+        {name = "path";}
+        {name = "buffer";}
+        {name = "git";}
+      ];
+      mapping = {
+        "<C-Space>" = "cmp.mapping.complete()";
+        "<C-e>" = "cmp.mapping.close()";
+        "<C-f>" = "cmp.mapping.scroll_docs(4)";
+        "<C-b>" = "cmp.mapping.scroll_docs(-4)";
+        "<CR>" = "cmp.mapping.confirm({ select = true })";
+        "<C-p>" = ''
+          cmp.mapping(
           function(fallback)
             local luasnip = require 'luasnip'
             if cmp.visible() then
@@ -95,12 +96,9 @@
             else
                 fallback()
             end
-          end
-        '';
-        modes = ["i" "s"];
-      };
-      "<C-n>" = {
-        action = ''
+          end, {'i', 's'})'';
+        "<C-n>" = ''
+          cmp.mapping(
           function(fallback)
             local luasnip = require 'luasnip'
             local check_backspace = function()
@@ -118,9 +116,7 @@
             else
               fallback()
             end
-          end
-        '';
-        modes = ["i" "s"];
+          end, {'i', 's'})'';
       };
     };
   };
