@@ -78,7 +78,10 @@ in {
       };
     };
     comment-nvim.enable = true;
-    project-nvim.enable = true;
+    project-nvim = {
+      enable = true;
+      enableTelescope = true;
+    };
     toggleterm = {
       enable = true;
       direction = "float";

@@ -36,7 +36,6 @@
         showUnindexed = true;
         defaultWorkspace = "CWD";
       };
-      project-nvim = {enable = true;};
     };
     keymaps = {
       "<leader>ff" = {
