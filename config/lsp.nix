@@ -16,7 +16,7 @@
       };
       texlab = {enable = true;};
       marksman = {enable = true;};
-      rnix-lsp = {enable = true;};
+      nil_ls = {enable = true;};
       # Python
       pyright = {enable = true;};
       ruff-lsp = {
