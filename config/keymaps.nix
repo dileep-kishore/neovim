@@ -405,7 +405,7 @@
     }
     {
       action = "<cmd>lua require('gitsigns').preview_hunk_inline()<cr>";
-      key = "<leader>gp";
+      key = "<leader>hp";
       mode = "n";
       options = {
         noremap = true;
@@ -423,7 +423,7 @@
     }
     {
       action = "<cmd>lua require('gitsigns').stage_hunk()<cr>";
-      key = "<leader>gs";
+      key = "<leader>hs";
       mode = "n";
       options = {
         noremap = true;
@@ -432,7 +432,7 @@
     }
     {
       action = "<cmd>lua require('gitsigns').undo_stage_hunk()<cr>";
-      key = "<leader>gu";
+      key = "<leader>hu";
       mode = "n";
       options = {
         noremap = true;
@@ -441,7 +441,7 @@
     }
     {
       action = "<cmd>lua require('gitsigns').reset_hunk()<cr>";
-      key = "<leader>gr";
+      key = "<leader>hr";
       mode = "n";
       options = {
         noremap = true;
