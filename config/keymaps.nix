@@ -449,7 +449,7 @@
     }
     # Neogit
     {
-      action = "<cmd>Neogit<CR>";
+      action = "<cmd>Neogit kind=tab<CR>";
       key = "<leader>gg";
       mode = "n";
       options = {
