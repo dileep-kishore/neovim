@@ -508,7 +508,7 @@
       };
     }
     {
-      action = "<cmd>Telescope frecency theme=dropdown<cr>";
+      action = "<cmd>Telescope frecency workspace=CWD theme=dropdown<cr>";
       key = "<leader>o";
       mode = "n";
       options = {

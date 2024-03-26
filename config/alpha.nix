@@ -30,7 +30,7 @@
       "                                                                       ";
     }
     dashboard.section.buttons.val = {
-        dashboard.button("f", "  Find file", ":Telescope frecency theme=dropdown<CR>"),
+        dashboard.button("f", "  Find file", ":Telescope frecency workspace=CWD theme=dropdown<CR>"),
         dashboard.button("e", "  New file", ":ene <BAR> startinsert<CR>"),
         dashboard.button("p", "  Find project", ":Telescope projects theme=dropdown<CR>"),
         dashboard.button("r", "󱝩  Recently used files", ":Telescope oldfiles theme=dropdown<CR>"),
