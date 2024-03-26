@@ -335,6 +335,17 @@
       };
     }
 
+    # mini.files
+    {
+      action = "<cmd>lua require('mini.files').open()<CR>";
+      key = "<leader>/";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+
     # Luasnip
     {
       action = "<cmd>lua require'luasnip'.expand()<CR>";

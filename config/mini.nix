@@ -10,6 +10,7 @@
         symbol = "¦";
       };
       bufremove = {};
+      files = {};
     };
   };
 }
