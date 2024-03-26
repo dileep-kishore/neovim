@@ -203,6 +203,16 @@
         silent = true;
       };
     }
+    # Close tab
+    {
+      action = "<cmd>tabclose<CR>";
+      key = "<Leader>qt";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
 
     # Stay in visual mode while indenting
     {
