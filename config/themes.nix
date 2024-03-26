@@ -17,6 +17,8 @@
         fg = "gold";
         bg = "surface";
       };
+      MiniIndentscopeSymbol = {fg = "foam";};
+      MiniIndentscopeSymbolOff = {fg = "foam";};
       EndOfBuffer = {
         fg = "base";
         bg = "base";
