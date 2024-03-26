@@ -12,10 +12,11 @@
     local diagnostics = {
         "diagnostics",
         sources = { "nvim_diagnostic" },
-        sections = { "error", "warn" },
-        symbols = { error = " ", warn = " " },
+        sections = { "error", "warn", "info" },
+        symbols = { error = " ", warn = " ", info = " " },
         colored = true,
         update_in_insert = false,
+        separator = "",
         always_visible = true,
         padding = { left = 1, right = 1 },
     }
@@ -25,6 +26,8 @@
         colored = true,
         symbols = { added = " ", modified = " ", removed = " " }, -- changes diff symbols
         cond = hide_in_width,
+        update_in_insert = true,
+        always_visible = true,
     }
 
     local mode = {
@@ -39,7 +42,6 @@
         path = 1,
         cond = hide_in_width,
         symbols = { modified = " ", readonly = " ", unnamed = "[No Name]", newfile = "[New]" },
-        separator = "|",
         padding = { left = 1, right = 1 },
     }
 
@@ -48,6 +50,11 @@
         icon_only = true,
         separator = "",
         padding = { left = 1, right = 0 },
+    }
+
+    local center_comp = {
+        "%=",
+        separator = "",
     }
 
     local function modified()
