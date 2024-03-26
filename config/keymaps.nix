@@ -450,7 +450,7 @@
     }
     {
       action = "<cmd>Gitsigns diffthis HEAD<cr>";
-      key = "<leader>gd";
+      key = "<leader>gD";
       mode = "n";
       options = {
         noremap = true;
@@ -470,7 +470,7 @@
     # Diffview
     {
       action = "<cmd>DiffviewOpen<CR>";
-      key = "<leader>gD";
+      key = "<leader>gd";
       mode = "n";
       options = {
         noremap = true;
