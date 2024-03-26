@@ -2,7 +2,11 @@
   plugins.mini = {
     enable = true;
     modules = {
-      animate = {};
+      animate = {
+        cursor = {
+          enable = true;
+        };
+      };
       splitjoin = {};
       indentscope = {
         try_as_border = true;
