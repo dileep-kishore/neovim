@@ -61,18 +61,18 @@ in {
         columns = ["icon"];
         float = {
           border = "rounded";
-          maxHeight = 60;
-          maxWidth = 60;
+          max_height = 60;
+          max_width = 60;
         };
         preview = {
           border = "rounded";
-          maxHeight = 60;
-          maxWidth = 60;
+          max_height = 60;
+          max_width = 60;
         };
         progress = {
           border = "rounded";
-          maxHeight = 60;
-          maxWidth = 60;
+          max_height = 60;
+          max_width = 60;
         };
       };
     };
