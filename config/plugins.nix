@@ -33,16 +33,6 @@
     };
     meta.homepage = "https://github.com/b0o/incline.nvim";
   };
-  tinygit = pkgs.vimUtils.buildVimPlugin {
-    pname = "nvim-tinygit";
-    version = "2024-03-26";
-    src = builtins.fetchGit {
-      url = "https://github.com/chrisgrieser/nvim-tinygit.git";
-      ref = "main";
-      rev = "9a5c31db23cb2e1c9625180268cae2139777cc70";
-    };
-    meta.homepage = "https://github.com/chrisgrieser/nvim-tinygit";
-  };
 in {
   plugins = {
     nvim-autopairs = {
@@ -250,11 +240,10 @@ in {
     twilight-nvim
     iron-nvim
     otter-nvim
-    headlines-nvim
     devdocs-nvim
     modes-nvim
     incline-nvim
-    tinygit
+    headlines-nvim
     {
       plugin = tint-nvim;
       config = "lua require('tint').setup()";
