@@ -64,7 +64,7 @@
     ui.codeAction = "";
     beacon.enable = true;
     implement = {
-      enable = false;
+      enable = true;
       sign = false;
     };
     lightbulb = {
@@ -73,7 +73,7 @@
       virtualText = false;
     };
     outline = {layout = "float";};
-    symbolInWinbar.enable = false;
+    symbolInWinbar.enable = true;
   };
   plugins.inc-rename.enable = true;
 
