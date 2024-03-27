@@ -80,6 +80,7 @@ in {
       };
     };
     comment.enable = true;
+    sleuth.enable = true;
     project-nvim = {
       enable = true;
       enableTelescope = true;
