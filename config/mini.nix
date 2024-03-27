@@ -9,8 +9,10 @@
       };
       splitjoin = {};
       indentscope = {
-        try_as_border = true;
-        border = "both";
+        options = {
+          try_as_border = true;
+          border = "top";
+        };
         symbol = "¦";
       };
       bufremove = {};

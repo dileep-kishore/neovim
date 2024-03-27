@@ -96,7 +96,7 @@ in {
       underCursor = false;
     };
     indent-blankline = {
-      enable = true;
+      enable = false;
       settings = {
         indent.char = "│";
         whitespace.remove_blankline_trail = true;
