@@ -42,6 +42,7 @@
         path = 1,
         cond = hide_in_width,
         symbols = { modified = " ", readonly = " ", unnamed = "[No Name]", newfile = "[New]" },
+        separator = "",
         padding = { left = 1, right = 1 },
     }
 
