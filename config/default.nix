@@ -6,6 +6,7 @@
     ./treesitter.nix
     ./tabby.nix
     ./incline.nix
+    ./grapple.nix
     ./mini.nix
     ./git.nix
     ./lualine.nix

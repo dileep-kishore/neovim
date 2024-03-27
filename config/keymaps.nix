@@ -830,10 +830,10 @@
       };
     }
 
-    # Harpoon
+    # Grapple
     {
-      action = "<cmd>lua require('harpoon'):list():append()<CR><cmd>lua vim.notify('Added to harpoon', 'info')<CR>";
-      key = "<S-m>";
+      action = "<cmd>Grapple tag<CR><cmd>lua vim.notify('Added to grapple', 'info')<CR>";
+      key = "<leader>m";
       mode = "n";
       options = {
         noremap = true;
@@ -841,8 +841,8 @@
       };
     }
     {
-      action = "<cmd>lua require('harpoon').ui:toggle_quick_menu(require('harpoon'):list())<CR>";
-      key = "<S-l>";
+      action = "<cmd>Grapple toggle_tags<CR>";
+      key = "<leader>M";
       mode = "n";
       options = {
         noremap = true;
@@ -850,8 +850,8 @@
       };
     }
     {
-      action = "<cmd>lua require('harpoon'):list():select(1)<CR>";
-      key = "<leader>h1";
+      action = "<cmd>Grapple select index=1<CR>";
+      key = "<leader>1";
       mode = "n";
       options = {
         noremap = true;
@@ -859,8 +859,26 @@
       };
     }
     {
-      action = "<cmd>lua require('harpoon'):list():select(2)<CR>";
-      key = "<leader>h2";
+      action = "<cmd>Grapple select index=2<CR>";
+      key = "<leader>2";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>Grapple select index=3<CR>";
+      key = "<leader>3";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>Grapple select index=4<CR>";
+      key = "<leader>4";
       mode = "n";
       options = {
         noremap = true;

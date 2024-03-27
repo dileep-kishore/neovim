@@ -33,6 +33,16 @@
     };
     meta.homepage = "https://github.com/b0o/incline.nvim";
   };
+  grapple-nvim = pkgs.vimUtils.buildVimPlugin {
+    pname = "grapple-nvim";
+    version = "2024-03-25";
+    src = builtins.fetchGit {
+      url = "https://github.com/cbochs/grapple.nvim.git";
+      ref = "main";
+      rev = "5d96868a6e9791b7a8ee51a9eef43fc408b9650e";
+    };
+    meta.homepage = "https://github.com/cbochs/grapple.nvim";
+  };
 in {
   plugins = {
     nvim-autopairs = {
@@ -243,6 +253,7 @@ in {
     devdocs-nvim
     modes-nvim
     incline-nvim
+    grapple-nvim
     headlines-nvim
     {
       plugin = tint-nvim;
@@ -255,10 +266,6 @@ in {
     {
       plugin = nvim-spectre;
       config = "lua require('spectre').setup()";
-    }
-    {
-      plugin = harpoon2;
-      config = "lua require('harpoon').setup()";
     }
     {
       plugin = octo-nvim;
