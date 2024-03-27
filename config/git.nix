@@ -9,8 +9,11 @@
   };
   plugins.neogit = {
     enable = true;
-    settings.integrations = {
-      diffview = true;
+    settings = {
+      commit_editor = {
+        kind = "floating";
+      };
+      integrations.diffview = true;
     };
   };
   plugins.diffview = {
