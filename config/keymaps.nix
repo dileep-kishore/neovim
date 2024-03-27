@@ -1020,7 +1020,7 @@
     # Neogen
     {
       action = "<cmd>lua require('neogen').generate()<cr>";
-      key = "<leader>dg";
+      key = "<leader>lg";
       mode = "n";
       options = {
         noremap = true;
