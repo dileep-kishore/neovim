@@ -376,8 +376,17 @@
       };
     }
     {
-      action = "<cmd>Git commit<CR>";
+      action = "<cmd>lua require('tinygit').smartCommit({pushIfClean=false})<CR>";
       key = "<leader>gc";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>lua require('tinygit').push()<CR>";
+      key = "<leader>gP";
       mode = "n";
       options = {
         noremap = true;
@@ -479,6 +488,15 @@
     }
     {
       action = "<cmd>DiffviewFileHistory<CR>";
+      key = "<leader>gH";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>lua require('tinygit').searchFileHistory()<CR>";
       key = "<leader>gh";
       mode = "n";
       options = {
