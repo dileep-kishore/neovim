@@ -376,7 +376,7 @@
       };
     }
     {
-      action = "<cmd>Git commit<CR>";
+      action = "<cmd>Neogit commit<CR>";
       key = "<leader>gc";
       mode = "n";
       options = {
