@@ -42,26 +42,28 @@ in {
     tmux-navigator.enable = true;
     oil = {
       enable = true;
-      defaultFileExplorer = true;
-      deleteToTrash = false;
-      promptSaveOnSelectNewEntry = true;
-      skipConfirmForSimpleEdits = true;
-      keymaps = {"<C-x>" = "actions.select_split";};
-      columns = {icon.enable = true;};
-      float = {
-        border = "rounded";
-        maxHeight = 60;
-        maxWidth = 60;
-      };
-      preview = {
-        border = "rounded";
-        maxHeight = 60;
-        maxWidth = 60;
-      };
-      progress = {
-        border = "rounded";
-        maxHeight = 60;
-        maxWidth = 60;
+      settings = {
+        defaultFileExplorer = true;
+        deleteToTrash = false;
+        promptSaveOnSelectNewEntry = true;
+        skipConfirmForSimpleEdits = true;
+        keymaps = {"<C-x>" = "actions.select_split";};
+        columns = ["icon"];
+        float = {
+          border = "rounded";
+          maxHeight = 60;
+          maxWidth = 60;
+        };
+        preview = {
+          border = "rounded";
+          maxHeight = 60;
+          maxWidth = 60;
+        };
+        progress = {
+          border = "rounded";
+          maxHeight = 60;
+          maxWidth = 60;
+        };
       };
     };
     trouble.enable = true;
@@ -77,7 +79,7 @@ in {
         QUESTION = {icon = "";};
       };
     };
-    comment-nvim.enable = true;
+    comment.enable = true;
     project-nvim = {
       enable = true;
       enableTelescope = true;
@@ -95,34 +97,36 @@ in {
     };
     indent-blankline = {
       enable = true;
-      indent.char = "│";
-      whitespace.removeBlanklineTrail = true;
-      scope = {
-        enabled = false;
-        showEnd = false;
-        showStart = false;
+      settings = {
+        indent.char = "│";
+        whitespace.remove_blankline_trail = true;
+        scope = {
+          enabled = false;
+          show_end = true;
+          show_start = true;
+        };
+        exclude.filetypes = [
+          "help"
+          "alpha"
+          "dashboard"
+          "neo-tree"
+          "Trouble"
+          "trouble"
+          "lazy"
+          "notify"
+          "toggleterm"
+          "lazyterm"
+          "lspinfo"
+          "packer"
+          "checkhealth"
+          "help"
+          "man"
+          "gitcommit"
+          "TelescopePrompt"
+          "TelescopeResults"
+          "\'\'"
+        ];
       };
-      exclude.filetypes = [
-        "help"
-        "alpha"
-        "dashboard"
-        "neo-tree"
-        "Trouble"
-        "trouble"
-        "lazy"
-        "notify"
-        "toggleterm"
-        "lazyterm"
-        "lspinfo"
-        "packer"
-        "checkhealth"
-        "help"
-        "man"
-        "gitcommit"
-        "TelescopePrompt"
-        "TelescopeResults"
-        "\'\'"
-      ];
     };
     leap = {
       enable = true;
