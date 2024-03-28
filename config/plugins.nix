@@ -153,12 +153,6 @@ in {
         minPatternLength = 0;
         rainbow.enabled = true;
       };
-      modes = {
-        char = {
-          enabled = true;
-          jumpLabels = true;
-        };
-      };
     };
     notify = {
       enable = true;

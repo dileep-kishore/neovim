@@ -1098,5 +1098,16 @@
         silent = true;
       };
     }
+
+    # Flash
+    {
+      action = "<cmd>lua require('flash').jump()<CR>";
+      key = "s";
+      mode = ["n" "x" "o"];
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
   ];
 }
