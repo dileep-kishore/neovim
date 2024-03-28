@@ -7,7 +7,6 @@
           enable = true;
         };
       };
-      splitjoin = {};
       indentscope = {
         options = {
           try_as_border = true;

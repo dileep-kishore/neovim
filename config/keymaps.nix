@@ -1109,5 +1109,16 @@
         silent = true;
       };
     }
+
+    # TreeSJ
+    {
+      action = "<cmd>lua require('treesj').toggle()<CR>";
+      key = "<leader>j";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
   ];
 }
