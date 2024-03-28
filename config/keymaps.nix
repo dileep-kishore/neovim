@@ -853,7 +853,7 @@
     # Grapple
     {
       action = "<cmd>Grapple tag<CR><cmd>lua vim.notify('Added to grapple', 'info')<CR>";
-      key = "<leader>m";
+      key = "<leader>mm";
       mode = "n";
       options = {
         noremap = true;
@@ -861,8 +861,35 @@
       };
     }
     {
-      action = "<cmd>Grapple toggle_tags<CR>";
-      key = "<leader>M";
+      action = "<cmd>Grapple untag<CR><cmd>lua vim.notify('Removed from grapple', 'info')<CR>";
+      key = "<leader>md";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>Grapple open_tags<CR>";
+      key = "<leader>ml";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>Grapple cycle_forward<CR><cmd>lua vim.notify('Grapple next', 'info')<CR>";
+      key = "]g";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>Grapple cycle_backward<CR><cmd>lua vim.notify('Grapple prev', 'info')<CR>";
+      key = "[g";
       mode = "n";
       options = {
         noremap = true;
@@ -871,7 +898,7 @@
     }
     {
       action = "<cmd>Grapple select index=1<CR>";
-      key = "<leader>1";
+      key = "<leader>m1";
       mode = "n";
       options = {
         noremap = true;
@@ -880,7 +907,7 @@
     }
     {
       action = "<cmd>Grapple select index=2<CR>";
-      key = "<leader>2";
+      key = "<leader>m2";
       mode = "n";
       options = {
         noremap = true;
@@ -889,7 +916,7 @@
     }
     {
       action = "<cmd>Grapple select index=3<CR>";
-      key = "<leader>3";
+      key = "<leader>m3";
       mode = "n";
       options = {
         noremap = true;
@@ -898,7 +925,7 @@
     }
     {
       action = "<cmd>Grapple select index=4<CR>";
-      key = "<leader>4";
+      key = "<leader>m4";
       mode = "n";
       options = {
         noremap = true;

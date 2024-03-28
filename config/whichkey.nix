@@ -86,8 +86,11 @@
       "<leader>td" = "Browse devdocs";
       "<leader>nf" = "New file (current dir)";
       "<leader>/" = "Mini files";
-      "<leader>m" = "Grapple tag";
-      "<leader>M" = "Grapple show";
+      "<leader>mm" = "Grapple tag";
+      "<leader>ml" = "Grapple show";
+      "<leader>md" = "Grapple untag";
+      "[g" = "Grapple prev";
+      "]g" = "Grapple next";
     };
   };
 }
