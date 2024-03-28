@@ -5,7 +5,6 @@
   plugins.cmp-buffer.enable = true;
   plugins.cmp-cmdline.enable = true;
   plugins.cmp-git.enable = true;
-  plugins.copilot-cmp.enable = true;
   plugins.copilot-lua = {
     enable = true;
     panel = {
@@ -13,8 +12,8 @@
       layout.position = "bottom";
     };
     suggestion = {
-      enabled = false;
-      autoTrigger = false;
+      enabled = true;
+      autoTrigger = true;
       keymap.accept = "<C-l>";
     };
   };
@@ -23,7 +22,7 @@
     autoEnableSources = true;
     settings = {
       preselect = "None";
-      experimental = {ghost_text = true;};
+      experimental = {ghost_text = false;};
       snippet = {expand = "luasnip";};
       window = {
         documentation.border = "rounded";
@@ -71,7 +70,6 @@
         end
       '';
       sources = [
-        {name = "copilot";}
         {name = "nvim_lsp";}
         {name = "luasnip";}
         {name = "otter";}
@@ -84,7 +82,7 @@
         "<C-e>" = "cmp.mapping.close()";
         "<C-f>" = "cmp.mapping.scroll_docs(4)";
         "<C-b>" = "cmp.mapping.scroll_docs(-4)";
-        "<CR>" = "cmp.mapping.confirm({ select = true })";
+        "<CR>" = "cmp.mapping.confirm({ select = false })";
         "<C-p>" = ''
           cmp.mapping(
           function(fallback)
