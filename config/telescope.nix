@@ -36,6 +36,10 @@
         showUnindexed = true;
         defaultWorkspace = "CWD";
       };
+      undo = {
+        enable = true;
+        useDelta = true;
+      };
     };
     keymaps = {
       "<leader>ff" = {

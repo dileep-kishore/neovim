@@ -516,6 +516,15 @@
         silent = true;
       };
     }
+    {
+      action = "<cmd>Telescope undo<cr>";
+      key = "<leader>su";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
 
     ## LSP and diagnostics
     # Trouble
