@@ -19,16 +19,17 @@
       "<C-k>" = "Expand luasnip";
       "<leader>ga" = "Gwrite";
       "<leader>gc" = "Git commit";
-      "]x" = "Gitsigns next hunk";
-      "[x" = "GitSigns prev hunk";
-      "<leader>gp" = "Gitsigns preview hunk";
-      "<leader>gs" = "Gitsigns stage hunk";
-      "<leader>gu" = "GitSigns undo stage hunk";
-      "<leader>gr" = "GitSigns reset hunk";
+      "]h" = "Gitsigns next hunk";
+      "[h" = "GitSigns prev hunk";
+      "<leader>hp" = "Gitsigns preview hunk";
+      "<leader>hs" = "Gitsigns stage hunk";
+      "<leader>hu" = "GitSigns undo stage hunk";
+      "<leader>hr" = "GitSigns reset hunk";
       "<leader>gd" = "Gitsigns diffthis HEAD";
       "<leader>gg" = "Neogit";
       "<leader>gD" = "Open Diffview";
       "<leader>gh" = "FileHistory Diffview";
+      "<leader>gb" = "Git line blame";
       "<leader>gl" = "LazyGit";
       "<leader>fb" = "Tele buffers";
       "<leader>o" = "Tele frequent";
@@ -39,6 +40,8 @@
       "<leader>xq" = "Trouble quickfix";
       "<leader>la" = "Lsp code action";
       "<leader>ld" = "Tele diagnostics";
+      "<leader>lg" = "Generate docstring";
+      "<leader>lh" = "Treesitter highlight";
       "<leader>lp" = "Lsp peek definition";
       "<leader>lf" = "Lsp references";
       "<leader>li" = "Lsp info";
@@ -63,7 +66,7 @@
       "<leader>th" = "ToggleTerm (horizontal)";
       "<leader>tv" = "ToggleTerm (vertical)";
       "<leader>sr" = "Spectre replace";
-      "<leader>sR" = "Spectre toggle";
+      "<leader>sR" = "SSR (structed replace)";
       "zR" = "UFO open all folds";
       "zM" = "UFO close all folds";
       "<leader>ty" = "Tele yank history";
@@ -82,6 +85,9 @@
       "<leader>dg" = "Generate docstring";
       "<leader>td" = "Browse devdocs";
       "<leader>nf" = "New file (current dir)";
+      "<leader>/" = "Mini files";
+      "<leader>m" = "Grapple tag";
+      "<leader>M" = "Grapple show";
     };
   };
 }
