@@ -14,7 +14,11 @@
     suggestion = {
       enabled = true;
       autoTrigger = true;
-      keymap.accept = "<C-l>";
+      keymap = {
+        accept = "<C-l>";
+        next = "<M-n>";
+        prev = "<M-p>";
+      };
     };
   };
   plugins.cmp = {
