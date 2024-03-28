@@ -830,6 +830,17 @@
       };
     }
 
+    # Flash treesitter highlight
+    {
+      action = "<cmd>lua require('flash').treesitter()<CR>";
+      key = "<leader>y";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+
     # Grapple
     {
       action = "<cmd>Grapple tag<CR><cmd>lua vim.notify('Added to grapple', 'info')<CR>";

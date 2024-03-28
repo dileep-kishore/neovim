@@ -139,10 +139,26 @@ in {
         ];
       };
     };
-    leap = {
+    flash = {
       enable = true;
-      addDefaultMappings = true;
-      caseSensitive = false;
+      continue = false;
+      jump = {
+        autojump = false;
+        history = false;
+        jumplist = true;
+        nohlsearch = true;
+      };
+      label = {
+        after = true;
+        minPatternLength = 0;
+        rainbow.enabled = true;
+      };
+      modes = {
+        char = {
+          enabled = true;
+          jumpLabels = true;
+        };
+      };
     };
     notify = {
       enable = true;
