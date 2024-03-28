@@ -830,9 +830,9 @@
       };
     }
     {
-      action = "<cmd>lua require('spectre').toggle()<CR>";
+      action = "<cmd>lua require('ssr').open()<CR>";
       key = "<leader>sR";
-      mode = "n";
+      mode = ["n" "x"];
       options = {
         noremap = true;
         silent = true;
