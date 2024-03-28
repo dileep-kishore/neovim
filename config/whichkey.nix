@@ -82,7 +82,9 @@
       "<leader>ca" = "ChatGPTActAs";
       "<leader>ce" = "ChatGPTEditWithInstruction";
       "<leader>cr" = "ChatGPTRun";
-      "<leader>dg" = "Generate docstring";
+      "<leader>cc" = "ChatGPTCompleteCode";
+      "<leader>cd" = "Diagnostics gpt";
+      "<leader>cs" = "Diagnostics search";
       "<leader>td" = "Browse devdocs";
       "<leader>nf" = "New file (current dir)";
       "<leader>/" = "Mini files";

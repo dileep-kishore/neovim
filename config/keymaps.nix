@@ -1055,6 +1055,15 @@
       };
     }
     {
+      action = "<cmd>ChatGPTCompleteCode<cr>";
+      key = "<leader>cc";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
       action = "<cmd>ChatGPTActAs<cr>";
       key = "<leader>ca";
       mode = "n";
@@ -1073,7 +1082,7 @@
       };
     }
     {
-      action = "<cmd>ChatGPTRun ";
+      action = ":ChatGPTRun ";
       key = "<leader>cr";
       mode = "n";
       options = {
