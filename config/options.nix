@@ -1,4 +1,11 @@
 {
+  config.clipboard = {
+    register = "unnamedplus";
+    providers = {wl-copy = {enable = true;};};
+  };
+
+  config.editorconfig.enable = true;
+
   config.options = {
     termguicolors = true;
     showmode = false;

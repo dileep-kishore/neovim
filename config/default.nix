@@ -18,11 +18,4 @@
     ./themes
     ./literate
   ];
-
-  clipboard = {
-    register = "unnamedplus";
-    providers = {wl-copy = {enable = true;};};
-  };
-
-  editorconfig.enable = true;
 }
