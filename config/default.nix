@@ -3,27 +3,27 @@
   imports = [
     ./options.nix
     ./autocmds.nix
-    ./treesitter.nix
-    ./tabby.nix
-    ./incline.nix
-    ./grapple.nix
-    ./mini.nix
-    ./git.nix
-    ./lualine.nix
-    ./lsp.nix
-    ./dap.nix
-    ./formatter.nix
-    ./linter.nix
-    ./snippets.nix
-    ./completions.nix
-    ./gpt.nix
-    ./alpha.nix
-    ./telescope.nix
-    ./folding.nix
-    ./themes.nix
+    ./treesitter/treesitter.nix
+    ./bars/tabby.nix
+    ./ui/incline.nix
+    ./misc/grapple.nix
+    ./misc/mini.nix
+    ./git/git.nix
+    ./bars/lualine.nix
+    ./lsp/lsp.nix
+    ./debuggers/dap.nix
+    ./lsp/formatter.nix
+    ./lsp/linter.nix
+    ./completions/snippets.nix
+    ./completions/completions.nix
+    ./ai/gpt.nix
+    ./dashboard/alpha.nix
+    ./ui/telescope.nix
+    ./ui/folding.nix
+    ./themes/themes.nix
     ./keymaps.nix
     ./plugins.nix
-    ./literate.nix
+    ./literate/literate.nix
     ./whichkey.nix
   ];
 
