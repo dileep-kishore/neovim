@@ -58,7 +58,7 @@
         local res = {
           ft_icon and { " ", ft_icon, " ", guibg = ft_color, guifg = helpers.contrast_color(ft_color) } or "",
           ' ',
-          { filename, gui = modified and 'bold,italic' or 'bold' },
+          { modified and filename .. " " or filename, gui = modified and 'bold,italic' or 'bold' },
           guibg = colors.base,
         }
         table.insert(res, ' ')
