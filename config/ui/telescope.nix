@@ -100,4 +100,5 @@
       };
     };
   };
+  extraConfigLua = builtins.readFile ./telescope.lua;
 }
