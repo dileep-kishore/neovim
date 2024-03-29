@@ -19,7 +19,7 @@
     ./dashboard/alpha.nix
     ./ui/telescope.nix
     ./ui/folding.nix
-    ./themes/themes.nix
+    ./themes
     ./keymaps.nix
     ./plugins.nix
     ./literate/literate.nix
