@@ -3,7 +3,7 @@
   imports = [
     ./options.nix
     ./autocmds.nix
-    ./treesitter/treesitter.nix
+    ./treesitter
     ./bars
     ./ui/incline.nix
     ./misc
