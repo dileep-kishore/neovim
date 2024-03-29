@@ -16,8 +16,8 @@
       autoTrigger = true;
       keymap = {
         accept = "<C-l>";
-        next = "<M-n>";
-        prev = "<M-p>";
+        next = "<A-n>";
+        prev = "<A-p>";
       };
     };
   };

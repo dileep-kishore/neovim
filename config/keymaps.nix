@@ -23,6 +23,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Move to the window on the left";
       };
     }
     {
@@ -32,6 +33,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Move to the window below";
       };
     }
     {
@@ -41,6 +43,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Move to the window above";
       };
     }
     {
@@ -50,6 +53,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Move to the window on the right";
       };
     }
 
@@ -61,6 +65,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "previous tab";
       };
     }
     {
@@ -70,6 +75,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "next tab";
       };
     }
 
@@ -81,6 +87,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Increase window height";
       };
     }
     {
@@ -90,6 +97,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Decrease window height";
       };
     }
     {
@@ -99,6 +107,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Increase window width";
       };
     }
     {
@@ -108,6 +117,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Decrease window width";
       };
     }
 
@@ -119,6 +129,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "previous buffer";
       };
     }
     {
@@ -128,6 +139,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "next buffer";
       };
     }
 
@@ -139,6 +151,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "new tab";
       };
     }
 
@@ -150,6 +163,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Move line down";
       };
     }
     {
@@ -159,6 +173,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Move line up";
       };
     }
 
@@ -170,6 +185,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Clear search highlight";
       };
     }
 
@@ -181,6 +197,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Save file";
       };
     }
     # Close buffers
@@ -191,6 +208,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Delete buffer";
       };
     }
     # Close window
@@ -201,6 +219,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Close window";
       };
     }
     # Close tab
@@ -211,6 +230,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Close tab";
       };
     }
 
@@ -222,6 +242,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Indent left";
       };
     }
     {
@@ -231,6 +252,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Indent right";
       };
     }
     # Move text up and down in visual mode
@@ -241,6 +263,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Move line down";
       };
     }
     {
@@ -250,6 +273,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Move line up";
       };
     }
     # Visual mode paste
@@ -260,6 +284,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Paste without yanking";
       };
     }
 
@@ -271,6 +296,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Run q macro";
       };
     }
     {
@@ -280,6 +306,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Run q macro";
       };
     }
 
@@ -293,6 +320,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "vim-tmux navigate left";
       };
     }
     {
@@ -302,6 +330,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "vim-tmux navigate down";
       };
     }
     {
@@ -311,6 +340,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "vim-tmux navigate up";
       };
     }
     {
@@ -320,6 +350,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "vim-tmux navigate right";
       };
     }
 
@@ -331,6 +362,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Alpha dashboard";
       };
     }
 
@@ -342,6 +374,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Oil";
       };
     }
 
@@ -353,6 +386,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Open mini.files";
       };
     }
 
@@ -361,7 +395,10 @@
       action = "<cmd>lua require'luasnip'.expand()<CR>";
       key = "<C-k>";
       mode = "i";
-      options = {silent = true;};
+      options = {
+        silent = true;
+        desc = "Expand snippet";
+      };
     }
 
     ## Git
@@ -373,6 +410,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Fugitive stage file";
       };
     }
     {
@@ -382,6 +420,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Neogit commit";
       };
     }
     # Gitsigns
@@ -392,6 +431,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Next hunk";
       };
     }
     {
@@ -401,6 +441,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Previous hunk";
       };
     }
     {
@@ -410,6 +451,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Preview hunk inline";
       };
     }
     {
@@ -419,6 +461,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Blame line";
       };
     }
     {
@@ -428,6 +471,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Stage hunk";
       };
     }
     {
@@ -437,6 +481,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Undo stage hunk";
       };
     }
     {
@@ -446,6 +491,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Reset hunk";
       };
     }
     {
@@ -455,6 +501,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Diff HEAD";
       };
     }
     # Neogit
@@ -465,6 +512,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Neogit";
       };
     }
     # Diffview
@@ -475,6 +523,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Diffview";
       };
     }
     {
@@ -484,6 +533,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Diffview file history";
       };
     }
     # LazyGit
@@ -494,6 +544,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "LazyGit";
       };
     }
 
@@ -505,6 +556,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Telescope find buffer";
       };
     }
     {
@@ -514,6 +566,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Telescope frecency";
       };
     }
     {
@@ -523,6 +576,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Telescope undo";
       };
     }
 
@@ -535,6 +589,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Trouble toggle";
       };
     }
     {
@@ -544,6 +599,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Trouble workspace diagnostics";
       };
     }
     {
@@ -553,6 +609,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Trouble document diagnostics";
       };
     }
     {
@@ -562,6 +619,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Trouble loclist";
       };
     }
     {
@@ -571,6 +629,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Trouble quickfix";
       };
     }
     # LSP
@@ -581,6 +640,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "LSP diagnostics at cursor";
       };
     }
     {
@@ -590,6 +650,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Lspsaga code action";
       };
     }
     {
@@ -599,6 +660,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Telescope diagnostics";
       };
     }
     {
@@ -608,6 +670,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Lspsaga peek definition";
       };
     }
     {
@@ -617,6 +680,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Lspsaga finder";
       };
     }
     {
@@ -626,6 +690,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "LSP info";
       };
     }
     {
@@ -635,6 +700,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "next Lspsaga diagnostic";
       };
     }
     {
@@ -644,6 +710,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "previous Lspsaga diagnostic";
       };
     }
     {
@@ -653,6 +720,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Run code lens";
       };
     }
     {
@@ -662,6 +730,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Incremental rename (file)";
       };
     }
     {
@@ -671,6 +740,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Project-wide rename";
       };
     }
     {
@@ -680,6 +750,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Telescope document symbols";
       };
     }
     {
@@ -689,6 +760,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Telescope workspace symbols";
       };
     }
     {
@@ -698,25 +770,28 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Lspsaga outline";
       };
     }
     # lspsaga
     {
       action = "<cmd>Lspsaga incoming_calls<cr>";
-      key = "<leader>Li";
+      key = "<leader>lI";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
+        desc = "Lspsaga incoming calls";
       };
     }
     {
       action = "<cmd>Lspsaga outgoing_calls<cr>";
-      key = "<leader>Lo";
+      key = "<leader>lO";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
+        desc = "Lspsaga outgoing calls";
       };
     }
     {
@@ -726,6 +801,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Lspsaga hover doc";
       };
     }
     {
@@ -735,6 +811,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Lspsaga goto definition";
       };
     }
 
@@ -746,6 +823,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Todo trouble";
       };
     }
     {
@@ -755,6 +833,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Todo telescope";
       };
     }
 
@@ -766,6 +845,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Telescope projects";
       };
     }
 
@@ -777,6 +857,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "DAP toggle breakpoint";
       };
     }
     {
@@ -786,6 +867,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "DAP continue";
       };
     }
     {
@@ -795,6 +877,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "DAP toggle UI";
       };
     }
 
@@ -802,20 +885,22 @@
     # NOTE: I have not set keybindings to toggle these terminals
     {
       action = "<cmd>ToggleTerm size=10 direction=horizontal<CR>";
-      key = "<leader>th";
+      key = "<leader>Th";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
+        desc = "ToggleTerm horizontal";
       };
     }
     {
       action = "<cmd>ToggleTerm size=80 direction=vertical<CR>";
-      key = "<leader>tv";
+      key = "<leader>Tv";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
+        desc = "ToggleTerm vertical";
       };
     }
 
@@ -827,6 +912,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Spectre replace";
       };
     }
     {
@@ -836,6 +922,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "SSR (structured) replace";
       };
     }
 
@@ -847,6 +934,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Flash treesitter";
       };
     }
 
@@ -858,6 +946,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Grapple tag";
       };
     }
     {
@@ -867,6 +956,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Grapple untag";
       };
     }
     {
@@ -876,6 +966,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Grapple show";
       };
     }
     {
@@ -885,6 +976,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Grapple next";
       };
     }
     {
@@ -894,6 +986,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Grapple prev";
       };
     }
     {
@@ -903,6 +996,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Grapple select 1";
       };
     }
     {
@@ -912,6 +1006,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Grapple select 2";
       };
     }
     {
@@ -921,6 +1016,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Grapple select 3";
       };
     }
     {
@@ -930,6 +1026,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Grapple select 4";
       };
     }
 
@@ -941,6 +1038,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Open all folds";
       };
     }
     {
@@ -950,6 +1048,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Close all folds";
       };
     }
 
@@ -961,6 +1060,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Yank history";
       };
     }
 
@@ -972,6 +1072,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Extract function";
       };
     }
     {
@@ -981,6 +1082,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Extract function to file";
       };
     }
     {
@@ -990,6 +1092,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Extract variable";
       };
     }
 
@@ -1001,6 +1104,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Zen mode";
       };
     }
     {
@@ -1010,6 +1114,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Twilight";
       };
     }
 
@@ -1021,26 +1126,29 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Otter (lsp) activate";
       };
     }
 
     # persistence
     {
       action = "<cmd>lua require('persistence').load()<cr>";
-      key = "<leader>as";
+      key = "<leader>Rs";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
+        desc = "Load last session";
       };
     }
     {
       action = "<cmd>lua require('persistence').load({ last = true })<cr>";
-      key = "<leader>al";
+      key = "<leader>Rl";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
+        desc = "Load last session";
       };
     }
 
@@ -1052,6 +1160,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "ChatGPT";
       };
     }
     {
@@ -1061,6 +1170,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "ChatGPT complete code";
       };
     }
     {
@@ -1070,6 +1180,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "ChatGPT act as";
       };
     }
     {
@@ -1079,6 +1190,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "ChatGPT edit with instruction";
       };
     }
     {
@@ -1088,6 +1200,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "ChatGPT run";
       };
     }
 
@@ -1099,6 +1212,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Generate docstring";
       };
     }
 
@@ -1110,6 +1224,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Devdocs open";
       };
     }
 
@@ -1121,6 +1236,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "New file (current dir)";
       };
     }
 
@@ -1132,6 +1248,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Get highlight at cursor";
       };
     }
 
@@ -1143,6 +1260,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Flash jump";
       };
     }
 
@@ -1154,6 +1272,7 @@
       options = {
         noremap = true;
         silent = true;
+        desc = "Toggle treeSJ";
       };
     }
   ];
