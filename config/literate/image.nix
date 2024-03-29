@@ -22,6 +22,4 @@
       };
     };
   };
-
-  extraConfigLua = builtins.readFile ./literate.lua;
 }

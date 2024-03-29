@@ -20,7 +20,7 @@
     ./themes
     ./keymaps.nix
     ./plugins.nix
-    ./literate/literate.nix
+    ./literate
     ./whichkey.nix
   ];
 
