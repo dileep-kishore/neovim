@@ -3,7 +3,7 @@
   imports = [
     ./options.nix
     ./autocmds.nix
-    ./plugins.nix
+    ./plugins
     ./keymaps
     ./treesitter
     ./bars
