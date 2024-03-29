@@ -263,8 +263,11 @@ in {
     otter-nvim
     modes-nvim
     incline-nvim
-    grapple-nvim
     headlines-nvim
+    {
+      plugin = grapple-nvim;
+      config = "lua require('grapple').setup({scope='git_branch'})";
+    }
     {
       plugin = devdocs-nvim;
       config = "lua require('nvim-devdocs').setup()";
