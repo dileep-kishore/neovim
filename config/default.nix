@@ -3,6 +3,8 @@
   imports = [
     ./options.nix
     ./autocmds.nix
+    ./plugins.nix
+    ./keymaps
     ./treesitter
     ./bars
     ./ui
@@ -14,8 +16,6 @@
     ./ai
     ./dashboard
     ./themes
-    ./keymaps
-    ./plugins.nix
     ./literate
   ];
 
