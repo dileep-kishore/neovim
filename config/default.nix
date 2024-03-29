@@ -8,10 +8,8 @@
     ./ui/incline.nix
     ./misc/mini.nix
     ./git
-    ./lsp/lsp.nix
+    ./lsp
     ./debuggers
-    ./lsp/formatter.nix
-    ./lsp/linter.nix
     ./completions
     ./ai
     ./dashboard
