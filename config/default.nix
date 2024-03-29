@@ -9,7 +9,7 @@
     ./misc/mini.nix
     ./git/git.nix
     ./lsp/lsp.nix
-    ./debuggers/dap.nix
+    ./debuggers
     ./lsp/formatter.nix
     ./lsp/linter.nix
     ./completions
