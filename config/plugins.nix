@@ -261,11 +261,14 @@ in {
     ssr-nvim
     iron-nvim
     otter-nvim
-    devdocs-nvim
     modes-nvim
     incline-nvim
     grapple-nvim
     headlines-nvim
+    {
+      plugin = devdocs-nvim;
+      config = "lua require('nvim-devdocs').setup()";
+    }
     {
       plugin = tint-nvim;
       config = "lua require('tint').setup()";

@@ -134,8 +134,6 @@
   };
 
   extraConfigLua = ''
-    require("nvim-devdocs").setup()
-
     local cmp = require('cmp')
     cmp.setup.cmdline('/', {
       mapping = cmp.mapping.preset.cmdline(),
