@@ -5,7 +5,7 @@
     ./autocmds.nix
     ./treesitter
     ./bars
-    ./ui/incline.nix
+    ./ui
     ./misc
     ./git
     ./lsp
@@ -13,8 +13,6 @@
     ./completions
     ./ai
     ./dashboard
-    ./ui/telescope.nix
-    ./ui/folding.nix
     ./themes
     ./keymaps.nix
     ./plugins.nix
