@@ -6,7 +6,7 @@
     ./treesitter/treesitter.nix
     ./bars
     ./ui/incline.nix
-    ./misc/mini.nix
+    ./misc
     ./git
     ./lsp
     ./debuggers
