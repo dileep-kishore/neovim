@@ -7,7 +7,7 @@
     ./bars
     ./ui/incline.nix
     ./misc/mini.nix
-    ./git/git.nix
+    ./git
     ./lsp/lsp.nix
     ./debuggers
     ./lsp/formatter.nix
