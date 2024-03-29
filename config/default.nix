@@ -14,10 +14,9 @@
     ./ai
     ./dashboard
     ./themes
-    ./keymaps.nix
+    ./keymaps
     ./plugins.nix
     ./literate
-    ./whichkey.nix
   ];
 
   clipboard = {
