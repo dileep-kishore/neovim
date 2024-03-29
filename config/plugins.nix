@@ -313,10 +313,6 @@ in {
       config = ''lua require("octo").setup()'';
     }
     {
-      plugin = ChatGPT-nvim;
-      config = "lua require('chatgpt').setup()";
-    }
-    {
       plugin = treesj;
       config = "lua require('treesj').setup({use_default_keymaps=false})";
     }
