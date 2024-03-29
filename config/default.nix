@@ -12,8 +12,7 @@
     ./debuggers/dap.nix
     ./lsp/formatter.nix
     ./lsp/linter.nix
-    ./completions/snippets.nix
-    ./completions/completions.nix
+    ./completions
     ./ai
     ./dashboard/alpha.nix
     ./ui/telescope.nix

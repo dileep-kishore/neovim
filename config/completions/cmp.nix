@@ -5,22 +5,7 @@
   plugins.cmp-buffer.enable = true;
   plugins.cmp-cmdline.enable = true;
   plugins.cmp-git.enable = true;
-  plugins.copilot-lua = {
-    enable = true;
-    panel = {
-      enabled = false;
-      layout.position = "bottom";
-    };
-    suggestion = {
-      enabled = true;
-      autoTrigger = true;
-      keymap = {
-        accept = "<C-l>";
-        next = "<A-n>";
-        prev = "<A-p>";
-      };
-    };
-  };
+
   plugins.cmp = {
     enable = true;
     autoEnableSources = true;
@@ -87,16 +72,6 @@
             end
           end, {'i', 's'})'';
       };
-    };
-  };
-  plugins.neogen = {
-    enable = true;
-    enablePlaceholders = true;
-    snippetEngine = "luasnip";
-    languages = {
-      python = {template = {annotation_convention = "numpydoc";};};
-      typescript = {template = {annotation_convention = "tsdoc";};};
-      typescriptreact = {template = {annotation_convention = "tsdoc";};};
     };
   };
 
