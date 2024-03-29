@@ -58,6 +58,7 @@ in {
         promptSaveOnSelectNewEntry = true;
         skipConfirmForSimpleEdits = true;
         keymaps = {"<C-x>" = "actions.select_split";};
+        keymaps = {"<C-v>" = "actions.select_vsplit";};
         columns = ["icon"];
         float = {
           border = "rounded";
