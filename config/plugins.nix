@@ -63,16 +63,40 @@ in {
           border = "rounded";
           max_height = 45;
           max_width = 60;
+          override = ''
+            function(conf)
+               local opts = {
+                 zindex = 80,
+               }
+               return vim.tbl_deep_extend("force", conf, opts)
+            end
+          '';
         };
         preview = {
           border = "rounded";
           max_height = 45;
           max_width = 60;
+          override = ''
+            function(conf)
+               local opts = {
+                 zindex = 80,
+               }
+               return vim.tbl_deep_extend("force", conf, opts)
+            end
+          '';
         };
         progress = {
           border = "rounded";
           max_height = 45;
           max_width = 60;
+          override = ''
+            function(conf)
+               local opts = {
+                 zindex = 80,
+               }
+               return vim.tbl_deep_extend("force", conf, opts)
+            end
+          '';
         };
       };
     };
