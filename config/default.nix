@@ -4,11 +4,10 @@
     ./options.nix
     ./autocmds.nix
     ./treesitter/treesitter.nix
-    ./bars/tabby.nix
+    ./bars
     ./ui/incline.nix
     ./misc/mini.nix
     ./git/git.nix
-    ./bars/lualine.nix
     ./lsp/lsp.nix
     ./debuggers/dap.nix
     ./lsp/formatter.nix
