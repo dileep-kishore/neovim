@@ -14,7 +14,7 @@
     ./lsp/linter.nix
     ./completions
     ./ai
-    ./dashboard/alpha.nix
+    ./dashboard
     ./ui/telescope.nix
     ./ui/folding.nix
     ./themes
