@@ -288,6 +288,7 @@ in {
     modes-nvim
     incline-nvim
     headlines-nvim
+    vim-just
     {
       plugin = grapple-nvim;
       config = "lua require('grapple').setup({scope='git_branch'})";
