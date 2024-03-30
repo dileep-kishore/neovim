@@ -5,6 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
     flake-parts.url = "github:hercules-ci/flake-parts";
+    devenv.url = "github:cachix/devenv";
   };
 
   outputs = {
@@ -14,21 +15,27 @@
     flake-parts,
     ...
   } @ inputs: let
-    config = import ./config; # import the module directly
+    config = import ./config;
     # NOTE: Function to create a customized pkgs with `allowUnfree` set to true
     mkPkgs = system:
       import nixpkgs {
         inherit system;
         config = {
-          allowUnfree = true; # Enable unfree packages
-          # You can set other Nixpkgs config options here as needed
+          allowUnfree = true;
         };
       };
   in
     flake-parts.lib.mkFlake {inherit inputs;} {
       systems = ["x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin"];
+      imports = [
+        inputs.devenv.flakeModule
+      ];
 
-      perSystem = {system, ...}: let
+      perSystem = {
+        system,
+        config,
+        ...
+      }: let
         pkgs =
           mkPkgs system; # NOTE: Use the custom pkgs with allowUnfree enabled
         nixvimLib = nixvim.lib.${system};
@@ -53,6 +60,22 @@
         packages = {
           # Lets you run `nix run .` to start nixvim
           default = nvim;
+        };
+
+        devenv.shells.default = {
+          name = "neovim";
+
+          packages = with pkgs; [
+            just
+          ];
+
+          pre-commit.hooks = {
+            ruff.enable = true;
+            shellcheck.enable = true;
+            markdownlint.enable = true;
+            alejandra.enable = true;
+            editorconfig-checker.enable = true;
+          };
         };
       };
     };
