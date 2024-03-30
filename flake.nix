@@ -31,11 +31,7 @@
         inputs.devenv.flakeModule
       ];
 
-      perSystem = {
-        system,
-        config,
-        ...
-      }: let
+      perSystem = {system, ...}: let
         pkgs =
           mkPkgs system; # NOTE: Use the custom pkgs with allowUnfree enabled
         nixvimLib = nixvim.lib.${system};
