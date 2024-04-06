@@ -29,7 +29,7 @@
     }
     {
       plugin = octo-nvim;
-      config = ''lua require("octo").setup()'';
+      config = ''lua require("octo").setup({suppress_missing_scope={projects_v2=true}})'';
     }
     {
       plugin = treesj;
