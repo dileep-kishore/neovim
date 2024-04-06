@@ -90,15 +90,14 @@
     }
 
     ## Git
-    # Fugitive
     {
-      action = "<cmd>Gwrite<CR>";
+      action = "<cmd>lua require('gitsigns').stage_buffer()<CR>";
       key = "<leader>ga";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
-        desc = "Fugitive stage file";
+        desc = "Stage buffer";
       };
     }
     {
