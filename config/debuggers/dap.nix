@@ -1,15 +1,16 @@
 {
+  # FIXME: Disable until nvim-nio is pushed to nixpkgs
   plugins.dap = {
-    enable = true;
+    enable = false;
     extensions = {
       dap-python = {
-        enable = true;
+        enable = false;
       };
       dap-ui = {
-        enable = true;
+        enable = false;
       };
       dap-virtual-text = {
-        enable = true;
+        enable = false;
       };
     };
   };

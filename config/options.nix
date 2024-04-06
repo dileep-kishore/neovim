@@ -6,7 +6,7 @@
 
   config.editorconfig.enable = true;
 
-  config.options = {
+  config.opts = {
     termguicolors = true;
     showmode = false;
     backup = false;
