@@ -2,7 +2,7 @@
   plugins = {
     nvim-autopairs = {
       enable = true;
-      checkTs = true;
+      settings.checkTs = true;
     };
     tmux-navigator.enable = true;
     trouble.enable = true;
