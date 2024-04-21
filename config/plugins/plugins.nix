@@ -26,10 +26,12 @@
     };
     toggleterm = {
       enable = true;
-      direction = "float";
-      floatOpts = {border = "single";};
-      openMapping = "<C-A-t>";
-      terminalMappings = true;
+      settings = {
+        direction = "float";
+        floatOpts = {border = "single";};
+        openMapping = "<C-A-t>";
+        terminalMappings = true;
+      };
     };
     illuminate = {
       enable = true;
