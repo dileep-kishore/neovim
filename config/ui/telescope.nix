@@ -1,7 +1,7 @@
 {
   plugins.telescope = {
     enable = true;
-    extraOptions = {
+    settings = {
       defaults = {
         path_display = ["truncate"];
         sorting_strategy = "ascending";
@@ -29,16 +29,18 @@
     extensions = {
       fzf-native = {
         enable = true;
-        caseMode = "smart_case";
+        settings.caseMode = "smart_case";
       };
       frecency = {
         enable = true;
-        showUnindexed = true;
-        defaultWorkspace = "CWD";
+        settings = {
+          showUnindexed = true;
+          defaultWorkspace = "CWD";
+        };
       };
       undo = {
         enable = true;
-        useDelta = true;
+        settings.useDelta = true;
       };
     };
     keymaps = {
