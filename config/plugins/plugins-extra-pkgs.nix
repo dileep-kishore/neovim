@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   extraPackages = with pkgs; [
     alejandra
+    commitlint
     eslint_d
     fd
     hadolint
