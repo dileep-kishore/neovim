@@ -46,59 +46,59 @@
     keymaps = {
       "<leader>ff" = {
         action = "find_files";
-        desc = "Telescope Files";
+        options.desc = "Telescope Files";
       };
       "<leader>fg" = {
         action = "git_files";
-        desc = "Telescope Git Files";
+        options.desc = "Telescope Git Files";
       };
       "<leader>fd" = {
         action = "fd";
-        desc = "Telescope fd";
+        options.desc = "Telescope fd";
       };
       "<leader>fm" = {
         action = "marks";
-        desc = "Telescope marks";
+        options.desc = "Telescope marks";
       };
       "<leader>fr" = {
         action = "registers";
-        desc = "Telescope registers";
+        options.desc = "Telescope registers";
       };
       "<leader>fj" = {
         action = "jumplist";
-        desc = "Telescope jumplist";
+        options.desc = "Telescope jumplist";
       };
       "<leader>sg" = {
         action = "live_grep";
-        desc = "Telescope Live Grep";
+        options.desc = "Telescope Live Grep";
       };
       "<leader>sb" = {
         action = "current_buffer_fuzzy_find";
-        desc = "Telescope search current buffer";
+        options.desc = "Telescope search current buffer";
       };
       "<leader>th" = {
         action = "help_tags";
-        desc = "Telescope find help";
+        options.desc = "Telescope find help";
       };
       "<leader>tm" = {
         action = "man_pages";
-        desc = "Telescope Man Pages";
+        options.desc = "Telescope Man Pages";
       };
       "<leader>tk" = {
         action = "keymaps";
-        desc = "Telescope Keymaps";
+        options.desc = "Telescope Keymaps";
       };
       "<leader>to" = {
         action = "vim_options";
-        desc = "Telescope Vim options";
+        options.desc = "Telescope Vim options";
       };
       "<leader>tc" = {
         action = "commands";
-        desc = "Telescope Commands";
+        options.desc = "Telescope Commands";
       };
       "<leader>gC" = {
         action = "git_commits";
-        desc = "Telescope git commits";
+        options.desc = "Telescope git commits";
       };
     };
   };
