@@ -1,6 +1,6 @@
 {
   plugins.treesitter-context = {
     enable = true;
-    separator = "-";
+    settings.separator = "-";
   };
 }
