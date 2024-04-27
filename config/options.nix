@@ -17,7 +17,7 @@
     title = true;
     hlsearch = true;
     incsearch = true;
-    inccommand = "split";
+    inccommand = "nosplit";
     mouse = "a";
     ignorecase = true;
     smartcase = true;
