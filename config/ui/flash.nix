@@ -11,7 +11,7 @@
     label = {
       after = true;
       minPatternLength = 0;
-      rainbow.enabled = true;
+      rainbow.enabled = false;
     };
   };
 }
