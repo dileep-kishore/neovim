@@ -29,7 +29,7 @@
       "<leader>T" = "+ToggleTerm";
       "<leader>r" = "+Refactor";
       "<leader>z" = "+Zen";
-      "<leader>R" = "+Persistence sessions";
+      "<leader>R" = "+Auto-session";
       "<leader>c" = "+ChatGPT";
       "<leader>n" = "+New file";
       "<leader>m" = "+Grapple";

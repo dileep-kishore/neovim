@@ -817,20 +817,19 @@
       };
     }
 
-    # persistence
     {
-      action = "<cmd>lua require('persistence').load()<cr>";
+      action = "<cmd>SessionSave<cr>";
       key = "<leader>Rs";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
-        desc = "Load last session";
+        desc = "Save session";
       };
     }
     {
-      action = "<cmd>lua require('persistence').load({ last = true })<cr>";
-      key = "<leader>Rl";
+      action = "<cmd>SessionRestore<cr>";
+      key = "<leader>Rr";
       mode = "n";
       options = {
         noremap = true;

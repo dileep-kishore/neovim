@@ -63,7 +63,6 @@
       enable = true;
       settings.theme = "dark";
     };
-    persistence.enable = true;
     vim-matchup = {
       enable = true;
       enableSurround = true;

@@ -1,7 +1,8 @@
 -- Always show tabline
 vim.o.showtabline = 2
 -- Save and restore tabpages
-vim.opt.sessionoptions = 'curdir,folds,globals,help,tabpages,terminal,winsize'
+vim.opt.sessionoptions =
+  'blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions'
 
 local colors = {
   _nc = '#16141f',
