@@ -3,8 +3,6 @@
     enable = true;
     lintersByFt = {
       text = ["vale"];
-      gitcommit = ["commitlint"];
-      NeogitCommitMessage = ["commitlint"];
       markdown = ["vale"];
       rst = ["rstcheck" "vale"];
       nix = ["nix"];
