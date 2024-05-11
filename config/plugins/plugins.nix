@@ -36,6 +36,7 @@
     illuminate = {
       enable = true;
       underCursor = false;
+      filetypesDenylist = ["qf" "help" "grapple" "Trouble"];
     };
     navic = {
       enable = true;
