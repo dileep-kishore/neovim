@@ -19,6 +19,10 @@
           fg = "gold";
           bg = "surface";
         };
+        ModesCopy = {bg = "gold";};
+        ModesDelete = {bg = "love";};
+        ModesInsert = {bg = "pine";};
+        ModesVisual = {bg = "iris";};
         MiniIndentscopeSymbol = {fg = "foam";};
         MiniIndentscopeSymbolOff = {fg = "foam";};
         EndOfBuffer = {
