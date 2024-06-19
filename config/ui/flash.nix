@@ -2,6 +2,7 @@
   plugins.flash = {
     enable = true;
     continue = false;
+    modes.search.enabled = false;
     jump = {
       autojump = false;
       history = false;
