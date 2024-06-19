@@ -1,12 +1,14 @@
 {
   plugins.specs = {
-    enable = true;
-    min_jump = 10;
-    increment = 10;
-    delay = 10;
-    width = 20;
-    color = "#94e2d5";
-    fader.builtin = "pulse_fader";
-    resizer.builtin = "shrink_resizer";
+    enable = false;
+    settings = {
+      min_jump = 10;
+      popup = {
+        inc_ms = 10;
+        width = 20;
+        delay_ms = 10;
+        winhl = "SpecsColor";
+      };
+    };
   };
 }
