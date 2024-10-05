@@ -12,7 +12,6 @@
     twilight-nvim
     ssr-nvim
     iron-nvim
-    otter-nvim
     headlines-nvim
     vim-just
     {

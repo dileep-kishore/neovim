@@ -1,5 +1,6 @@
 {
   plugins = {
+    web-devicons.enable = true;
     nvim-autopairs = {
       enable = true;
       settings.checkTs = true;
@@ -8,14 +9,16 @@
     trouble.enable = true;
     todo-comments = {
       enable = true;
-      mergeKeywords = true;
-      highlight = {
-        before = "";
-        after = "fg";
-        keyword = "wide";
-      };
-      keywords = {
-        QUESTION = {icon = "";};
+      settings = {
+        mergeKeywords = true;
+        highlight = {
+          before = "";
+          after = "fg";
+          keyword = "wide";
+        };
+        keywords = {
+          QUESTION = {icon = "";};
+        };
       };
     };
     comment.enable = true;
@@ -40,22 +43,28 @@
     };
     navic = {
       enable = true;
-      highlight = true;
-      lsp.autoAttach = true;
+      settings = {
+        highlight = true;
+        lsp.autoAttach = true;
+      };
     };
     yanky = {
       enable = true;
-      picker.telescope = {
-        enable = true;
-        useDefaultMappings = true;
+      settings = {
+        picker.telescope = {
+          enable = true;
+          useDefaultMappings = true;
+        };
+        systemClipboard.syncWithRing = true;
       };
-      systemClipboard.syncWithRing = true;
     };
     refactoring.enable = true;
     better-escape = {
       enable = true;
-      keys = "<Esc>";
-      mapping = ["jk"];
+      settings = {
+        keys = "<Esc>";
+        mapping = ["jk"];
+      };
     };
     nvim-bqf.enable = true;
     nvim-colorizer.enable = true;
@@ -69,6 +78,10 @@
       enableSurround = true;
       enableTransmute = true;
       treesitterIntegration.enable = true;
+    };
+    otter = {
+      enable = true;
+      autoActivate = true;
     };
   };
 }
