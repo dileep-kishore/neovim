@@ -61,10 +61,6 @@
     refactoring.enable = true;
     better-escape = {
       enable = true;
-      settings = {
-        keys = "<Esc>";
-        mapping = ["jk"];
-      };
     };
     nvim-bqf.enable = true;
     nvim-colorizer.enable = true;
