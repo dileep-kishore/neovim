@@ -1,6 +1,6 @@
 {
   plugins.copilot-lua = {
-    enable = true;
+    enable = false;
     panel = {
       enabled = false;
       layout.position = "bottom";
