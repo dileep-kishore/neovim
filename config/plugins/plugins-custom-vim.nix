@@ -23,12 +23,12 @@
   };
   grapple-nvim = pkgs.vimUtils.buildVimPlugin {
     pname = "grapple-nvim";
-    version = "2024-03-25";
+    version = "2024-09-29";
     src = pkgs.fetchFromGitHub {
       owner = "cbochs";
       repo = "grapple.nvim";
-      rev = "5d96868a6e9791b7a8ee51a9eef43fc408b9650e";
-      hash = "sha256-EPokho3yxeTAFHnnfCeWW3mq5NO8sDqBAftkfOtgPgg=";
+      rev = "b41ddfc1c39f87f3d1799b99c2f0f1daa524c5f7";
+      hash = "sha256-Dz60583Qic2TqO3BPSHME4Q7CiweB1gQCdFNtjNoN3U=";
     };
     meta.homepage = "https://github.com/cbochs/grapple.nvim";
   };
