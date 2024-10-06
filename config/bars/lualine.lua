@@ -31,7 +31,7 @@ local diff = {
 local mode = {
   'mode',
   fmt = function(str)
-    return ' [' .. str:sub(1, 1) .. ']'
+    return ' [' .. str:sub(1, 1) .. ']'
   end,
   padding = { left = 1, right = 0 },
 }
@@ -94,7 +94,7 @@ end
 
 local lsp_status = {
   get_lsp_status,
-  separator = '|',
+  separator = '',
 }
 
 local filetype = {
@@ -106,7 +106,7 @@ local branch = {
   'b:gitsigns_head',
   icons_enabled = true,
   icon = '',
-  separator = '|',
+  separator = '',
   padding = { left = 1, right = 1 },
 }
 
@@ -154,7 +154,7 @@ local progress = {
 local location = {
   'location',
   cond = hide_in_width,
-  separator = '|',
+  separator = '',
   padding = { left = 0, right = 0 },
 }
 
@@ -166,9 +166,9 @@ lualine.setup {
   options = {
     icons_enabled = true,
     globalstatus = true,
-    theme = 'auto',
-    component_separators = { left = '', right = '' },
-    section_separators = { left = '', right = '' },
+    theme = 'catppuccin',
+    component_separators = { left = '', right = '' },
+    section_separators = { left = '', right = '' },
     disabled_filetypes = { 'alpha', 'dashboard', 'NvimTree', 'Outline' },
     always_divide_middle = true,
   },
