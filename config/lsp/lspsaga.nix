@@ -20,4 +20,5 @@
       colorMode = false;
     };
   };
+  extraConfigLua = builtins.readFile ./lspsaga.lua;
 }
