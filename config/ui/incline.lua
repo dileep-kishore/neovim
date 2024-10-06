@@ -23,8 +23,8 @@ local devicons = require 'nvim-web-devicons'
 local helpers = require 'incline.helpers'
 require('incline').setup {
   window = {
-    padding = 1,
-    padding_char = ' ',
+    padding = 0,
+    -- padding_char = ' ',
     margin = { horizontal = 1, vertical = 0 },
   },
   render = function(props)
@@ -48,22 +48,32 @@ require('incline').setup {
 
     local modified = vim.bo[props.buf].modified
 
-    local res = {
-      ft_icon and {
-        ' ',
-        ft_icon,
-        ' ',
-        guibg = ft_color,
-        guifg = helpers.contrast_color(ft_color),
-      } or '',
-      ' ',
-      grapple_status,
+    local res =
       {
-        modified and filename .. ' ' or filename,
-        gui = modified and 'bold,italic' or 'italic',
-      },
-      guibg = mocha.base,
-    }
+        ft_icon and {
+          ' ',
+          ft_icon,
+          ' ',
+          guibg = props.focused and ft_color or mocha.base,
+          guifg = props.focused and helpers.contrast_color(ft_color)
+            or ft_color,
+        } or '',
+        {
+          modified and '  ' or ' ',
+          guifg = mocha.yellow,
+        },
+        {
+          filename,
+          gui = modified and 'bold,italic' or 'italic',
+          guifg = props.focused and mocha.text or mocha.overlay2,
+        },
+        ' ',
+        {
+          grapple_status,
+          guifg = mocha.pink,
+        },
+        guibg = mocha.base,
+      }
     table.insert(res, ' ')
     return res
   end,

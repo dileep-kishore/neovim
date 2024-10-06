@@ -21,17 +21,6 @@
         comments = ["italic"];
         functions = ["bold"];
       };
-      # custom_highlights = {
-      #   InclineNormal = {bg = "#1e1e2e";};
-      #   InclineNormalNC = {bg = "#1e1e2e";};
-      #   Pmenu = {bg = "#1e1e2e";};
-      #   Float = {bg = "#1e1e2e";};
-      #   FloatBorder = {bg = "#1e1e2e";};
-      #   NormalFloat = {bg = "#1e1e2e";};
-      #   TreesitterContext = {bg = "#181825";};
-      #   TreesitterContextBottom = {style = {}; };
-      #   TreesitterContextLineNumberBottom = {style = {};};
-      # };
       custom_highlights = ''
         function(colors)
             return {
