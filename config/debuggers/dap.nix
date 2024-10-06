@@ -14,4 +14,5 @@
       };
     };
   };
+  extraConfigLua = builtins.readFile ./dap.lua;
 }

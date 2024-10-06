@@ -39,10 +39,8 @@
       '';
       integrations = {
         alpha = true;
-        dap = {
-          enable_ui = true;
-          enabled = true;
-        };
+        dap = true;
+        dap_ui = true;
         cmp = true;
         flash = true;
         gitsigns = true;
@@ -56,7 +54,10 @@
         lsp_trouble = true;
         markdown = true;
         mason = true;
-        mini = {enabled = true;};
+        mini = {
+          enabled = true;
+          indentscope_color = "lavender";
+        };
         native_lsp = {
           enabled = true;
           inlay_hints.background = true;
@@ -70,11 +71,14 @@
         octo = true;
         ufo = true;
         overseer = true;
+        nvim_surround = true;
         rainbow_delimiters = true;
         telescope = {enabled = true;};
         treesitter = true;
+        semantic_tokens = true;
         symbols_outline = true;
         which_key = true;
+        treesitter_context = true;
       };
     };
   };

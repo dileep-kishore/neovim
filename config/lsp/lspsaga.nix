@@ -1,8 +1,13 @@
 {
   plugins.lspsaga = {
     enable = true;
-    ui.border = "rounded";
-    ui.codeAction = "";
+    ui = {
+      border = "rounded";
+      codeAction = "";
+      kind = {
+        Folder = [" "];
+      };
+    };
     beacon.enable = true;
     implement = {
       enable = true;
@@ -18,6 +23,7 @@
       enable = true;
       showFile = true;
       colorMode = false;
+      separator = "  ";
     };
   };
   extraConfigLua = builtins.readFile ./lspsaga.lua;
