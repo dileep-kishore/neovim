@@ -24,6 +24,10 @@
       custom_highlights = {
         InclineNormal = {bg = "#1e1e2e";};
         InclineNormalNC = {bg = "#1e1e2e";};
+        Pmenu = {bg = "#1e1e2e";};
+        Float = {bg = "#1e1e2e";};
+        FloatBorder = {bg = "#1e1e2e";};
+        NormalFloat = {bg = "#1e1e2e";};
       };
       integrations = {
         alpha = true;
