@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       commit_editor = {
-        kind = "tab";
+        kind = "split";
       };
       integrations.diffview = true;
     };

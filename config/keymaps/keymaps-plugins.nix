@@ -203,7 +203,7 @@
     }
     # Neogit
     {
-      action = "<cmd>Neogit kind=tab<CR>";
+      action = "<cmd>Neogit kind=split<CR>";
       key = "<leader>gg";
       mode = "n";
       options = {
