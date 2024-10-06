@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       commit_editor = {
-        kind = "split";
+        kind = "floating";
       };
       integrations.diffview = true;
     };
