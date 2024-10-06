@@ -1,8 +1,7 @@
 {
   imports = [
-    ./rose-pine.nix
     ./catppuccin.nix
+    ./rose-pine.nix
     ./modes.nix
-    ./headlines.nix
   ];
 }

@@ -1,15 +1,25 @@
 {
   colorschemes.catppuccin = {
-    enable = false;
+    enable = true;
     settings = {
       flavour = "mocha";
-      disableBold = false;
-      disableItalic = false;
-      background.dark = "mocha";
-      background.light = "latte";
+      # FIXME: This does not work
+      dim_inactive = {
+        enabled = true;
+        shade = "dark";
+        percentage = 0.15;
+      };
+      background = {
+        dark = "mocha";
+        light = "latte";
+      };
       styles = {
-        functions = ["italic"];
+        keywords = ["italic"];
         types = ["italic"];
+        conditionals = ["italic"];
+        loops = ["italic"];
+        comments = ["italic"];
+        functions = ["bold"];
       };
       integrations = {
         alpha = true;
@@ -46,6 +56,7 @@
         overseer = true;
         rainbow_delimiters = true;
         telescope = {enabled = true;};
+        treesitter = true;
         symbols_outline = true;
         which_key = true;
       };

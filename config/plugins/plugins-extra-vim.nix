@@ -12,12 +12,7 @@
     twilight-nvim
     ssr-nvim
     iron-nvim
-    headlines-nvim
     vim-just
-    {
-      plugin = tint-nvim;
-      config = "lua require('tint').setup()";
-    }
     {
       plugin = nvim-surround;
       config = "lua require('nvim-surround').setup({move_cursor=false})";
