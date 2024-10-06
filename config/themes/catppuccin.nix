@@ -21,6 +21,10 @@
         comments = ["italic"];
         functions = ["bold"];
       };
+      custom_highlights = {
+        InclineNormal = {bg = "#1e1e2e";};
+        InclineNormalNC = {bg = "#1e1e2e";};
+      };
       integrations = {
         alpha = true;
         dap = {

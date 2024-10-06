@@ -1,22 +1,4 @@
-local colors = {
-  _nc = '#16141f',
-  base = '#191724',
-  surface = '#1f1d2e',
-  overlay = '#26233a',
-  muted = '#6e6a86',
-  subtle = '#908caa',
-  text = '#e0def4',
-  love = '#eb6f92',
-  gold = '#f6c177',
-  rose = '#ebbcba',
-  pine = '#31748f',
-  foam = '#9ccfd8',
-  iris = '#c4a7e7',
-  highlight_low = '#21202e',
-  highlight_med = '#403d52',
-  highlight_high = '#524f67',
-  none = 'NONE',
-}
+local mocha = require('catppuccin.palettes').get_palette 'mocha'
 
 local darkenHexColor = function(hex, factor)
   -- Ensure factor is between 0 and 1
@@ -51,8 +33,21 @@ require('incline').setup {
     if filename == '' then
       filename = '[No Name]'
     end
+
     local ft_icon, ft_color = devicons.get_icon_color(filename)
+
+    local grapple_status
+    if props.focused then
+      grapple_status = require('grapple').name_or_index() or ''
+      if grapple_status ~= '' then
+        grapple_status = '󰛢' .. grapple_status .. ' '
+      end
+    else
+      grapple_status = ''
+    end
+
     local modified = vim.bo[props.buf].modified
+
     local res = {
       ft_icon and {
         ' ',
@@ -62,11 +57,12 @@ require('incline').setup {
         guifg = helpers.contrast_color(ft_color),
       } or '',
       ' ',
+      grapple_status,
       {
         modified and filename .. ' ' or filename,
-        gui = modified and 'bold,italic' or 'bold',
+        gui = modified and 'bold,italic' or 'italic',
       },
-      guibg = colors.base,
+      guibg = mocha.base,
     }
     table.insert(res, ' ')
     return res
