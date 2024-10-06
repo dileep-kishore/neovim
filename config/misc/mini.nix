@@ -5,9 +5,11 @@
     modules = {
       icons.enable = true;
       animate = {
-        cursor = {
-          enable = true;
-        };
+        cursor.enable = true;
+        scroll.enable = true;
+        resize.enable = true;
+        open.enable = true;
+        close.enable = true;
       };
       indentscope = {
         options = {
