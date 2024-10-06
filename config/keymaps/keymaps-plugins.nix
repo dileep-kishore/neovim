@@ -42,18 +42,6 @@
       };
     }
 
-    # Alpha dashboard
-    {
-      action = "<cmd>Alpha<CR>";
-      key = "<Leader>aa";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Alpha dashboard";
-      };
-    }
-
     # Oil
     {
       action = "<cmd>Oil --float<CR>";
