@@ -30,7 +30,8 @@
                 Float = { bg = colors.base },
                 FloatBorder = { bg = colors.base },
                 NormalFloat = { bg = colors.base },
-                TreesitterContext = { bg = colors.mantle },
+                TreesitterContext = { bg = colors.base },
+                TreesitterContextLineNumber = { bg = colors.mantle },
                 TreesitterContextBottom = { style = {} },
                 TreesitterContextLineNumberBottom = { style = {} },
             }
@@ -72,7 +73,10 @@
         overseer = true;
         nvim_surround = true;
         rainbow_delimiters = true;
-        telescope = {enabled = true;};
+        telescope = {
+          enabled = true;
+          style = "nvchad";
+        };
         treesitter = true;
         semantic_tokens = true;
         symbols_outline = true;

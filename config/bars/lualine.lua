@@ -1,3 +1,10 @@
+local colors = require('catppuccin.palettes').get_palette 'mocha'
+
+local custom_catppuccin = require 'lualine.themes.catppuccin-mocha'
+
+custom_catppuccin.normal.c.bg = colors.base
+custom_catppuccin.inactive.c.bg = colors.base
+
 local status_ok, lualine = pcall(require, 'lualine')
 if not status_ok then
   return
@@ -74,7 +81,7 @@ end
 
 local modified_section = {
   modified,
-  color = { fg = '#ca1243' },
+  color = { fg = '#f38ba8' },
 }
 
 local function get_lsp_status()
@@ -122,7 +129,7 @@ local cmd = {
 local macro = {
   require('noice').api.statusline.mode.get,
   cond = require('noice').api.statusline.mode.has,
-  color = { fg = '#eb6f92' },
+  color = { fg = '#f38ba8' },
 }
 
 -- cool function for progress
@@ -166,7 +173,7 @@ lualine.setup {
   options = {
     icons_enabled = true,
     globalstatus = true,
-    theme = 'catppuccin',
+    theme = custom_catppuccin,
     component_separators = { left = '', right = '' },
     section_separators = { left = '', right = '' },
     disabled_filetypes = { 'alpha', 'dashboard', 'NvimTree', 'Outline' },
@@ -175,8 +182,16 @@ lualine.setup {
   sections = {
     lualine_a = { mode },
     lualine_b = { branch, diff },
-    lualine_c = { icononly_filetype, filename, diagnostics },
-    lualine_x = { macro, cmd, 'encoding' },
+    lualine_c = {
+      icononly_filetype,
+      filename,
+      diagnostics,
+    },
+    lualine_x = {
+      macro,
+      cmd,
+      'encoding',
+    },
     lualine_y = { lsp_status, filetype },
     lualine_z = { location, progress, progress_custom },
   },
