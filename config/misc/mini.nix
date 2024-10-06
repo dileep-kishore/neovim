@@ -19,7 +19,10 @@
         symbol = "¦";
       };
       bufremove = {};
-      files = {};
+      files = {
+        windows.preview = true;
+        windows.width_preview = 60;
+      };
     };
   };
 }
