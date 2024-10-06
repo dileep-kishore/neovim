@@ -18,10 +18,6 @@
       config = "lua require('nvim-surround').setup({move_cursor=false})";
     }
     {
-      plugin = nvim-spectre;
-      config = "lua require('spectre').setup()";
-    }
-    {
       plugin = octo-nvim;
       config = ''lua require("octo").setup({suppress_missing_scope={projects_v2=true}})'';
     }
@@ -32,6 +28,10 @@
     {
       plugin = highlight-undo-nvim;
       config = "lua require('highlight-undo').setup()";
+    }
+    {
+      plugin = grug-far-nvim;
+      config = "lua require('grug-far').setup()";
     }
   ];
 }

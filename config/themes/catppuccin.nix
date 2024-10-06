@@ -44,10 +44,10 @@
           enabled = true;
         };
         cmp = true;
-        leap = true;
+        flash = true;
         gitsigns = true;
         harpoon = true;
-        headlines = true;
+        grug_far = true;
         illuminate = {
           enabled = true;
           lsp = true;

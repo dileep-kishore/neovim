@@ -14,5 +14,10 @@
         prev = "<A-p>";
       };
     };
+    filetypes = {
+      "grug-far" = false;
+      "grug-far-history" = false;
+      "grug-far-help" = false;
+    };
   };
 }

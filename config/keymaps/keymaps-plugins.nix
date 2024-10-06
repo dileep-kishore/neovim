@@ -591,15 +591,15 @@
       };
     }
 
-    # Spectre
+    # GrugFar
     {
-      action = "<cmd>lua require('spectre').open_file_search()<CR>";
+      action = "<cmd>GrugFar<CR>";
       key = "<leader>sr";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
-        desc = "Spectre replace";
+        desc = "GrugFar replace";
       };
     }
     {
