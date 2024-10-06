@@ -16,7 +16,7 @@
       indentscope = {
         options = {
           try_as_border = true;
-          border = "both";
+          border = "top";
         };
         symbol = "¦";
       };
