@@ -2,7 +2,7 @@
   plugins.wtf = {
     enable = true;
     context = true;
-    openaiModelId = "gpt-3.5-turbo";
+    openaiModelId = "gpt-4o-mini";
     popupType = "popup";
     searchEngine = "google";
     keymaps.ai.key = "<leader>cd";
