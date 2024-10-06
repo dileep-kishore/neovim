@@ -4,33 +4,15 @@ vim.o.showtabline = 2
 vim.opt.sessionoptions =
   'blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions'
 
-local colors = {
-  _nc = '#16141f',
-  base = '#191724',
-  surface = '#1f1d2e',
-  overlay = '#26233a',
-  muted = '#6e6a86',
-  subtle = '#908caa',
-  text = '#e0def4',
-  love = '#eb6f92',
-  gold = '#f6c177',
-  rose = '#ebbcba',
-  pine = '#31748f',
-  foam = '#9ccfd8',
-  iris = '#c4a7e7',
-  highlight_low = '#21202e',
-  highlight_med = '#403d52',
-  highlight_high = '#524f67',
-  none = 'NONE',
-}
+local colors = require('catppuccin.palettes').get_palette 'mocha'
 
 local theme = {
   fill = { fg = colors.base, bg = colors.base },
-  head = { fg = colors.base, bg = colors.iris, style = 'bold' },
-  current_tab = { fg = colors.base, bg = colors.foam, style = 'bold' },
-  tab = { fg = colors.text, bg = colors.overlay },
-  win = { fg = colors.text, bg = colors.overlay },
-  tail = { fg = colors.base, bg = colors.iris, style = 'bold' },
+  head = { fg = colors.base, bg = colors.mauve, style = 'bold' },
+  current_tab = { fg = colors.base, bg = colors.green, style = 'bold' },
+  tab = { fg = colors.overlay2, bg = colors.surface0 },
+  win = { fg = colors.text, bg = colors.surface0 },
+  tail = { fg = colors.base, bg = colors.mauve, style = 'bold' },
 }
 
 local open_tabs = {}
@@ -98,7 +80,7 @@ local window_count = function(tab)
   local api = require 'tabby.module.api'
   local win_count = #api.get_tab_wins(tab.id)
   -- return "[  " .. win_count .. " ]"
-  return '[' .. win_count .. 'W]'
+  return ' ' .. win_count
 end
 
 local lsp_diag = function(buf)
@@ -119,23 +101,22 @@ end
 require('tabby.tabline').set(function(line)
   return {
     {
-      { ' 󰓩  ', hl = theme.head },
+      { ' 󰓩 ', hl = theme.head },
       { tab_count(), hl = theme.head },
       -- line.sep('█ ', theme.head, theme.fill),
-      line.sep('', theme.head, theme.fill),
+      line.sep('', theme.head, theme.fill),
     },
     line.tabs().foreach(function(tab)
       local hl = tab.is_current() and theme.current_tab or theme.tab
       return {
         -- line.sep('█', hl, theme.fill),
-        line.sep('', hl, theme.fill),
+        line.sep('', theme.fill, hl),
         tab.is_current() and '' or '',
         tab.number(),
-        -- ":",
-        window_count(tab),
         tab_name(tab),
+        window_count(tab),
         -- line.sep('█ ', hl, theme.fill),
-        line.sep('', hl, theme.fill),
+        line.sep('', hl, theme.fill),
         hl = hl,
         margin = ' ',
       }
