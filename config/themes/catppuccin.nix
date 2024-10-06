@@ -21,14 +21,32 @@
         comments = ["italic"];
         functions = ["bold"];
       };
-      custom_highlights = {
-        InclineNormal = {bg = "#1e1e2e";};
-        InclineNormalNC = {bg = "#1e1e2e";};
-        Pmenu = {bg = "#1e1e2e";};
-        Float = {bg = "#1e1e2e";};
-        FloatBorder = {bg = "#1e1e2e";};
-        NormalFloat = {bg = "#1e1e2e";};
-      };
+      # custom_highlights = {
+      #   InclineNormal = {bg = "#1e1e2e";};
+      #   InclineNormalNC = {bg = "#1e1e2e";};
+      #   Pmenu = {bg = "#1e1e2e";};
+      #   Float = {bg = "#1e1e2e";};
+      #   FloatBorder = {bg = "#1e1e2e";};
+      #   NormalFloat = {bg = "#1e1e2e";};
+      #   TreesitterContext = {bg = "#181825";};
+      #   TreesitterContextBottom = {style = {}; };
+      #   TreesitterContextLineNumberBottom = {style = {};};
+      # };
+      custom_highlights = ''
+        function(colors)
+            return {
+                InclineNormal = { bg = colors.base },
+                InclineNormalNC = { bg = colors.base },
+                Pmenu = { bg = colors.base },
+                Float = { bg = colors.base },
+                FloatBorder = { bg = colors.base },
+                NormalFloat = { bg = colors.base },
+                TreesitterContext = { bg = colors.mantle },
+                TreesitterContextBottom = { style = {} },
+                TreesitterContextLineNumberBottom = { style = {} },
+            }
+        end
+      '';
       integrations = {
         alpha = true;
         dap = {
