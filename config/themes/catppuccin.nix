@@ -33,7 +33,6 @@
                 TreesitterContext = { bg = colors.mantle },
                 TreesitterContextBottom = { style = {} },
                 TreesitterContextLineNumberBottom = { style = {} },
-                CmpItemMenu = { fg = colors.rosewater, style = { 'italic' } },
             }
         end
       '';

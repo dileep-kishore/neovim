@@ -23,7 +23,7 @@
           border = "rounded";
         };
       };
-      formatting.fields = ["kind" "abbr" "menu"];
+      formatting.fields = ["abbr" "kind" "menu"];
       formatting.format = builtins.readFile ./cmp_format.lua;
       sources = [
         {name = "nvim_lsp";}
