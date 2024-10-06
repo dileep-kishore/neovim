@@ -14,6 +14,10 @@
       virtualText = false;
     };
     outline = {layout = "float";};
-    symbolInWinbar.enable = true;
+    symbolInWinbar = {
+      enable = true;
+      showFile = true;
+      colorMode = false;
+    };
   };
 }
