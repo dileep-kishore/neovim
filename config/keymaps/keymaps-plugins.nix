@@ -142,6 +142,16 @@
       };
     }
     {
+      action = "<cmd>lua require('gitsigns').preview_hunk()<cr>";
+      key = "<leader>hP";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Preview hunk inline";
+      };
+    }
+    {
       action = "<cmd>lua require('gitsigns').blame_line({full=true})<cr>";
       key = "<leader>gb";
       mode = "n";
