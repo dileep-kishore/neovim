@@ -13,6 +13,7 @@
         border = "rounded";
         max_height = 45;
         max_width = 60;
+        preview_split = "above";
         override = ''
           function(conf)
              local opts = {
