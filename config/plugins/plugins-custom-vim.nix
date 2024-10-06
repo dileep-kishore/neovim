@@ -1,23 +1,23 @@
 {pkgs, ...}: let
   modes-nvim = pkgs.vimUtils.buildVimPlugin {
     pname = "nvim-modes";
-    version = "2023-12-10";
+    version = "2024-06-06";
     src = pkgs.fetchFromGitHub {
       owner = "mvllow";
       repo = "modes.nvim";
-      rev = "4035a46aaabe43faf1b54740575af9dd5bb03809";
-      hash = "sha256-Kd2hf5obrPvCVLtRcFjLd75byyrB2o3uYCSEMW6IeCc=";
+      rev = "326cff3282419b3bcc745061978c1e592cae055d";
+      hash = "sha256-z1XD0O+gG2/+g/skdWGC64Zv4dXvvhWesaK/8DcPF/E=";
     };
     meta.homepage = "https://github.com/mvllow/modes.nvim";
   };
   incline-nvim = pkgs.vimUtils.buildVimPlugin {
     pname = "nvim-incline";
-    version = "2024-02-28";
+    version = "2024-05-17";
     src = pkgs.fetchFromGitHub {
       owner = "b0o";
       repo = "incline.nvim";
-      rev = "2f5f6094089b29ee1e626cd9459fb42ce249e191";
-      hash = "sha256-tu8KrBnw6mqaACgmgdTvfLhFp5EGAsA7xp0SLbsMXTI=";
+      rev = "16fc9c073e3ea4175b66ad94375df6d73fc114c0";
+      hash = "sha256-5DoIvIdAZV7ZgmQO2XmbM3G+nNn4tAumsShoN3rDGrs=";
     };
     meta.homepage = "https://github.com/b0o/incline.nvim";
   };
