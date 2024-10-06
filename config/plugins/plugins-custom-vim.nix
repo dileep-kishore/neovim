@@ -1,15 +1,4 @@
 {pkgs, ...}: let
-  devdocs-nvim = pkgs.vimUtils.buildVimPlugin {
-    pname = "nvim-devdocs";
-    version = "2023-12-22";
-    src = pkgs.fetchFromGitHub {
-      owner = "luckasRanarison";
-      repo = "nvim-devdocs";
-      rev = "521d24661ffe6d1ba025debea2675c765a9c1ee1";
-      hash = "sha256-qqtBNfBBGyxMsHL3UXu+MF/UyfVAubG+6fnwLK9kY9Q=";
-    };
-    meta.homepage = "https://github.com/luckasRanarison/nvim-devdocs";
-  };
   modes-nvim = pkgs.vimUtils.buildVimPlugin {
     pname = "nvim-modes";
     version = "2023-12-10";
@@ -45,10 +34,6 @@
   };
 in {
   extraPlugins = [
-    {
-      plugin = devdocs-nvim;
-      config = "lua require('nvim-devdocs').setup()";
-    }
     modes-nvim
     incline-nvim
     {

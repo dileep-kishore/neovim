@@ -902,18 +902,6 @@
       };
     }
 
-    # Devdocs telescope
-    {
-      action = "<cmd>DevdocsOpenCurrentFloat<cr>";
-      key = "<leader>td";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Devdocs open";
-      };
-    }
-
     # New file at current location
     {
       action = ":e %:h/";
