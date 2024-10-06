@@ -3,7 +3,9 @@
     enable = true;
     mockDevIcons = true;
     modules = {
-      icons.enable = true;
+      icons = {
+        style = "glpyh";
+      };
       animate = {
         cursor.enable = true;
         scroll.enable = true;
@@ -23,6 +25,7 @@
         windows.preview = true;
         windows.width_preview = 60;
       };
+      move = {};
     };
   };
 }

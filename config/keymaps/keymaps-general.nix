@@ -155,28 +155,6 @@
       };
     }
 
-    # Move text up and down
-    {
-      action = "<cmd>move .+1<CR>==";
-      key = "<A-j>";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Move line down";
-      };
-    }
-    {
-      action = "<cmd>move .-2<CR>==";
-      key = "<A-k>";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Move line up";
-      };
-    }
-
     # Turn off search highlight
     {
       action = "<cmd>nohl<CR>";
@@ -253,27 +231,6 @@
         noremap = true;
         silent = true;
         desc = "Indent right";
-      };
-    }
-    # Move text up and down in visual mode
-    {
-      action = ":move '>+1<CR>gv=gv";
-      key = "<A-j>";
-      mode = "v";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Move line down";
-      };
-    }
-    {
-      action = ":move '<-2<CR>gv=gv";
-      key = "<A-k>";
-      mode = "v";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Move line up";
       };
     }
     # Visual mode paste
