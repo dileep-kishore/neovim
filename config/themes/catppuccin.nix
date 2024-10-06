@@ -75,7 +75,7 @@
         rainbow_delimiters = true;
         telescope = {
           enabled = true;
-          style = "nvchad";
+          # style = "nvchad";
         };
         treesitter = true;
         semantic_tokens = true;
