@@ -78,6 +78,7 @@
         symbols_outline = true;
         which_key = true;
         treesitter_context = true;
+        render_markdown = true;
       };
     };
   };
