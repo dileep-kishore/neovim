@@ -72,5 +72,8 @@
       enable = true;
       autoActivate = true;
     };
+    cloak = {
+      enable = true;
+    };
   };
 }
