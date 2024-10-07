@@ -75,5 +75,12 @@
     cloak = {
       enable = true;
     };
+    git-conflict = {
+      enable = true;
+      settings = {
+        default_commands = true;
+        default_mappings = true;
+      };
+    };
   };
 }
