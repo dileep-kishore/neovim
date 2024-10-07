@@ -69,12 +69,6 @@
       enable = true;
       settings.theme = "dark";
     };
-    vim-matchup = {
-      enable = true;
-      enableSurround = true;
-      enableTransmute = true;
-      treesitterIntegration.enable = true;
-    };
     otter = {
       enable = true;
       autoActivate = true;

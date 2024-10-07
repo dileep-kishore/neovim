@@ -7,5 +7,6 @@
     ./indent-blankline.nix
     ./flash.nix
     ./notifications.nix
+    ./matchup.nix
   ];
 }
