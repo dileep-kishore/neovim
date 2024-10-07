@@ -34,7 +34,8 @@
                 TreesitterContextLineNumber = { bg = colors.mantle },
                 TreesitterContextBottom = { style = {} },
                 TreesitterContextLineNumberBottom = { style = {} },
-                CmpItemKindCodeium = { fg = colors.teal; }; }
+                CmpItemKindCodeium = { fg = colors.teal }
+            }
         end
       '';
       integrations = {
