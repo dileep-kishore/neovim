@@ -19,3 +19,25 @@ cmp.setup.cmdline(':', {
     },
   }),
 })
+
+cmp.setup.filetype('chatgpt-input', {
+  sources = cmp.config.sources({
+    { name = 'nvim_lsp' },
+    { name = 'path' },
+    { name = 'buffer' },
+    { name = 'git' },
+  }, {
+    { name = 'buffer' },
+  }),
+})
+
+cmp.setup.filetype('', {
+  sources = cmp.config.sources({
+    { name = 'nvim_lsp' },
+    { name = 'path' },
+    { name = 'buffer' },
+    { name = 'git' },
+  }, {
+    { name = 'buffer' },
+  }),
+})

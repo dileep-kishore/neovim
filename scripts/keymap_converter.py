@@ -5,7 +5,16 @@ import re
 
 
 def main(input_file: pathlib.Path, output_file: pathlib.Path) -> None:
-    """Function that converts the keymaps file to whichkey descriptions"""
+    """
+    Function that converts the keymaps file to whichkey descriptions.
+
+    Parameters
+    ----------
+    input_file : pathlib.Path
+        The path to the input file containing keymaps.
+    output_file : pathlib.Path
+        The path to the output file where whichkey descriptions will be written.
+    """
     action_pattern = r"<cmd>(.*?)<cr>"
     key_pattern = r'"([^"]*)"'
     with open(input_file, "r") as f:
