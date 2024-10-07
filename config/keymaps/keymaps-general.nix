@@ -233,17 +233,6 @@
         desc = "Indent right";
       };
     }
-    # Visual mode paste
-    {
-      action = ''"_dP'';
-      key = "p";
-      mode = "v";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Paste without yanking";
-      };
-    }
 
     # Macros
     {
