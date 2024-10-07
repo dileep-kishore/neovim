@@ -15,6 +15,7 @@ def main(input_file: pathlib.Path, output_file: pathlib.Path) -> None:
     output_file : pathlib.Path
         The path to the output file where whichkey descriptions will be written.
     """
+    # NOTE: Comment to test italics ==
     action_pattern = r"<cmd>(.*?)<cr>"
     key_pattern = r'"([^"]*)"'
     with open(input_file, "r") as f:

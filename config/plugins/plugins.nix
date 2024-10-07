@@ -11,9 +11,10 @@
       enable = true;
       settings = {
         mergeKeywords = true;
+        gui_style.fg = "BOLD";
         highlight = {
           before = "";
-          after = "fg";
+          after = "";
           keyword = "wide";
         };
         keywords = {
