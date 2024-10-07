@@ -947,5 +947,17 @@
         desc = "Toggle treeSJ";
       };
     }
+
+    # Image-Clip
+    {
+      action = "<cmd>PasteImage<cr>";
+      key = "<leader>P";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Paste image from clipboard";
+      };
+    }
   ];
 }

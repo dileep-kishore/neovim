@@ -33,5 +33,9 @@
       plugin = grug-far-nvim;
       config = "lua require('grug-far').setup()";
     }
+    {
+      plugin = img-clip-nvim;
+      config = "lua require('img-clip').setup()";
+    }
   ];
 }
