@@ -37,5 +37,9 @@
       plugin = img-clip-nvim;
       config = "lua require('img-clip').setup()";
     }
+    {
+      plugin = nvim-highlight-colors;
+      config = "lua require('nvim-highlight-colors').setup({render='virtual', enable_tailwind=true, virtual_symbol=' ', virtual_symbol_suffix=''})";
+    }
   ];
 }

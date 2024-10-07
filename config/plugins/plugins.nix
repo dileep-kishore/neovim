@@ -63,7 +63,6 @@
       enable = true;
     };
     nvim-bqf.enable = true;
-    nvim-colorizer.enable = true;
     marks.enable = true;
     markdown-preview = {
       enable = true;
