@@ -1,7 +1,7 @@
 {
   imports = [
     ./cmp.nix
-    ./copilot.nix
+    ./codeium.nix
     ./snippets.nix
     ./neogen.nix
   ];
