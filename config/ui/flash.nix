@@ -12,7 +12,7 @@
       };
       label = {
         after = true;
-        minPatternLength = 0;
+        min_pattern_length = 0;
         rainbow.enabled = false;
       };
     };

@@ -29,18 +29,18 @@
     extensions = {
       fzf-native = {
         enable = true;
-        settings.caseMode = "smart_case";
+        settings.case_mode = "smart_case";
       };
       frecency = {
         enable = true;
         settings = {
-          showUnindexed = true;
-          defaultWorkspace = "CWD";
+          show_unindexed = true;
+          default_workspace = "CWD";
         };
       };
       undo = {
         enable = true;
-        settings.useDelta = true;
+        settings.use_delta = true;
       };
     };
     keymaps = {

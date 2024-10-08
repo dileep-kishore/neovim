@@ -1,12 +1,14 @@
 {
   plugins.nvim-ufo = {
     enable = true;
-    providerSelector = ''
-      function(bufnr, filetype, buftype)
-          return {'treesitter', 'indent'}
-      end
-    '';
-    enableGetFoldVirtText = true;
-    foldVirtTextHandler = builtins.readFile ./ufo_virttext.lua;
+    settings = {
+      provider_selector = ''
+        function(bufnr, filetype, buftype)
+            return {'treesitter', 'indent'}
+        end
+      '';
+      enable_get_fold_virt_text = true;
+      fold_virt_text_handler = builtins.readFile ./ufo_virttext.lua;
+    };
   };
 }

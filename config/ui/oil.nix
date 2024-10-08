@@ -2,12 +2,14 @@
   plugins.oil = {
     enable = true;
     settings = {
-      defaultFileExplorer = true;
-      deleteToTrash = false;
-      promptSaveOnSelectNewEntry = true;
-      skipConfirmForSimpleEdits = true;
-      keymaps = {"<C-x>" = "actions.select_split";};
-      keymaps = {"<C-v>" = "actions.select_vsplit";};
+      default_file_explorer = true;
+      delete_to_trash = false;
+      prompt_save_on_select_new_entry = true;
+      skip_confirm_for_simple_edits = true;
+      keymaps = {
+        "<C-x>" = "actions.select_split";
+        "<C-v>" = "actions.select_vsplit";
+      };
       columns = ["icon"];
       float = {
         border = "rounded";

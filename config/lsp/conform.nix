@@ -2,18 +2,18 @@
   plugins.conform-nvim = {
     enable = true;
     settings = {
-      formatOnSave = {
-        lspFallback = true;
-        timeoutMs = 500;
+      format_on_save = {
+        lsp_format = "fallback";
+        timeout_ms = 500;
       };
       # Map of filetype to formatters
-      formattersByFt = {
+      formatters_by_ft = {
         lua = ["stylua"];
         nix = ["alejandra"];
         sh = ["shfmt"];
         go = ["gofmt"];
         rust = ["rustfmt"];
-        python = ["isort" "ruff_format"];
+        python = ["ruff_organize_imports" "ruff_format"];
         javascript = ["prettier"];
         javascriptreact = ["prettier"];
         typescript = ["prettier"];
