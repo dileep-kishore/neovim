@@ -32,6 +32,17 @@
     };
     meta.homepage = "https://github.com/cbochs/grapple.nvim";
   };
+  highlight-undo-nvim = pkgs.vimUtils.buildVimPlugin {
+    pname = "highlight-undo-nvim";
+    version = "2024-10-08";
+    src = pkgs.fetchFromGitHub {
+      owner = "tzachar";
+      repo = "highlight-undo.nvim";
+      rev = "ee2f6355e08719fea902e7c478aa7351934f2bb6";
+      hash = "sha256-YOU0vZ9vs1/kAeKpSNo5VHZ/uoTtX2XLIXc2cHd+J10=";
+    };
+    meta.homepage = "https://github.com/tzachar/highlight-undo.nvim";
+  };
 in {
   extraPlugins = [
     modes-nvim
@@ -39,6 +50,10 @@ in {
     {
       plugin = grapple-nvim;
       config = "lua require('grapple').setup({scope='git_branch'})";
+    }
+    {
+      plugin = highlight-undo-nvim;
+      config = "lua require('highlight-undo').setup()";
     }
   ];
 }
