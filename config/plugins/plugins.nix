@@ -15,7 +15,7 @@
         highlight = {
           before = "";
           after = "";
-          keyword = "wide";
+          keyword = "wide_fg";
         };
         keywords = {
           QUESTION = {icon = "";};
