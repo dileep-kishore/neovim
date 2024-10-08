@@ -1,9 +1,9 @@
 {
   plugins.vim-matchup = {
-    enable = true;
+    enable = false;
     enableSurround = true;
     enableTransmute = true;
     treesitterIntegration.enable = true;
   };
-  extraConfigLua = builtins.readFile ./matchup.lua;
+  # extraConfigLua = builtins.readFile ./matchup.lua;
 }
