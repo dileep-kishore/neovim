@@ -8,9 +8,9 @@ local colors = require('catppuccin.palettes').get_palette 'mocha'
 
 local theme = {
   fill = { fg = colors.base, bg = colors.base },
-  head = { fg = colors.base, bg = colors.mauve, style = 'bold' },
-  current_tab = { fg = colors.base, bg = colors.green, style = 'bold' },
-  tab = { fg = colors.overlay2, bg = colors.surface0 },
+  head = { fg = colors.mantle, bg = colors.mauve, style = 'bold' },
+  current_tab = { fg = colors.mantle, bg = colors.blue, style = 'bold' },
+  tab = { fg = colors.overlay2, bg = colors.surface0, style = 'NONE' },
   win = { fg = colors.text, bg = colors.surface0 },
   tail = { fg = colors.base, bg = colors.mauve, style = 'bold' },
 }
