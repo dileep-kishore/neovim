@@ -6,7 +6,10 @@
       settings.checkTs = true;
     };
     tmux-navigator.enable = true;
-    trouble.enable = true;
+    trouble = {
+      enable = true;
+      settings = {};
+    };
     todo-comments = {
       enable = true;
       settings = {

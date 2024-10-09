@@ -268,38 +268,38 @@
     ## LSP and diagnostics
     # Trouble
     {
-      action = "<cmd>TroubleToggle<CR>";
+      action = "<cmd>Trouble diagnostics toggle filter.buf=0 focus=true<CR>";
       key = "<leader>xx";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
-        desc = "Trouble toggle";
+        desc = "Trouble diagnostics (buffer)";
       };
     }
     {
-      action = "<cmd>Trouble workspace_diagnostics<cr>";
-      key = "<leader>xw";
+      action = "<cmd>Trouble diagnostics toggle focus=true<CR>";
+      key = "<leader>xX";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
-        desc = "Trouble workspace diagnostics";
+        desc = "Trouble diagnostics (workspace)";
       };
     }
     {
-      action = "<cmd>Trouble document_diagnostics<cr>";
-      key = "<leader>xd";
+      action = "<cmd>Trouble lsp toggle focus=true win.position=bottom<cr>";
+      key = "<leader>xl";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
-        desc = "Trouble document diagnostics";
+        desc = "Trouble lsp (def/ref/...)";
       };
     }
     {
       action = "<cmd>Trouble loclist<cr>";
-      key = "<leader>xl";
+      key = "<leader>xL";
       mode = "n";
       options = {
         noremap = true;
@@ -308,13 +308,23 @@
       };
     }
     {
-      action = "<cmd>Trouble quickfix<cr>";
+      action = "<cmd>Trouble symbols toggle focus=true win.position=bottom<cr>";
+      key = "<leader>xs";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Trouble symbols (buffer)";
+      };
+    }
+    {
+      action = "<cmd>Trouble qflist toggle<cr>";
       key = "<leader>xq";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
-        desc = "Trouble quickfix";
+        desc = "Trouble quickfix list";
       };
     }
     # LSP
@@ -502,13 +512,23 @@
 
     # Todo-comments
     {
-      action = "<cmd>TodoTrouble<cr>";
+      action = "<cmd>Trouble todo toggle filter.buf=0 focus=true<cr>";
       key = "<leader>xt";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
-        desc = "Todo trouble";
+        desc = "Trouble todos (buffer)";
+      };
+    }
+    {
+      action = "<cmd>Trouble todo toggle focus=true<cr>";
+      key = "<leader>xT";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Trouble todos (workspace)";
       };
     }
     {
