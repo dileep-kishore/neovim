@@ -2,7 +2,7 @@
   plugins.avante = {
     enable = true;
     settings = {
-      provider = "openai";
+      provider = "claude";
       behavior.auto_suggestions = false;
     };
   };
