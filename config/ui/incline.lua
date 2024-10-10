@@ -1,4 +1,4 @@
-local mocha = require('catppuccin.palettes').get_palette 'mocha'
+local colors = require('catppuccin.palettes').get_palette 'mocha'
 
 local darkenHexColor = function(hex, factor)
   -- Ensure factor is between 0 and 1
@@ -54,25 +54,25 @@ require('incline').setup {
           ' ',
           ft_icon,
           ' ',
-          guibg = props.focused and ft_color or mocha.base,
+          guibg = props.focused and ft_color or colors.base,
           guifg = props.focused and helpers.contrast_color(ft_color)
             or ft_color,
         } or '',
         {
           modified and '  ' or ' ',
-          guifg = mocha.yellow,
+          guifg = colors.yellow,
         },
         {
           filename,
           gui = modified and 'bold,italic' or 'italic',
-          guifg = props.focused and mocha.text or mocha.overlay2,
+          guifg = props.focused and colors.text or colors.overlay2,
         },
         ' ',
         {
           grapple_status,
-          guifg = mocha.pink,
+          guifg = colors.pink,
         },
-        guibg = mocha.base,
+        guibg = colors.base,
       }
     table.insert(res, ' ')
     return res
