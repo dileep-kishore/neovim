@@ -16,10 +16,10 @@
       };
       texlab = {enable = true;};
       marksman = {enable = true;};
-      nil-ls = {enable = true;};
+      nil_ls = {enable = true;};
       # Python
       pyright = {enable = true;};
-      ruff-lsp = {
+      ruff_lsp = {
         enable = false;
         extraOptions = {
           init_options = {
@@ -30,16 +30,16 @@
           };
         };
       };
-      ts-ls = {enable = true;};
-      lua-ls = {enable = true;};
-      rust-analyzer = {
+      ts_ls = {enable = true;};
+      lua_ls = {enable = true;};
+      rust_analyzer = {
         enable = true;
         installCargo = true;
         installRustc = true;
       };
       svelte = {enable = true;};
       tailwindcss = {enable = true;};
-      typst-lsp = {enable = true;};
+      typst_lsp = {enable = true;};
       # vscode extracted
       cssls = {enable = true;};
       html = {enable = true;};

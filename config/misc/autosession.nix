@@ -1,11 +1,11 @@
 {
   plugins.auto-session = {
     enable = true;
-    autoRestore.enabled = true;
-    autoSave.enabled = true;
-    autoSession = {
-      enableLastSession = false;
-      useGitBranch = true;
+    settings = {
+      auto_restore = true;
+      auto_save = true;
+      use_git_branch = true;
+      auto_restore_last_session = false;
     };
   };
 }
