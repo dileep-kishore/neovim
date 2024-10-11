@@ -9,7 +9,6 @@
       gopls = {enable = true;};
       hls = {enable = true;};
       jsonls = {enable = true;};
-      julials = {enable = true;};
       ltex = {
         enable = true;
         settings.checkFrequency = "save";
