@@ -41,3 +41,25 @@ cmp.setup.filetype('', {
     { name = 'buffer' },
   }),
 })
+
+cmp.setup.filetype('oil', {
+  sources = cmp.config.sources({
+    { name = 'nvim_lsp' },
+    { name = 'path' },
+    { name = 'buffer' },
+    { name = 'git' },
+  }, {
+    { name = 'buffer' },
+  }),
+})
+
+cmp.setup.filetype('minifiles', {
+  sources = cmp.config.sources({
+    { name = 'nvim_lsp' },
+    { name = 'path' },
+    { name = 'buffer' },
+    { name = 'git' },
+  }, {
+    { name = 'buffer' },
+  }),
+})
