@@ -59,7 +59,7 @@ require('incline').setup {
             or ft_color,
         } or '',
         {
-          modified and '  ' or ' ',
+          modified and ' ●' or ' ',
           guifg = colors.yellow,
         },
         {

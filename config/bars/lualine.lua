@@ -26,15 +26,6 @@ local diagnostics = {
   padding = { left = 1, right = 1 },
 }
 
-local diff = {
-  'diff',
-  colored = true,
-  symbols = { added = ' ', modified = ' ', removed = ' ' }, -- changes diff symbols
-  cond = hide_in_width,
-  update_in_insert = true,
-  always_visible = true,
-}
-
 local mode = {
   'mode',
   fmt = function(str)
@@ -49,20 +40,23 @@ local filename = {
   path = 1,
   cond = hide_in_width,
   symbols = {
-    modified = ' ',
+    modified = '●',
     readonly = ' ',
     unnamed = '[No Name]',
     newfile = '[New]',
   },
   separator = '',
-  padding = { left = 0, right = 1 },
+  padding = { left = 0, right = 0 },
+  color = { fg = colors.blue },
 }
 
 local icononly_filetype = {
   'filetype',
+  colored = false,
   icon_only = true,
   separator = '',
-  padding = { left = 1, right = 0 },
+  padding = { left = 0, right = 0 },
+  color = { fg = colors.blue },
 }
 
 local center_comp = {
@@ -101,7 +95,7 @@ end
 
 local lsp_status = {
   get_lsp_status,
-  separator = '',
+  separator = '',
 }
 
 local filetype = {
@@ -113,8 +107,20 @@ local branch = {
   'b:gitsigns_head',
   icons_enabled = true,
   icon = '',
-  separator = '',
+  separator = '',
   padding = { left = 1, right = 1 },
+  color = { gui = 'bold' },
+}
+
+local diff = {
+  'diff',
+  colored = true,
+  symbols = { added = ' ', modified = ' ', removed = ' ' }, -- changes diff symbols
+  cond = hide_in_width,
+  update_in_insert = true,
+  always_visible = true,
+  separator = '',
+  padding = { left = 0, right = 1 },
 }
 
 local cmd = {
@@ -181,19 +187,20 @@ lualine.setup {
   },
   sections = {
     lualine_a = { mode },
-    lualine_b = { branch, diff },
+    lualine_b = { filetype, lsp_status },
     lualine_c = {
+      diagnostics,
+      center_comp,
       icononly_filetype,
       filename,
-      diagnostics,
     },
     lualine_x = {
       macro,
       cmd,
       'encoding',
     },
-    lualine_y = { lsp_status, filetype },
-    lualine_z = { location, progress, progress_custom },
+    lualine_y = { branch, diff },
+    lualine_z = { progress, progress_custom },
   },
   inactive_sections = {
     lualine_a = {},
