@@ -20,5 +20,6 @@
     stylua
     typstfmt
     vale
+    python312Packages.pylatexenc
   ];
 }
