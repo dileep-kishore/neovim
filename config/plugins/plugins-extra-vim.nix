@@ -15,7 +15,7 @@
     vim-just
     {
       plugin = nvim-surround;
-      config = "lua require('nvim-surround').setup({move_cursor=false})";
+      config = "lua require('nvim-surround').setup({move_cursor='sticky'})";
     }
     {
       plugin = octo-nvim;
