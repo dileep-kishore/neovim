@@ -56,7 +56,7 @@
 
     # mini.files
     {
-      action = "<cmd>lua require('mini.files').open()<CR>";
+      action = "<cmd>lua require('mini.files').open(vim.api.nvim_buf_get_name(0))<CR>";
       key = "<leader>/";
       mode = "n";
       options = {
