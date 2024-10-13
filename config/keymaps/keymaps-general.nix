@@ -15,6 +15,26 @@
     }
     # jk -> <Esc> keymap in better-escape plugin config
 
+    # HACK: Paste keymaps were being overwriten
+    {
+      action = "p";
+      key = "p";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      action = "P";
+      key = "P";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+
     # Window navigation
     {
       action = "<C-w>h";
