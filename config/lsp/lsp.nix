@@ -7,7 +7,6 @@
       dockerls = {enable = true;};
       eslint = {enable = true;};
       gopls = {enable = true;};
-      hls = {enable = true;};
       jsonls = {enable = true;};
       ltex = {
         enable = true;
