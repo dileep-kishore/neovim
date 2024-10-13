@@ -211,6 +211,17 @@
         desc = "Close tab";
       };
     }
+    # Close all and quit
+    {
+      action = "<cmd>qa<CR>";
+      key = "<Leader>qa";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Close tab";
+      };
+    }
 
     # Stay in visual mode while indenting
     {
