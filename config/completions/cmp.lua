@@ -63,3 +63,17 @@ cmp.setup.filetype('minifiles', {
     { name = 'buffer' },
   }),
 })
+
+local luasnip = require 'luasnip'
+local luasnip_types = require 'luasnip.util.types'
+
+luasnip.config.setup {
+  ext_opts = {
+    [luasnip_types.choiceNode] = {
+      active = { virt_text = { { '󰞗 ', 'Comment' } } },
+    },
+    [luasnip_types.insertNode] = {
+      active = { virt_text = { { '󰞗 ', 'Comment' } } },
+    },
+  },
+}
