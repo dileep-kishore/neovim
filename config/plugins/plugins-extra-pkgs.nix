@@ -3,6 +3,7 @@
     alejandra
     eslint_d
     fd
+    gh
     hadolint
     imagemagick
     isort
@@ -10,6 +11,7 @@
     mypy
     nodePackages.jsonlint
     nodePackages.prettier
+    python312Packages.pylatexenc
     quarto
     ripgrep
     rstcheck
@@ -20,6 +22,5 @@
     stylua
     typstfmt
     vale
-    python312Packages.pylatexenc
   ];
 }
