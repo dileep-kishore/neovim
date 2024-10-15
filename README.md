@@ -1,7 +1,7 @@
 <!-- markdownlint-disable -->
 <h1 align="center">
     <a name="top" title="nvim-nix">
-        nvim-nix
+        nvim-nix v2
     </a>
 </h1>
 <br />
@@ -55,9 +55,9 @@ And then install it by adding `inputs.neovim.packages.${system}.default` to your
 | :----------------------------------: |
 | ![dashboard](./assets/dashboard.png) |
 
-|           _Files_            |
-| :--------------------------: |
-| ![files](./assets/files.png) |
+|            _Editor_            |
+| :----------------------------: |
+| ![editor](./assets/editor.png) |
 
 |                _Autocompletions_                 |
 | :----------------------------------------------: |
@@ -78,7 +78,7 @@ And then install it by adding `inputs.neovim.packages.${system}.default` to your
 - A lot of the default options and autocmds that you would find on a distribution like [LunarVim](lunarvim.org/) are configured out of the box
 - [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) syntax highlighting is enabled and [rose-pine](https://github.com/rose-pine/neovim) theme is set as the default
 - Uses custom statusline configured using [lualine.nvim](https://github.com/nvim-treesitter/nvim-treesitter)
-- Custom tabline configured using [tabby.nvim](https://github.com/nvim-treesitter/nvim-treesitter)
+- Custom tabline configured using [tabby.nvim](https://github.com/nanozuki/tabby.nvim)
 - Includes [neogit](https://github.com/NeogitOrg/neogit) and [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim) for working with git
 - Lsp servers, linters and formatters for configured for Python, Nix, Lua, Javascript, Typescript, Julia, Bash, Rust, Go and many more
 - Debugging is supported through the [Debugging adapter protocol (DAP) plugin](https://github.com/mfussenegger/nvim-dap).
@@ -86,7 +86,8 @@ And then install it by adding `inputs.neovim.packages.${system}.default` to your
 - Completions are enabled through [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - Snippets are set up using [luasnip](https://github.com/L3MON4D3/LuaSnip) and [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim) for fuzzy file finding and searching
-- AI capabilities are enabled through [ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim) and [GitHub copilot](https://github.com/zbirenbaum/copilot.lua)
-- Indent lines are enabled using [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) and [mini.indentscope](https://github.com/echasnovski/mini.indentscope)
+- Better file navigation using [Oil.nvim](https://github.com/stevearc/oil.nvim) and [Grapple.nvim](https://github.com/cbochs/grapple.nvim)
+- AI capabilities are enabled through [Avante.nvim](https://github.com/yetone/avante.nvim) and [ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim) and [Codeium.nvim](https://github.com/Exafunction/codeium.nvim)
+- Indent lines are enabled using [mini.indentscope](https://github.com/echasnovski/mini.indentscope)
 - The dashboard is set up using [alpha-nvim](https://github.com/goolord/alpha-nvim)
-- Many other features! Check out default.nix and plugins.nix
+- Many other features! Check out default.nix and the plugins/ folder
