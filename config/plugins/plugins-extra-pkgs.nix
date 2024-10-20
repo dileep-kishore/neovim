@@ -12,7 +12,6 @@
     nodePackages.jsonlint
     nodePackages.prettier
     python312Packages.pylatexenc
-    quarto
     ripgrep
     rstcheck
     ruff
