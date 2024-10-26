@@ -26,7 +26,6 @@
       formatting.fields = ["abbr" "kind" "menu"];
       formatting.format = builtins.readFile ./cmp_format.lua;
       sources = [
-        {name = "codeium";}
         {name = "nvim_lsp";}
         {name = "luasnip";}
         {name = "path";}
