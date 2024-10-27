@@ -87,7 +87,7 @@ And then install it by adding `inputs.neovim.packages.${system}.default` to your
 - Snippets are set up using [luasnip](https://github.com/L3MON4D3/LuaSnip) and [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim) for fuzzy file finding and searching
 - Better file navigation using [Oil.nvim](https://github.com/stevearc/oil.nvim) and [Grapple.nvim](https://github.com/cbochs/grapple.nvim)
-- AI capabilities are enabled through [Avante.nvim](https://github.com/yetone/avante.nvim) and [ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim) and [Codeium.nvim](https://github.com/Exafunction/codeium.nvim)
+- AI capabilities are enabled through [Avante.nvim](https://github.com/yetone/avante.nvim) and [ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim) and [supermaven-nvim](https://github.com/supermaven-inc/supermaven-nvim)
 - Indent lines are enabled using [mini.indentscope](https://github.com/echasnovski/mini.indentscope)
 - The dashboard is set up using [alpha-nvim](https://github.com/goolord/alpha-nvim)
-- Many other features! Check out default.nix and the plugins/ folder
+- And many other features! Check out default.nix and the plugins/ folder
