@@ -34,11 +34,11 @@
   };
   highlight-undo-nvim = pkgs.vimUtils.buildVimPlugin {
     pname = "highlight-undo-nvim";
-    version = "2024-10-08";
+    version = "2024-10-20";
     src = pkgs.fetchFromGitHub {
       owner = "tzachar";
       repo = "highlight-undo.nvim";
-      rev = "ee2f6355e08719fea902e7c478aa7351934f2bb6";
+      rev = "c87a6ec1ded241ef223269077cbd5f97a6f0d5bf";
       hash = "sha256-YOU0vZ9vs1/kAeKpSNo5VHZ/uoTtX2XLIXc2cHd+J10=";
     };
     meta.homepage = "https://github.com/tzachar/highlight-undo.nvim";
