@@ -1,6 +1,16 @@
 {
   plugins = {
     web-devicons.enable = true;
+    spider = {
+      enable = true;
+      skipInsignificantPunctuation = true;
+      keymaps.motions = {
+        b = "b";
+        e = "e";
+        ge = "ge";
+        w = "w";
+      };
+    };
     nvim-autopairs = {
       enable = true;
       settings.checkTs = true;
