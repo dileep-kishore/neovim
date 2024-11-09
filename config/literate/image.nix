@@ -1,9 +1,12 @@
 {
   plugins.image = {
     enable = true;
+    backend = "kitty";
     editorOnlyRenderWhenFocused = true;
-    maxHeightWindowPercentage = 50;
-    maxWidthWindowPercentage = 50;
+    maxWidth = 100;
+    maxHeight = 25;
+    maxHeightWindowPercentage = 80;
+    maxWidthWindowPercentage = 80;
     windowOverlapClearFtIgnore = ["cmp_menu" "cmp_docs"];
     integrations = {
       markdown = {
