@@ -1033,7 +1033,7 @@
       };
     }
     {
-      action = ":<C-u>MoltenEvaluateVisual<cr>gv";
+      action = ":<C-u>MoltenEvaluateVisual<cr>gv<esc>";
       key = "<leader>nr";
       mode = "v";
       options = {
