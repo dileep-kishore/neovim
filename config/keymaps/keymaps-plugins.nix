@@ -1052,5 +1052,15 @@
         desc = "Molten enter output";
       };
     }
+    {
+      action = "<cmd>MoltenHideOutput<cr>";
+      key = "<leader>nh";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Molten hide output";
+      };
+    }
   ];
 }
