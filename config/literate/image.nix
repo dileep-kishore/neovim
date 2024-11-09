@@ -4,6 +4,7 @@
     editorOnlyRenderWhenFocused = true;
     maxHeightWindowPercentage = 50;
     maxWidthWindowPercentage = 50;
+    windowOverlapClearFtIgnore = ["cmp_menu" "cmp_docs"];
     integrations = {
       markdown = {
         enabled = true;

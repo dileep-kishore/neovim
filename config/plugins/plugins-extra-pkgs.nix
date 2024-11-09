@@ -11,6 +11,7 @@
     mypy
     nodePackages.jsonlint
     nodePackages.prettier
+    pnglatex
     python312Packages.pylatexenc
     ripgrep
     rstcheck
