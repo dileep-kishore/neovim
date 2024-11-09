@@ -1003,46 +1003,6 @@
       };
     }
     {
-      action = "<cmd>MoltenEvaluateOperator<cr>";
-      key = "<leader>ne";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Molten evaluate operator";
-      };
-    }
-    {
-      action = "<cmd>MoltenEvaluateLine<cr>";
-      key = "<leader>nl";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Molten evaluate line";
-      };
-    }
-    {
-      action = "<cmd>MoltenReevaluateCell<cr>";
-      key = "<leader>nc";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Molten evaluate cell";
-      };
-    }
-    {
-      action = ":<C-u>MoltenEvaluateVisual<cr>gv<esc>";
-      key = "<leader>nr";
-      mode = "v";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Molten evaluate visual selection";
-      };
-    }
-    {
       action = ":noautocmd MoltenEnterOutput<cr>";
       key = "<leader>no";
       mode = "n";
