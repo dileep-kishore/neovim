@@ -983,7 +983,7 @@
 
     # Literate note plugin keymaps
     {
-      action = "<cmd>QuartoPreview<cr>";
+      action = "<cmd>QuartoPreview %:p<cr>";
       key = "<leader>np";
       mode = "n";
       options = {
