@@ -920,17 +920,18 @@
       };
     }
 
+    # NOTE: Disabled becuase I prefer to use Oil.nvim
     # New file at current location
-    {
-      action = ":e %:h/";
-      key = "<leader>nf";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "New file (current dir)";
-      };
-    }
+    # {
+    #   action = ":e %:h/";
+    #   key = "<leader>nf";
+    #   mode = "n";
+    #   options = {
+    #     noremap = true;
+    #     silent = true;
+    #     desc = "New file (current dir)";
+    #   };
+    # }
 
     # Get highlight at cursor
     {
