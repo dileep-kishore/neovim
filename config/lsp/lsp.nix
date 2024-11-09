@@ -2,7 +2,7 @@
   plugins.lsp = {
     enable = true;
     servers = {
-      astro = {enable = true;};
+      astro = {enable = false;};
       bashls = {enable = true;};
       dockerls = {enable = true;};
       eslint = {enable = true;};
