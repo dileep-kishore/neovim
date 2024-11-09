@@ -14,6 +14,7 @@
     ssr-nvim
     iron-nvim
     vim-just
+    quarto-nvim
     {
       plugin = nvim-surround;
       config = "lua require('nvim-surround').setup({move_cursor='sticky'})";
