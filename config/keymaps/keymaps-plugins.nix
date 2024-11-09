@@ -1003,6 +1003,16 @@
       };
     }
     {
+      action = "<cmd>MoltenEvaluateVisual<cr>gv<esc>";
+      key = "<leader>nr";
+      mode = "v";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Molten evaluate visual selection";
+      };
+    }
+    {
       action = ":noautocmd MoltenEnterOutput<cr>";
       key = "<leader>no";
       mode = "n";

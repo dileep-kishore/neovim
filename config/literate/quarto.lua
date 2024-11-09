@@ -33,12 +33,6 @@ vim.keymap.set(
   runner.run_line,
   { desc = 'Quarto run line', silent = true }
 )
-vim.keymap.set(
-  'v',
-  '<leader>nr',
-  runner.run_range,
-  { desc = 'Quarto run visual range', silent = true }
-)
 vim.keymap.set('n', '<leader>nR', function()
   runner.run_all(true)
 end, { desc = 'Quarto run all cells of all languages', silent = true })
