@@ -246,7 +246,7 @@
     }
     {
       action = "<cmd>Telescope frecency workspace=CWD theme=dropdown<cr>";
-      key = "<leader>o";
+      key = "<leader>ff";
       mode = "n";
       options = {
         noremap = true;
@@ -1030,6 +1030,98 @@
         noremap = true;
         silent = true;
         desc = "Molten hide output";
+      };
+    }
+
+    # Obsidian keymaps
+    {
+      action = "<cmd>ObsidianNew<cr>";
+      key = "<leader>on";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Obsidian new note";
+      };
+    }
+    {
+      action = "<cmd>ObsidianQuickSwitch<cr>";
+      key = "<leader>of";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Obsidian quick switch";
+      };
+    }
+    {
+      action = "<cmd>ObsidianToday<cr>";
+      key = "<leader>od";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Obsidian today";
+      };
+    }
+    {
+      action = "<cmd>ObsidianTemplate<cr>";
+      key = "<leader>ot";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Obsidian template";
+      };
+    }
+    {
+      action = "<cmd>ObsidianLink<cr>";
+      key = "<leader>ok";
+      mode = "v";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Obsidian link";
+      };
+    }
+    {
+      action = "<cmd>ObsidianBacklinks<cr>";
+      key = "<leader>ob";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Obsidian backlinks";
+      };
+    }
+    {
+      action = "<cmd>ObsidianLinks<cr>";
+      key = "<leader>ol";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Obsidian links";
+      };
+    }
+    {
+      action = "<cmd>ObsidianRename<cr>";
+      key = "<leader>or";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Obsidian rename";
+      };
+    }
+    {
+      action = "<cmd>ObsidianTOC<cr>";
+      key = "<leader>oo";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Obsidian table of contents";
       };
     }
   ];

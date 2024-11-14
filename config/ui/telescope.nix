@@ -44,7 +44,7 @@
       };
     };
     keymaps = {
-      "<leader>ff" = {
+      "<leader>fa" = {
         action = "find_files";
         options.desc = "Telescope Files";
       };
