@@ -14,7 +14,7 @@
       float = {
         border = "rounded";
         max_height = 45;
-        max_width = 60;
+        max_width = 80;
         preview_split = "above";
         override = ''
           function(conf)
@@ -28,7 +28,7 @@
       preview = {
         border = "rounded";
         max_height = 45;
-        max_width = 60;
+        max_width = 80;
         override = ''
           function(conf)
              local opts = {
@@ -41,7 +41,7 @@
       progress = {
         border = "rounded";
         max_height = 45;
-        max_width = 60;
+        max_width = 80;
         override = ''
           function(conf)
              local opts = {
