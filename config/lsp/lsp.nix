@@ -11,6 +11,16 @@
       ltex = {
         enable = true;
         settings.checkFrequency = "save";
+        settings.enabled = [
+          "bibtex"
+          "context"
+          "context.tex"
+          "html"
+          "latex"
+          "org"
+          "restructuredtext"
+          "rsweave"
+        ];
       };
       texlab = {enable = true;};
       marksman = {enable = true;};

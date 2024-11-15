@@ -2,8 +2,8 @@
   plugins.lint = {
     enable = true;
     lintersByFt = {
-      text = ["vale"];
-      markdown = ["vale"];
+      text = [];
+      markdown = [];
       rst = ["rstcheck" "vale"];
       nix = ["nix"];
       json = ["jsonlint"];
