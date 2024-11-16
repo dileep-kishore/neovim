@@ -77,6 +77,28 @@
       };
     }
 
+    # Set/unset keymaps
+    {
+      action = "<cmd>set wrap!<CR>";
+      key = "<Leader>uw";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Toggle wrap";
+      };
+    }
+    {
+      action = "<cmd>set spell!<CR>";
+      key = "<Leader>us";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Toggle spell check";
+      };
+    }
+
     # Tab navigation
     {
       action = "<cmd>tabprevious<CR>";
