@@ -38,6 +38,11 @@
           };
         };
       };
+      # Julia
+      julials = {
+        enable = true;
+        package = null;
+      };
       ts_ls = {enable = true;};
       lua_ls = {enable = true;};
       rust_analyzer = {
