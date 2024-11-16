@@ -2,15 +2,20 @@
   plugins.render-markdown = {
     enable = true;
     settings = {
+      preset = "obsidian";
       heading = {
         width = "block";
         right_pad = 5;
         border = true;
         border_virtual = true;
+        position = "inline";
+      };
+      indent = {
+        enabled = true;
       };
       code = {
         width = "block";
-        position = "right";
+        position = "left";
         right_pad = 5;
         border = "thick";
       };
