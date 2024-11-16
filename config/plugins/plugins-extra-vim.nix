@@ -3,7 +3,6 @@
     plenary-nvim
     vim-repeat
     friendly-snippets
-    supermaven-nvim
     lualine-nvim
     tabby-nvim
     alpha-nvim
