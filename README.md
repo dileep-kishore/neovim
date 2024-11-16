@@ -91,3 +91,11 @@ And then install it by adding `inputs.neovim.packages.${system}.default` to your
 - Indent lines are enabled using [mini.indentscope](https://github.com/echasnovski/mini.indentscope)
 - The dashboard is set up using [alpha-nvim](https://github.com/goolord/alpha-nvim)
 - And many other features! Check out default.nix and the plugins/ folder
+
+## Manual Installation
+
+The julia language server is not currently supported by nixpkgs, so you will need to install it manually.
+
+```sh
+julia --project=~/.julia/environments/nvim-lspconfig -e 'using Pkg; Pkg.add("LanguageServer")'
+```
