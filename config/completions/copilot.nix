@@ -1,6 +1,6 @@
 {
   plugins.copilot-lua = {
-    enable = false;
+    enable = true;
     panel = {
       enabled = false;
       layout.position = "bottom";
@@ -10,6 +10,7 @@
       autoTrigger = true;
       keymap = {
         accept = "<C-l>";
+        acceptWord = "<C-j>";
         next = "<A-n>";
         prev = "<A-p>";
       };
@@ -18,6 +19,20 @@
       "grug-far" = false;
       "grug-far-history" = false;
       "grug-far-help" = false;
+      "." = false;
+      "" = false;
+      "chatgpt-input" = false;
+      "oil" = false;
+      "minifiles" = false;
+    };
+  };
+  plugins.copilot-chat = {
+    enable = true;
+    settings = {
+      auto_follow_cursor = true;
+      auto_insert_mode = true;
+      context = "buffer";
+      model = "claude-3.5-sonnet";
     };
   };
 }

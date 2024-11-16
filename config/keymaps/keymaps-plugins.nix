@@ -868,13 +868,13 @@
       };
     }
     {
-      action = "<cmd>ChatGPTCompleteCode<cr>";
+      action = "<cmd>CopilotChatToggle<cr>";
       key = "<leader>cc";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
-        desc = "ChatGPT complete code";
+        desc = "Copilot chat toggle";
       };
     }
     {
