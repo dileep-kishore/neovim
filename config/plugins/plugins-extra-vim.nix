@@ -8,7 +8,6 @@
     alpha-nvim
     lazygit-nvim
     lspkind-nvim
-    zen-mode-nvim
     twilight-nvim
     ssr-nvim
     iron-nvim
@@ -41,6 +40,10 @@
     {
       plugin = tabout-nvim;
       config = "lua require('tabout').setup()";
+    }
+    {
+      plugin = zen-mode-nvim;
+      config = "lua require('zen-mode').setup({window={backdrop=1},plugins={twilight={enabled=false}}})";
     }
   ];
 }

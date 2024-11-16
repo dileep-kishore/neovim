@@ -30,6 +30,7 @@
                 Float = { bg = colors.base },
                 FloatBorder = { bg = colors.base },
                 NormalFloat = { bg = colors.base },
+                ZenBg = { bg = colors.base },
                 TreesitterContextLineNumber = { bg = colors.mantle },
                 TreesitterContextBottom = { style = {} },
                 TreesitterContextLineNumberBottom = { style = {} },
