@@ -8,6 +8,10 @@
       eslint = {enable = true;};
       gopls = {enable = true;};
       jsonls = {enable = true;};
+      harper_ls = {
+        enable = true;
+        filetypes = ["markdown"];
+      };
       ltex = {
         enable = true;
         settings.checkFrequency = "save";
