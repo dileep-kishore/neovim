@@ -11,7 +11,7 @@
         position = "overlay";
       };
       indent = {
-        enabled = true;
+        enabled = false;
       };
       code = {
         width = "block";
