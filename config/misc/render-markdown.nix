@@ -8,7 +8,7 @@
         right_pad = 5;
         border = true;
         border_virtual = true;
-        position = "inline";
+        position = "overlay";
       };
       indent = {
         enabled = true;
