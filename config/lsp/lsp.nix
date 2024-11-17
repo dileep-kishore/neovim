@@ -15,15 +15,24 @@
       ltex = {
         enable = true;
         settings.checkFrequency = "save";
-        settings.enabled = [
+        filetypes = [
+          "bib"
           "bibtex"
           "context"
           "context.tex"
+          "gitcommit"
           "html"
           "latex"
+          "mail"
           "org"
-          "restructuredtext"
+          "pandoc"
+          "plaintex"
+          "quarto"
+          "rmd"
+          "rnoweb"
           "rsweave"
+          "tex"
+          "xhtml"
         ];
       };
       texlab = {enable = true;};
@@ -55,7 +64,59 @@
         installRustc = true;
       };
       svelte = {enable = true;};
-      tailwindcss = {enable = true;};
+      tailwindcss = {
+        enable = true;
+        filetypes = [
+          "aspnetcorerazor"
+          "astro"
+          "astro-markdown"
+          "blade"
+          "clojure"
+          "django-html"
+          "htmldjango"
+          "edge"
+          "eelixir"
+          "ejs"
+          "erb"
+          "eruby"
+          "gohtml"
+          "gohtmltmpl"
+          "haml"
+          "handlebars"
+          "hbs"
+          "html"
+          "htmlangular"
+          "html-eex"
+          "heex"
+          "jade"
+          "leaf"
+          "liquid"
+          "mdx"
+          "mustache"
+          "njk"
+          "nunjucks"
+          "php"
+          "razor"
+          "slim"
+          "twig"
+          "css"
+          "less"
+          "postcss"
+          "sass"
+          "scss"
+          "stylus"
+          "sugarss"
+          "javascript"
+          "javascriptreact"
+          "reason"
+          "rescript"
+          "typescript"
+          "typescriptreact"
+          "vue"
+          "svelte"
+          "templ"
+        ];
+      };
       typst_lsp = {enable = true;};
       # vscode extracted
       cssls = {enable = true;};
