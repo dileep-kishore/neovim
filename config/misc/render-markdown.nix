@@ -23,6 +23,7 @@
       file_types = [
         "markdown"
         "Avante"
+        "quarto"
       ];
     };
   };
