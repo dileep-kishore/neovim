@@ -8,6 +8,9 @@
       virt_text_output = true;
       image_location = "float";
       output_show_exec_time = true;
+      virt_lines_off_by_1 = true;
+      output_show_more = true;
+      use_border_highlights = true;
     };
   };
 }
