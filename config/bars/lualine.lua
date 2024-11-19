@@ -55,7 +55,7 @@ local icononly_filetype = {
   colored = false,
   icon_only = true,
   separator = '',
-  padding = { left = 0, right = 0 },
+  padding = { left = 1, right = 0 },
   color = { fg = colors.blue },
 }
 
@@ -189,10 +189,10 @@ lualine.setup {
     lualine_a = { mode },
     lualine_b = { filetype, lsp_status },
     lualine_c = {
-      diagnostics,
-      center_comp,
       icononly_filetype,
       filename,
+      diagnostics,
+      -- center_comp,
     },
     lualine_x = {
       macro,
