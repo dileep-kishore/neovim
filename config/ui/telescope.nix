@@ -44,7 +44,7 @@
       };
     };
     keymaps = {
-      "<leader>fa" = {
+      "<leader>ff" = {
         action = "find_files";
         options.desc = "Telescope Files";
       };
@@ -60,7 +60,7 @@
         action = "marks";
         options.desc = "Telescope marks";
       };
-      "<leader>fr" = {
+      "<leader>fR" = {
         action = "registers";
         options.desc = "Telescope registers";
       };

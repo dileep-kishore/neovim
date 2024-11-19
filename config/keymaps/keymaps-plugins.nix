@@ -246,7 +246,7 @@
     }
     {
       action = "<cmd>Telescope frecency workspace=CWD theme=dropdown<cr>";
-      key = "<leader>ff";
+      key = "<leader>fr";
       mode = "n";
       options = {
         noremap = true;
