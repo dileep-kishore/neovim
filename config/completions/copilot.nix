@@ -24,6 +24,9 @@
       "chatgpt-input" = false;
       "oil" = false;
       "minifiles" = false;
+      "markdown" = true;
+      "yaml" = true;
+      "gitcommit" = true;
     };
   };
   plugins.copilot-chat = {
