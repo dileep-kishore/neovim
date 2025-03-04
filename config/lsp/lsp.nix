@@ -117,7 +117,7 @@
           "templ"
         ];
       };
-      typst_lsp = {enable = true;};
+      typst_lsp = {enable = false;};
       # vscode extracted
       cssls = {enable = true;};
       html = {enable = true;};
