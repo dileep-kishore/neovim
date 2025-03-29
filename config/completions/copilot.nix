@@ -1,6 +1,6 @@
 {
   plugins.copilot-lua = {
-    enable = true;
+    enable = false;
     panel = {
       enabled = false;
       layout.position = "bottom";
@@ -30,7 +30,7 @@
     };
   };
   plugins.copilot-chat = {
-    enable = true;
+    enable = false;
     settings = {
       auto_follow_cursor = true;
       auto_insert_mode = true;
