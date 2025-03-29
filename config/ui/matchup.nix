@@ -2,8 +2,8 @@
   plugins.vim-matchup = {
     enable = true;
     settings = {
-      surround_enabled = true;
-      transmute_enabled = true;
+      surround_enabled = 1;
+      transmute_enabled = 1;
       treesitter.enabled = true;
     };
   };

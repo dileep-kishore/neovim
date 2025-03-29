@@ -1,28 +1,30 @@
 {
   plugins.image = {
     enable = true;
-    backend = "kitty";
-    editorOnlyRenderWhenFocused = true;
-    maxWidth = 100;
-    maxHeight = 25;
-    maxHeightWindowPercentage = 80;
-    maxWidthWindowPercentage = 80;
-    windowOverlapClearFtIgnore = ["cmp_menu" "cmp_docs"];
-    settings.integrations = {
-      markdown = {
-        enabled = true;
-        clearInInsertMode = true;
-        onlyRenderImageAtCursor = true;
-      };
-      neorg = {
-        enabled = true;
-        clearInInsertMode = true;
-        onlyRenderImageAtCursor = true;
-      };
-      syslang = {
-        enabled = true;
-        clearInInsertMode = true;
-        onlyRenderImageAtCursor = true;
+    settings = {
+      backend = "kitty";
+      editor_only_render_when_focused = true;
+      max_width = 100;
+      max_height = 25;
+      max_height_window_percentage = 80;
+      max_width_window_percentage = 80;
+      window_overlap_clear_ft_ignore = ["cmp_menu" "cmp_docs"];
+      integrations = {
+        markdown = {
+          enabled = true;
+          clearInInsertMode = true;
+          onlyRenderImageAtCursor = true;
+        };
+        neorg = {
+          enabled = true;
+          clearInInsertMode = true;
+          onlyRenderImageAtCursor = true;
+        };
+        syslang = {
+          enabled = true;
+          clearInInsertMode = true;
+          onlyRenderImageAtCursor = true;
+        };
       };
     };
   };

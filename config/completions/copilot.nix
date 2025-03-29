@@ -1,32 +1,34 @@
 {
   plugins.copilot-lua = {
     enable = false;
-    panel = {
-      enabled = false;
-      layout.position = "bottom";
-    };
-    suggestion = {
-      enabled = true;
-      autoTrigger = true;
-      keymap = {
-        accept = "<C-l>";
-        acceptWord = "<C-j>";
-        next = "<A-n>";
-        prev = "<A-p>";
+    settings = {
+      panel = {
+        enabled = false;
+        layout.position = "bottom";
       };
-    };
-    filetypes = {
-      "grug-far" = false;
-      "grug-far-history" = false;
-      "grug-far-help" = false;
-      "." = false;
-      "" = false;
-      "chatgpt-input" = false;
-      "oil" = false;
-      "minifiles" = false;
-      "markdown" = true;
-      "yaml" = true;
-      "gitcommit" = true;
+      suggestion = {
+        enabled = true;
+        autoTrigger = true;
+        keymap = {
+          accept = "<C-l>";
+          acceptWord = "<C-j>";
+          next = "<A-n>";
+          prev = "<A-p>";
+        };
+      };
+      filetypes = {
+        "grug-far" = false;
+        "grug-far-history" = false;
+        "grug-far-help" = false;
+        "." = false;
+        "" = false;
+        "chatgpt-input" = false;
+        "oil" = false;
+        "minifiles" = false;
+        "markdown" = true;
+        "yaml" = true;
+        "gitcommit" = true;
+      };
     };
   };
   plugins.copilot-chat = {
