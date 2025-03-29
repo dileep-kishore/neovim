@@ -29,7 +29,7 @@ local diagnostics = {
 local mode = {
   'mode',
   fmt = function(str)
-    return ' [' .. str:sub(1, 1) .. ']'
+    return ' [' .. str:sub(1, 1) .. ']'
   end,
   padding = { left = 1, right = 0 },
 }
@@ -47,7 +47,7 @@ local filename = {
   },
   separator = '',
   padding = { left = 0, right = 0 },
-  color = { fg = colors.blue },
+  color = { fg = colors.text },
 }
 
 local icononly_filetype = {
