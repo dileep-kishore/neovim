@@ -3,9 +3,8 @@
     enable = true;
     settings = {
       flavour = "mocha";
-      # FIXME: This does not work
       dim_inactive = {
-        enabled = true;
+        enabled = false;
         shade = "dark";
         percentage = 0.15;
       };
