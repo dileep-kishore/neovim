@@ -8,7 +8,7 @@
     maxHeightWindowPercentage = 80;
     maxWidthWindowPercentage = 80;
     windowOverlapClearFtIgnore = ["cmp_menu" "cmp_docs"];
-    integrations = {
+    settings.integrations = {
       markdown = {
         enabled = true;
         clearInInsertMode = true;

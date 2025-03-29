@@ -1,17 +1,16 @@
 {
-  # FIXME: Disable until nvim-nio is pushed to nixpkgs
-  plugins.dap = {
-    enable = false;
-    extensions = {
-      dap-python = {
-        enable = false;
-      };
-      dap-ui = {
-        enable = false;
-      };
-      dap-virtual-text = {
-        enable = false;
-      };
+  plugins = {
+    dap = {
+      enable = true;
+    };
+    dap-python = {
+      enable = true;
+    };
+    dap-ui = {
+      enable = true;
+    };
+    dap-virtual-text = {
+      enable = true;
     };
   };
   extraConfigLua = builtins.readFile ./dap.lua;
