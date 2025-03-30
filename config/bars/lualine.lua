@@ -189,10 +189,10 @@ lualine.setup {
     lualine_a = { mode },
     lualine_b = { filetype, lsp_status },
     lualine_c = {
+      center_comp,
       icononly_filetype,
       filename,
       diagnostics,
-      -- center_comp,
     },
     lualine_x = {
       macro,
