@@ -8,5 +8,6 @@
     ./flash.nix
     ./notifications.nix
     ./matchup.nix
+    ./arrow.nix
   ];
 }

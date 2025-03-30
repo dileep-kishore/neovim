@@ -1,5 +1,4 @@
 {pkgs, ...}: let
-  # TODO: Update these
   modes-nvim = pkgs.vimUtils.buildVimPlugin {
     pname = "nvim-modes";
     version = "2025-01-25";
@@ -22,24 +21,9 @@
     };
     meta.homepage = "https://github.com/b0o/incline.nvim";
   };
-  grapple-nvim = pkgs.vimUtils.buildVimPlugin {
-    pname = "grapple-nvim";
-    version = "2024-09-29";
-    src = pkgs.fetchFromGitHub {
-      owner = "cbochs";
-      repo = "grapple.nvim";
-      rev = "b41ddfc1c39f87f3d1799b99c2f0f1daa524c5f7";
-      hash = "sha256-Dz60583Qic2TqO3BPSHME4Q7CiweB1gQCdFNtjNoN3U=";
-    };
-    meta.homepage = "https://github.com/cbochs/grapple.nvim";
-  };
 in {
   extraPlugins = [
     modes-nvim
     incline-nvim
-    {
-      plugin = grapple-nvim;
-      config = "lua require('grapple').setup({scope='git_branch'})";
-    }
   ];
 }

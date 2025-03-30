@@ -8,7 +8,7 @@ wk.add {
   { '<leader>h', group = '+Git hunk' },
   { '<leader>i', group = '+Iron' },
   { '<leader>l', group = '+LSP' },
-  { '<leader>m', group = '+Grapple' },
+  { '<leader>m', group = '+Arrow' },
   { '<leader>n', group = '+Literate Notes' },
   { '<leader>p', group = '+Parameter swap' },
   { '<Leader>q', group = '+Close' },

@@ -36,14 +36,13 @@ require('incline').setup {
 
     local ft_icon, ft_color = devicons.get_icon_color(filename)
 
-    local grapple_status
+    local arrow_status
+    local arrow_status_text
     if props.focused then
-      grapple_status = require('grapple').name_or_index() or ''
-      if grapple_status ~= '' then
-        grapple_status = '󰛢' .. grapple_status .. ' '
-      end
+      arrow_status = require 'arrow.statusline'
+      arrow_status_text = arrow_status.text_for_statusline_with_icons()
     else
-      grapple_status = ''
+      arrow_status_text = ''
     end
 
     local modified = vim.bo[props.buf].modified
@@ -69,7 +68,7 @@ require('incline').setup {
         },
         ' ',
         {
-          grapple_status,
+          arrow_status_text,
           guifg = colors.pink,
         },
         guibg = colors.base,
