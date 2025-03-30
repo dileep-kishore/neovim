@@ -232,6 +232,17 @@
         desc = "LazyGit";
       };
     }
+    # Gitbrowse
+    {
+      action = "<cmd>lua Snacks.gitbrowse()<CR>";
+      key = "<leader>go";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Git browse";
+      };
+    }
 
     # Other telescope keymaps
     {
@@ -299,7 +310,7 @@
     }
     {
       action = "<cmd>Trouble loclist<cr>";
-      key = "<leader>xL";
+      key = "<leader>xLu";
       mode = "n";
       options = {
         noremap = true;

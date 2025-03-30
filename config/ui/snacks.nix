@@ -5,6 +5,9 @@
       bigfile = {
         enabled = true;
       };
+      gitbrowse = {
+        enabled = true;
+      };
       quickfile = {
         enabled = true;
       };
