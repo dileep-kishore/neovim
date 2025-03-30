@@ -1,6 +1,7 @@
 {
   plugins.blink-copilot.enable = true;
   plugins.blink-emoji.enable = true;
+  plugins.blink-compat.enable = true;
   plugins.blink-cmp = {
     enable = true;
     setupLspCapabilities = true;
@@ -48,7 +49,7 @@
         };
       };
       sources = {
-        default = ["copilot" "lsp" "snippets" "path" "buffer" "emoji"];
+        default = ["copilot" "lsp" "snippets" "path" "buffer" "avante_commands" "avante_mentions" "avante_files" "emoji"];
         providers = {
           copilot = {
             async = true;
@@ -69,6 +70,18 @@
             opts = {
               insert = true;
             };
+          };
+          avante_commands = {
+            name = "avante_commands";
+            module = "blink.compat.source";
+          };
+          avante_mentions = {
+            name = "avante_mentions";
+            module = "blink.compat.source";
+          };
+          avante_files = {
+            name = "avante_files";
+            module = "blink.compat.source";
           };
         };
       };
