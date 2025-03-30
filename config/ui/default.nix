@@ -9,5 +9,6 @@
     ./notifications.nix
     ./matchup.nix
     ./arrow.nix
+    ./snacks.nix
   ];
 }
