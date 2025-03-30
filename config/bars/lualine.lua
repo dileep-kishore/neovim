@@ -135,7 +135,13 @@ local cmd = {
 local macro = {
   require('noice').api.statusline.mode.get,
   cond = require('noice').api.statusline.mode.has,
-  color = { fg = '#f38ba8' },
+  color = { fg = colors.red },
+}
+
+local search = {
+  require('noice').api.status.search.get,
+  cond = require('noice').api.status.search.has,
+  color = { fg = colors.peach },
 }
 
 -- cool function for progress
@@ -196,6 +202,7 @@ lualine.setup {
     },
     lualine_x = {
       macro,
+      search,
       cmd,
       'encoding',
     },
