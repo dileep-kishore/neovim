@@ -48,6 +48,7 @@
         dap = true;
         dap_ui = true;
         cmp = true;
+        blink_cmp = true;
         flash = true;
         gitsigns = true;
         harpoon = true;
