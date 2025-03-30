@@ -24,6 +24,7 @@ in {
         enabled = false;
         layout.position = "bottom";
       };
+      copilot_model = "gpt-4o-copilot";
       suggestion = {
         enabled = false;
         autoTrigger = false;
