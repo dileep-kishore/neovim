@@ -25,8 +25,8 @@ in {
         layout.position = "bottom";
       };
       suggestion = {
-        enabled = true;
-        autoTrigger = true;
+        enabled = false;
+        autoTrigger = false;
         keymap = {
           accept = "<C-l>";
           acceptWord = "<C-j>";

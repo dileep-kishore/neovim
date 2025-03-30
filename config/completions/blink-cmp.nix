@@ -1,4 +1,6 @@
 {
+  plugins.blink-copilot.enable = true;
+  plugins.blink-emoji.enable = true;
   plugins.blink-cmp = {
     enable = true;
     setupLspCapabilities = true;
@@ -46,7 +48,29 @@
         };
       };
       sources = {
-        default = ["lsp" "snippets" "path" "buffer"];
+        default = ["copilot" "lsp" "snippets" "path" "buffer" "emoji"];
+        providers = {
+          copilot = {
+            async = true;
+            module = "blink-copilot";
+            name = "copilot";
+            score_offset = 100;
+            opts = {
+              max_completions = 3;
+              kind = "Copilot";
+              kind_icon = " ";
+              kind_hl = "CmpItemKindCopilot";
+            };
+          };
+          emoji = {
+            module = "blink-emoji";
+            name = "Emoji";
+            score_offset = 15;
+            opts = {
+              insert = true;
+            };
+          };
+        };
       };
     };
   };

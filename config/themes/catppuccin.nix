@@ -33,7 +33,7 @@
                 TreesitterContextLineNumber = { bg = colors.mantle },
                 TreesitterContextBottom = { style = {} },
                 TreesitterContextLineNumberBottom = { style = {} },
-                CmpItemKindCodeium = { fg = colors.teal },
+                CmpItemKindCopilot = { fg = colors.teal },
                 ["@comment.note"] = { link = "Comment" },
                 ["@comment.todo"] = { link = "Comment" },
                 ["@comment.hint"] = { link = "Comment" },
