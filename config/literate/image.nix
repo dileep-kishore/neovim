@@ -12,18 +12,18 @@
       integrations = {
         markdown = {
           enabled = true;
-          clearInInsertMode = true;
-          onlyRenderImageAtCursor = true;
+          clear_in_insert_mode = true;
+          only_render_image_at_cursor = true;
         };
         neorg = {
           enabled = true;
-          clearInInsertMode = true;
-          onlyRenderImageAtCursor = true;
+          clear_in_insert_mode = true;
+          only_render_image_at_cursor = true;
         };
         syslang = {
           enabled = true;
-          clearInInsertMode = true;
-          onlyRenderImageAtCursor = true;
+          clear_in_insert_mode = true;
+          only_render_image_at_cursor = true;
         };
       };
     };
