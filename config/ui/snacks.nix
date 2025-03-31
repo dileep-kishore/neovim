@@ -30,13 +30,17 @@
             preset = "default";
             layout = {backdrop = false;};
           };
+          vscode-custom = {
+            preset = "vscode";
+            layout = {border = "rounded";};
+          };
         };
         sources = {
           # Snacks pickers (find) [f]
           files.layout.preset = "custom";
           git_files.layout.preset = "custom";
           buffers.layout.preset = "dropdown";
-          projects.layout.preset = "vscode";
+          projects.layout.preset = "vscode-custom";
           jumps.layout.preset = "ivy";
           marks.layout.preset = "ivy";
 
@@ -51,13 +55,13 @@
           todo_comments.layout.preset = "ivy";
 
           # Snacks pickers (misc) [t]
-          # command_history.layout.preset = "vscode";
-          registers.layout.preset = "vscode";
+          command_history.layout.preset = "vscode-custom";
+          registers.layout.preset = "vscode-custom";
           undo.layout.preset = "dropdown";
           help.layout.preset = "custom";
           highlights.layout.preset = "dropdown";
-          # icons.layout.preset = "vscode";
-          keymaps.layout.preset = "vscode";
+          icons.layout.preset = "vscode-custom";
+          keymaps.layout.preset = "vscode-custom";
 
           # Snacks pickers (lsp) [l]
           diagnostics.layout.preset = "ivy";
