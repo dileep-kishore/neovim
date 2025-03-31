@@ -7,6 +7,10 @@
       icons = {
         style = "glpyh";
       };
+      surround = {
+        respect_selection_type = true;
+        search_method = "cover_or_next";
+      };
       animate = {
         cursor.enable = true;
         scroll.enable = true;

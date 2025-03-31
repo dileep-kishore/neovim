@@ -748,7 +748,7 @@
     # Flash
     {
       action = "<cmd>lua require('flash').jump()<CR>";
-      key = "s";
+      key = "<leader><leader>";
       mode = ["n" "x" "o"];
       options = {
         noremap = true;

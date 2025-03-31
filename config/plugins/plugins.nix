@@ -1,7 +1,7 @@
 {
   plugins = {
     nvim-surround = {
-      enable = true;
+      enable = false;
       settings = {
         move_cursor = "sticky";
       };
