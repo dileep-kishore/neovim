@@ -17,13 +17,6 @@
       quickfile = {
         enabled = true;
       };
-      statuscolumn = {
-        enabled = false;
-      };
-      words = {
-        debounce = 100;
-        enabled = true;
-      };
       picker = {
         layouts = {
           custom = {
