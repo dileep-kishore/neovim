@@ -513,29 +513,6 @@
       };
     }
 
-    # Terminal
-    # NOTE: I have not set keybindings to toggle these terminals
-    {
-      action = "<cmd>ToggleTerm size=10 direction=horizontal<CR>";
-      key = "<leader>Th";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "ToggleTerm horizontal";
-      };
-    }
-    {
-      action = "<cmd>ToggleTerm size=80 direction=vertical<CR>";
-      key = "<leader>Tv";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "ToggleTerm vertical";
-      };
-    }
-
     # GrugFar
     {
       action = "<cmd>GrugFar<CR>";
