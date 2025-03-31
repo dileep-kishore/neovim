@@ -21,10 +21,6 @@
       config = ''lua require("octo").setup({suppress_missing_scope={projects_v2=true}})'';
     }
     {
-      plugin = treesj;
-      config = "lua require('treesj').setup({use_default_keymaps=false})";
-    }
-    {
       plugin = grug-far-nvim;
       config = "lua require('grug-far').setup()";
     }

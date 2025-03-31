@@ -760,7 +760,7 @@
     # TreeSJ
     {
       action = "<cmd>lua require('treesj').toggle()<CR>";
-      key = "<leader>j";
+      key = "gs";
       mode = "n";
       options = {
         noremap = true;

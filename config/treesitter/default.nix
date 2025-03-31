@@ -5,5 +5,6 @@
     ./autotag.nix
     ./context.nix
     ./textobjects.nix
+    ./treesj.nix
   ];
 }
