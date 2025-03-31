@@ -233,7 +233,7 @@
     # Other keymaps
     {
       action = "<cmd>lua Snacks.rename.rename_file()<CR>";
-      key = "<leader>r";
+      key = "<leader>rr";
       mode = "n";
       options = {
         noremap = true;
