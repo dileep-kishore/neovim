@@ -223,7 +223,7 @@
     }
     # LazyGit
     {
-      action = "<cmd>LazyGit<CR>";
+      action = "<cmd>lua Snacks.lazygit.open()<CR>";
       key = "<leader>gl";
       mode = "n";
       options = {

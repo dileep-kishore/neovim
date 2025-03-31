@@ -6,7 +6,6 @@
     lualine-nvim
     tabby-nvim
     alpha-nvim
-    lazygit-nvim
     lspkind-nvim
     twilight-nvim
     ssr-nvim
