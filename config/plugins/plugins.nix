@@ -1,5 +1,11 @@
 {
   plugins = {
+    nvim-surround = {
+      enable = true;
+      settings = {
+        move_cursor = "sticky";
+      };
+    };
     web-devicons.enable = true;
     spider = {
       enable = true;

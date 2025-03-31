@@ -13,10 +13,6 @@
     vim-just
     quarto-nvim
     {
-      plugin = nvim-surround;
-      config = "lua require('nvim-surround').setup({move_cursor='sticky'})";
-    }
-    {
       plugin = octo-nvim;
       config = ''lua require("octo").setup({suppress_missing_scope={projects_v2=true}})'';
     }
