@@ -229,5 +229,17 @@
         desc = "LSP symbols";
       };
     }
+
+    # Other keymaps
+    {
+      action = "<cmd>lua Snacks.rename.rename_file()<CR>";
+      key = "<leader>r";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Rename file";
+      };
+    }
   ];
 }

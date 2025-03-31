@@ -70,4 +70,5 @@
       };
     };
   };
+  extraConfigLua = builtins.readFile ./snacks.lua;
 }
