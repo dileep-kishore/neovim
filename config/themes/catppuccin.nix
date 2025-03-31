@@ -64,7 +64,7 @@
         mason = true;
         mini = {
           enabled = true;
-          indentscope_color = "lavender";
+          indentscope_color = "overlay2";
         };
         native_lsp = {
           enabled = true;
