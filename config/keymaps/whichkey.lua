@@ -15,7 +15,7 @@ wk.add {
   { '<leader>r', group = '+Refactor' },
   { '<leader>R', group = '+Auto-session' },
   { '<leader>s', group = '+Text search' },
-  { '<leader>t', group = '+Telescope' },
+  { '<leader>t', group = '+Snacks pickers' },
   { '<leader>T', group = '+ToggleTerm' },
   { '<leader>x', group = '+Trouble' },
   { '<leader>z', group = '+Zen' },

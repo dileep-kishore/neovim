@@ -28,26 +28,26 @@ dashboard.section.header.val = {
   '                                                                       ',
 }
 dashboard.section.buttons.val = {
-  dashboard.button(
-    'f',
-    '  Find file',
-    ':Telescope frecency workspace=CWD theme=dropdown<CR>'
-  ),
   dashboard.button('e', '  New file', ':ene <BAR> startinsert<CR>'),
   dashboard.button(
-    'p',
-    '  Find project',
-    ':Telescope projects theme=dropdown<CR>'
+    'f',
+    '  Find files',
+    '<cmd>lua Snacks.picker.files()<CR>'
   ),
   dashboard.button(
-    'r',
-    '󱝩  Recently used files',
-    ':Telescope oldfiles theme=dropdown<CR>'
+    'p',
+    '  Select project',
+    '<cmd>lua Snacks.picker.projects()<CR>'
+  ),
+  dashboard.button(
+    's',
+    '󱁴  Search text',
+    '<cmd>lua Snacks.picker.grep()<CR>'
   ),
   dashboard.button(
     't',
-    '󱁴  Find text',
-    ':Telescope live_grep theme=dropdown<CR>'
+    '  Browse todos',
+    '<cmd>lua Snacks.picker.todo_comments()<CR>'
   ),
   dashboard.button('x', '  Quit Neovim', ':qa<CR>'),
 }

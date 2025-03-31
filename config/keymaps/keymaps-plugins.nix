@@ -244,38 +244,6 @@
       };
     }
 
-    # Other telescope keymaps
-    {
-      action = "<cmd>Telescope buffers theme=dropdown<CR>";
-      key = "<leader>fb";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Telescope find buffer";
-      };
-    }
-    {
-      action = "<cmd>Telescope frecency workspace=CWD theme=dropdown<cr>";
-      key = "<leader>fr";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Telescope frecency";
-      };
-    }
-    {
-      action = "<cmd>Telescope undo<cr>";
-      key = "<leader>su";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Telescope undo";
-      };
-    }
-
     ## LSP and diagnostics
     # Trouble
     {
@@ -360,16 +328,6 @@
       };
     }
     {
-      action = "<cmd>Telescope diagnostics theme=dropdown<cr>";
-      key = "<leader>ld";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Telescope diagnostics";
-      };
-    }
-    {
       action = "<cmd>Lspsaga peek_definition<cr>";
       key = "<leader>lp";
       mode = "n";
@@ -450,26 +408,6 @@
       };
     }
     {
-      action = "<cmd>Telescope lsp_document_symbols theme=dropdown<cr>";
-      key = "<leader>ls";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Telescope document symbols";
-      };
-    }
-    {
-      action = "<cmd>Telescope lsp_dynamic_workspace_symbols theme=dropdown<cr>";
-      key = "<leader>lS";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Telescope workspace symbols";
-      };
-    }
-    {
       action = "<cmd>Lspsaga outline<cr>";
       key = "<leader>lo";
       mode = "n";
@@ -540,28 +478,6 @@
         noremap = true;
         silent = true;
         desc = "Trouble todos (workspace)";
-      };
-    }
-    {
-      action = "<cmd>TodoTelescope theme=ivy<CR>";
-      key = "<leader>st";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Todo telescope";
-      };
-    }
-
-    # Projects
-    {
-      action = "<cmd>Telescope projects theme=dropdown<CR>";
-      key = "<leader>fp";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Telescope projects";
       };
     }
 
@@ -673,18 +589,6 @@
         noremap = true;
         silent = true;
         desc = "Close all folds";
-      };
-    }
-
-    # Yanky.nvim
-    {
-      action = "<cmd>lua require('telescope').extensions.yank_history.yank_history()<cr>";
-      key = "<leader>ty";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Yank history";
       };
     }
 

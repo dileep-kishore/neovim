@@ -37,10 +37,6 @@
     };
     comment.enable = true;
     sleuth.enable = true;
-    project-nvim = {
-      enable = true;
-      enableTelescope = true;
-    };
     toggleterm = {
       enable = true;
       settings = {
@@ -66,7 +62,7 @@
       enable = true;
       settings = {
         picker.telescope = {
-          enable = true;
+          enable = false;
           useDefaultMappings = true;
         };
         systemClipboard.syncWithRing = true;
