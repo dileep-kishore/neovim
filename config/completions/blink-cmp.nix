@@ -1,6 +1,5 @@
 {
   plugins.blink-copilot.enable = true;
-  plugins.blink-emoji.enable = true;
   plugins.blink-compat.enable = true;
   plugins.blink-cmp = {
     enable = true;
@@ -49,7 +48,7 @@
         };
       };
       sources = {
-        default = ["copilot" "lsp" "snippets" "path" "buffer" "avante_commands" "avante_mentions" "avante_files" "emoji"];
+        default = ["copilot" "lsp" "snippets" "path" "buffer" "avante_commands" "avante_mentions" "avante_files"];
         providers = {
           copilot = {
             async = true;
@@ -61,14 +60,6 @@
               kind = "Copilot";
               kind_icon = " ";
               kind_hl = "CmpItemKindCopilot";
-            };
-          };
-          emoji = {
-            module = "blink-emoji";
-            name = "Emoji";
-            score_offset = 15;
-            opts = {
-              insert = true;
             };
           };
           avante_commands = {
