@@ -120,7 +120,7 @@
       };
     }
     {
-      action = "<cmd>lua require('gitsigns').preview_hunk_inline()<cr>";
+      action = "<cmd>lua require('gitsigns').preview_hunk()<cr>";
       key = "<leader>hp";
       mode = "n";
       options = {
@@ -130,7 +130,7 @@
       };
     }
     {
-      action = "<cmd>lua require('gitsigns').preview_hunk()<cr>";
+      action = "<cmd>lua require('gitsigns').preview_hunk_inline()<cr>";
       key = "<leader>hP";
       mode = "n";
       options = {
