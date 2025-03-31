@@ -2,7 +2,7 @@
   plugins.avante = {
     enable = true;
     settings = {
-      provider = "claude";
+      provider = "openai";
       behavior = {
         auto_suggestions = false;
         enable_claude_text_editor_tool_mode = true;
