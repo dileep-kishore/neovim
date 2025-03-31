@@ -37,15 +37,6 @@
     };
     comment.enable = true;
     sleuth.enable = true;
-    toggleterm = {
-      enable = true;
-      settings = {
-        direction = "float";
-        floatOpts = {border = "single";};
-        openMapping = "<C-A-t>";
-        terminalMappings = true;
-      };
-    };
     illuminate = {
       enable = true;
       underCursor = false;

@@ -252,13 +252,13 @@
       };
     }
     {
-      action = "<cmd>lua Snacks.scratch.select()<CR>";
-      key = "<leader>nS";
+      action = "<cmd>lua Snacks.terminal.toggle()<CR>";
+      key = "<leader>T";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
-        desc = "Select scratch buffer";
+        desc = "Toggle Snacks terminal";
       };
     }
   ];

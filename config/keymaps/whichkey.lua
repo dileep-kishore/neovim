@@ -16,7 +16,7 @@ wk.add {
   { '<leader>R', group = '+Auto-session' },
   { '<leader>s', group = '+Text search' },
   { '<leader>t', group = '+Snacks pickers' },
-  { '<leader>T', group = '+ToggleTerm' },
+  { '<leader>T', group = '+Terminal' },
   { '<leader>x', group = '+Trouble' },
   { '<leader>z', group = '+Zen' },
   { '<leader>cd', desc = 'Diagnostics gpt' },
