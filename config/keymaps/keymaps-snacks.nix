@@ -241,5 +241,25 @@
         desc = "Rename file";
       };
     }
+    {
+      action = "<cmd>lua Snacks.scratch()<CR>";
+      key = "<leader>ns";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Toggle scratch buffer";
+      };
+    }
+    {
+      action = "<cmd>lua Snacks.scratch.select()<CR>";
+      key = "<leader>nS";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Select scratch buffer";
+      };
+    }
   ];
 }
