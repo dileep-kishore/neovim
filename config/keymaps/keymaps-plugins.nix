@@ -637,7 +637,7 @@
 
     {
       action = "<cmd>SessionSave<cr>";
-      key = "<leader>Rs";
+      key = "<leader>es";
       mode = "n";
       options = {
         noremap = true;
@@ -647,12 +647,22 @@
     }
     {
       action = "<cmd>SessionRestore<cr>";
-      key = "<leader>Rr";
+      key = "<leader>er";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
         desc = "Load last session";
+      };
+    }
+    {
+      action = "<cmd>SessionDelete<CR>";
+      key = "<leader>ed";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Delete session";
       };
     }
 
