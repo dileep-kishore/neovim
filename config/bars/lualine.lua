@@ -40,7 +40,7 @@ local filename = {
   path = 1,
   cond = hide_in_width,
   symbols = {
-    modified = '●',
+    modified = '[+]',
     readonly = ' ',
     unnamed = '[No Name]',
     newfile = '[New]',
@@ -115,7 +115,7 @@ local branch = {
 local diff = {
   'diff',
   colored = true,
-  symbols = { added = ' ', modified = ' ', removed = ' ' }, -- changes diff symbols
+  symbols = { added = ' ', modified = ' ', removed = ' ' }, -- changes diff symbols
   cond = hide_in_width,
   update_in_insert = true,
   always_visible = true,
