@@ -16,6 +16,7 @@
     ...
   } @ inputs: let
     config = import ./config;
+    nix.nixPath = ["nixpkgs=${nixpkgs}"];
     # NOTE: Function to create a customized pkgs with `allowUnfree` set to true
     mkPkgs = system:
       import nixpkgs {

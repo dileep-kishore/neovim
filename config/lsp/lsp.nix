@@ -37,7 +37,22 @@
       };
       texlab = {enable = true;};
       marksman = {enable = true;};
-      nil_ls = {enable = true;};
+      nixd = {
+        enable = true;
+        settings = {
+          nixpkgs = {
+            expr = "import <nixpkgs> {}";
+          };
+          options = {
+            nixos = {
+              expr = "(builtins.getFlake \"github:dileep-kishore/nixos-hyprland\").nixosConfigurations.tsuki.options";
+            };
+            home_manger = {
+              expr = "(builtins.getFlake \"github:dileep-kishore/nixos-hyprland\").homeConfigurations.\"g8k@lap135849\".options";
+            };
+          };
+        };
+      };
       # Python
       pyright = {enable = true;};
       ruff_lsp = {
