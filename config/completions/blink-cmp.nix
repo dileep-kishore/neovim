@@ -12,8 +12,10 @@
         preset = "enter";
         "<Tab>" = [];
         "<S-Tab>" = [];
-        "<C-p>" = ["snippet_backward" "select_prev" "fallback_to_mappings"];
-        "<C-n>" = ["snippet_forward" "select_next" "fallback_to_mappings"];
+        "<C-p>" = ["select_prev" "fallback_to_mappings"];
+        "<C-n>" = ["select_next" "fallback_to_mappings"];
+        "<C-k>" = ["snippet_forward" "fallback_to_mappings"];
+        "<C-S-k>" = ["snippet_forward" "fallback_to_mappings"];
       };
       signature = {
         enabled = false;
