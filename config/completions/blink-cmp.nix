@@ -78,4 +78,5 @@
       };
     };
   };
+  extraConfigLua = builtins.readFile ./highlight-colors.lua;
 }
