@@ -924,5 +924,17 @@
         desc = "Obsidian table of contents";
       };
     }
+
+    # Which-key (help)
+    {
+      action = "<cmd>lua require('which-key').show({ global = false })<CR>";
+      key = "<leader>?";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "All keymaps (which-key)";
+      };
+    }
   ];
 }
