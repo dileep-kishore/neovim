@@ -6,5 +6,6 @@
       pynvim
       pyperclip
       nbformat
+      jupytext
     ];
 }
