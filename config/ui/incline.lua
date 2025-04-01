@@ -58,13 +58,16 @@ require('incline').setup {
             or ft_color,
         } or '',
         {
-          modified and ' ●' or ' ',
+          ' ',
           guifg = colors.yellow,
         },
         {
           filename,
-          gui = modified and 'bold,italic' or 'italic',
-          guifg = props.focused and colors.text or colors.overlay2,
+          gui = modified and 'italic' or 'italic',
+          -- guifg = props.focused and colors.text or colors.overlay2,
+          guifg = modified and colors.peach
+            or props.focused and colors.text
+            or colors.overlay2,
         },
         ' ',
         {
