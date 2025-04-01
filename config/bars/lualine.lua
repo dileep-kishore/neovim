@@ -79,7 +79,8 @@ local modified_section = {
 }
 
 local function get_lsp_status()
-  local buf_clients = vim.lsp.get_clients()
+  local buf_clients =
+    vim.lsp.get_clients { bufnr = vim.api.nvim_get_current_buf() }
   local buf_client_names = ''
   for _, client in pairs(buf_clients) do
     -- table.insert(buf_client_names, client.name)
