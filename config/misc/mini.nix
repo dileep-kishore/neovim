@@ -27,8 +27,13 @@
       };
       bufremove = {};
       files = {
-        windows.preview = true;
-        windows.width_preview = 60;
+        windows = {
+          preview = true;
+          width_preview = 60;
+        };
+        mappings = {
+          go_in_plus = "<CR>";
+        };
       };
       move = {};
     };
