@@ -32,10 +32,6 @@
       config = "lua require('tabout').setup()";
     }
     {
-      plugin = zen-mode-nvim;
-      config = "lua require('zen-mode').setup({window={backdrop=1},plugins={twilight={enabled=false}}})";
-    }
-    {
       plugin = highlight-undo-nvim;
       config = "lua require('highlight-undo').setup()";
     }

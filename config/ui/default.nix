@@ -9,5 +9,6 @@
     ./matchup.nix
     ./arrow.nix
     ./snacks.nix
+    ./zen.nix
   ];
 }
