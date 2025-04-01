@@ -1,5 +1,8 @@
 {
   plugins = {
+    nui.enable = true;
+    repeat.enable = true;
+    friendly-snippets.enable = true;
     nvim-surround = {
       enable = false;
       settings = {
@@ -113,6 +116,9 @@
         default_commands = true;
         default_mappings = true;
       };
+    };
+    grug-far = {
+      enable = true;
     };
     highlight-colors = {
       enable = true;
