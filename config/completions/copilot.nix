@@ -19,6 +19,10 @@ in {
     enable = true;
     package = copilot-lua-custom;
     nodePackage = pkgs.nodejs_23;
+    lazyLoad.settings = {
+      cmd = "Copilot";
+      event = "InsertEnter";
+    };
     settings = {
       panel = {
         enabled = false;

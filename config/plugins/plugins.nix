@@ -1,17 +1,12 @@
 {
   plugins = {
+    lz-n.enable = true;
     nui.enable = true;
     repeat.enable = true;
     friendly-snippets.enable = true;
-    nvim-surround = {
-      enable = false;
-      settings = {
-        move_cursor = "sticky";
-      };
-    };
     web-devicons.enable = true;
     spider = {
-      enable = true;
+      enable = false;
       skipInsignificantPunctuation = true;
       keymaps.motions = {
         b = "b";
@@ -23,11 +18,13 @@
     nvim-autopairs = {
       enable = true;
       settings.checkTs = true;
+      lazyLoad.settings.event = "InsertEnter";
     };
     tmux-navigator.enable = true;
     trouble = {
       enable = true;
       settings = {};
+      lazyLoad.settings.event = "DeferredUIEnter";
     };
     todo-comments = {
       enable = true;
@@ -50,13 +47,6 @@
       enable = true;
       underCursor = false;
       filetypesDenylist = ["qf" "help" "grapple" "Trouble"];
-    };
-    navic = {
-      enable = true;
-      settings = {
-        highlight = true;
-        lsp.autoAttach = true;
-      };
     };
     yanky = {
       enable = true;
@@ -97,8 +87,12 @@
         };
       };
     };
-    nvim-bqf.enable = true;
-    marks.enable = true;
+    nvim-bqf = {
+      enable = true;
+    };
+    marks = {
+      enable = true;
+    };
     markdown-preview = {
       enable = true;
       settings.theme = "dark";
@@ -119,6 +113,11 @@
     };
     grug-far = {
       enable = true;
+      lazyLoad = {
+        settings = {
+          cmd = "GrugFar";
+        };
+      };
     };
     highlight-colors = {
       enable = true;

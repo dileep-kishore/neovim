@@ -1,6 +1,11 @@
 {
   plugins.avante = {
     enable = true;
+    lazyLoad = {
+      settings = {
+        event = "DeferredUIEnter";
+      };
+    };
     settings = {
       provider = "openai";
       openai = {

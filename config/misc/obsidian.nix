@@ -1,6 +1,7 @@
 {
   plugins.obsidian = {
     enable = true;
+    lazyLoad.settings.ft = "markdown";
     settings = {
       disable_frontmatter = true;
       workspaces = [

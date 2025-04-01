@@ -1,6 +1,7 @@
 {
   plugins.flash = {
     enable = true;
+    lazyLoad.settings.event = "DeferredUIEnter";
     settings = {
       continue = false;
       modes.search.enabled = false;
