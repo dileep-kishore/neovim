@@ -1,5 +1,4 @@
 {
-  plugins.blink-copilot.enable = true;
   plugins.blink-compat.enable = true;
   plugins.blink-cmp = {
     enable = true;
@@ -26,7 +25,7 @@
         completion = {
           list.selection.preselect = false;
           menu = {auto_show = true;};
-          ghost_text = {enabled = false;};
+          ghost_text = {enabled = true;};
         };
       };
       completion = {
@@ -39,7 +38,7 @@
           auto_show = true;
           window.border = "rounded";
         };
-        ghost_text.enabled = false;
+        ghost_text.enabled = true;
         accept = {
           auto_brackets = {
             enabled = false;
@@ -50,20 +49,8 @@
         };
       };
       sources = {
-        default = ["copilot" "lsp" "snippets" "path" "buffer" "avante_commands" "avante_mentions" "avante_files"];
+        default = ["lsp" "snippets" "path" "buffer" "avante_commands" "avante_mentions" "avante_files"];
         providers = {
-          copilot = {
-            async = true;
-            module = "blink-copilot";
-            name = "copilot";
-            score_offset = 100;
-            opts = {
-              max_completions = 3;
-              kind = "Copilot";
-              kind_icon = " ";
-              kind_hl = "CmpItemKindCopilot";
-            };
-          };
           avante_commands = {
             name = "avante_commands";
             module = "blink.compat.source";

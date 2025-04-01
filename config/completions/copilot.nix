@@ -30,8 +30,9 @@ in {
       };
       copilot_model = "gpt-4o-copilot";
       suggestion = {
-        enabled = false;
-        autoTrigger = false;
+        enabled = true;
+        auto_trigger = true;
+        hide_during_completion = true;
         keymap = {
           accept = "<C-l>";
           acceptWord = "<C-j>";
