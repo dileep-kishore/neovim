@@ -36,47 +36,96 @@ require('incline').setup {
 
     local ft_icon, ft_color = devicons.get_icon_color(filename)
 
-    local arrow_status
+    local arrow_status = require 'arrow.statusline'
     local arrow_status_text
     if props.focused then
-      arrow_status = require 'arrow.statusline'
-      arrow_status_text = arrow_status.text_for_statusline_with_icons()
+      arrow_status_text = ' ' .. arrow_status.text_for_statusline_with_icons()
     else
-      arrow_status_text = ''
+      -- arrow_status_text = ''
+      arrow_status_text = ' ' .. arrow_status.text_for_statusline_with_icons()
     end
 
     local modified = vim.bo[props.buf].modified
 
-    local res =
+    local function get_git_diff()
+      local icons = { removed = ' ', changed = ' ', added = ' ' }
+      local signs = vim.b[props.buf].gitsigns_status_dict
+      local labels = {}
+      if signs == nil then
+        return labels
+      end
+      for name, icon in pairs(icons) do
+        if tonumber(signs[name]) and signs[name] > 0 then
+          table.insert(
+            labels,
+            { icon .. signs[name] .. ' ', group = 'Diff' .. name }
+          )
+        end
+      end
+      if #labels > 0 then
+        table.insert(labels, { '| ' })
+      end
+      return labels
+    end
+
+    local function get_diagnostic_label()
+      local icons =
+        { error = ' ', warn = ' ', info = ' ', hint = ' ' }
+      local label = {}
+
+      for severity, icon in pairs(icons) do
+        local n = #vim.diagnostic.get(
+          props.buf,
+          { severity = vim.diagnostic.severity[string.upper(severity)] }
+        )
+        if n > 0 then
+          table.insert(
+            label,
+            { icon .. n .. ' ', group = 'DiagnosticSign' .. severity }
+          )
+        end
+      end
+      if #label > 0 then
+        table.insert(label, { '| ' })
+      end
+      return label
+    end
+
+    local res = {
+      { '', guifg = colors.surface0, guibg = colors.base },
+      props.focused and {
+        { get_diagnostic_label() },
+        { get_git_diff() },
+        guibg = colors.surface0,
+      } or '',
+      ft_icon
+          and {
+            ft_icon,
+            ' ',
+            -- guibg = props.focused and ft_color or colors.base,
+            guibg = colors.surface0,
+            -- guifg = props.focused and helpers.contrast_color(ft_color) or ft_color,
+            guifg = props.focused and ft_color or colors.overlay2,
+          }
+        or '',
       {
-        ft_icon and {
-          ' ',
-          ft_icon,
-          ' ',
-          guibg = props.focused and ft_color or colors.base,
-          guifg = props.focused and helpers.contrast_color(ft_color)
-            or ft_color,
-        } or '',
-        {
-          ' ',
-          guifg = colors.yellow,
-        },
-        {
-          filename,
-          gui = modified and 'italic' or 'italic',
-          -- guifg = props.focused and colors.text or colors.overlay2,
-          guifg = modified and colors.peach
-            or props.focused and colors.text
-            or colors.overlay2,
-        },
-        ' ',
-        {
-          arrow_status_text,
-          guifg = colors.pink,
-        },
-        guibg = colors.base,
-      }
-    table.insert(res, ' ')
+        filename,
+        gui = 'italic',
+        -- guifg = props.focused and colors.text or colors.overlay2,
+        guibg = colors.surface0,
+        guifg = modified and colors.peach
+          or props.focused and colors.text
+          or colors.overlay2,
+      },
+      {
+        arrow_status_text,
+        guifg = props.focused and colors.green or colors.overlay2,
+        guibg = colors.surface0,
+      },
+      { '', guifg = colors.surface0, guibg = colors.base },
+      guibg = colors.base,
+    }
+    -- table.insert(res, ' ')
     return res
   end,
 }
