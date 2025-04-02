@@ -35,7 +35,7 @@ in {
         hide_during_completion = true;
         keymap = {
           accept = "<C-l>";
-          acceptWord = "<C-j>";
+          accept_word = "<C-j>";
           next = "<A-n>";
           prev = "<A-p>";
         };
