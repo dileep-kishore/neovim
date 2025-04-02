@@ -1,4 +1,8 @@
-{pkgs, ...}: let
+{
+  pkgs,
+  lib,
+  ...
+}: let
   modes-nvim = pkgs.vimUtils.buildVimPlugin {
     pname = "nvim-modes";
     version = "2025-01-25";
@@ -21,9 +25,39 @@
     };
     meta.homepage = "https://github.com/b0o/incline.nvim";
   };
+  websocket-nvim = pkgs.vimUtils.buildVimPlugin {
+    pname = "websocket-nvim";
+    version = "2024-04-14";
+    src = pkgs.fetchFromGitHub {
+      owner = "AbaoFromCUG";
+      repo = "websocket.nvim";
+      rev = "8a096d51c957557f939e296c4937f27d5dc596d5";
+      hash = "sha256-+Z2RgiqdYWzkEUQRHxqoaiLeekziNaf3bNZEe3dDexI=";
+    };
+    buildInputs = [pkgs.vimPlugins.plenary-nvim];
+    meta.homepage = "https://github.com/AbaoFromCUG/websocket.nvim";
+  };
+  neopyter = pkgs.vimUtils.buildVimPlugin {
+    pname = "neopyter";
+    version = "2025-03-18";
+    src = pkgs.fetchFromGitHub {
+      owner = "SUSTech-data";
+      repo = "neopyter";
+      rev = "8716511f2a0d1500ba8f4adeb05bbb432a080bac";
+      hash = "sha256-dNUNWvMESeDfbLVLymW9nvLuhQGJoV26JaL7V8NQvF0=";
+    };
+    buildInputs = [pkgs.vimPlugins.plenary-nvim websocket-nvim];
+    nvimSkipModules = [
+      "neopyter.neoconf"
+      "neopyter.cmp"
+    ];
+    meta.homepage = "https://github.com/SUSTech-data/neopyter";
+  };
 in {
   extraPlugins = [
     modes-nvim
     incline-nvim
+    websocket-nvim
+    neopyter
   ];
 }

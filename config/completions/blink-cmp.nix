@@ -49,8 +49,12 @@
         };
       };
       sources = {
-        default = ["lsp" "snippets" "path" "buffer" "avante_commands" "avante_mentions" "avante_files"];
+        default = ["lsp" "snippets" "path" "buffer" "neopyter" "avante_commands" "avante_mentions" "avante_files"];
         providers = {
+          neopyter = {
+            name = "Neopyter";
+            module = "neopyter.blink";
+          };
           avante_commands = {
             name = "avante_commands";
             module = "blink.compat.source";
