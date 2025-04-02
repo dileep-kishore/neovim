@@ -199,7 +199,7 @@ lualine.setup {
       center_comp,
       icononly_filetype,
       filename,
-      diagnostics,
+      -- diagnostics,
     },
     lualine_x = {
       macro,
