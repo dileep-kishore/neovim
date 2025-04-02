@@ -5,6 +5,12 @@
     repeat.enable = true;
     friendly-snippets.enable = true;
     web-devicons.enable = true;
+    aerial = {
+      enable = true;
+      lazyLoad.settings = {
+        cmd = ["AerialToggle" "AerialNext" "AerialPrev"];
+      };
+    };
     spider = {
       enable = false;
       skipInsignificantPunctuation = true;
