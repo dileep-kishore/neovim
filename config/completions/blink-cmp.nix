@@ -31,12 +31,30 @@
       completion = {
         list.selection.preselect = false;
         menu = {
-          border = "rounded";
+          border = [
+            ["󱐋" "WarningMsg"]
+            "─"
+            "╮"
+            "│"
+            "╯"
+            "─"
+            "╰"
+            "│"
+          ];
           winhighlight = "Normal:Pmenu,CursorLine:PmenuSel,Search:None";
         };
         documentation = {
           auto_show = true;
-          window.border = "rounded";
+          window.border = [
+            ["󰙎" "DiagnosticOk"]
+            "─"
+            "╮"
+            "│"
+            "╯"
+            "─"
+            "╰"
+            "│"
+          ];
         };
         ghost_text.enabled = true;
         accept = {
