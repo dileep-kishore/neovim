@@ -44,3 +44,4 @@ luac.out
 .devenv/
 .direnv/
 .pre-commit-config.yaml
+.aider*
