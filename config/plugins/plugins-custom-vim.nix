@@ -34,7 +34,7 @@
       rev = "8a096d51c957557f939e296c4937f27d5dc596d5";
       hash = "sha256-+Z2RgiqdYWzkEUQRHxqoaiLeekziNaf3bNZEe3dDexI=";
     };
-    buildInputs = [pkgs.vimPlugins.plenary-nvim];
+    buildInputs = [pkgs.vimPlugins.plenary-nvim pkgs.vimPlugins.nvim-treesitter];
     meta.homepage = "https://github.com/AbaoFromCUG/websocket.nvim";
   };
   neopyter = pkgs.vimUtils.buildVimPlugin {
@@ -46,7 +46,7 @@
       rev = "8716511f2a0d1500ba8f4adeb05bbb432a080bac";
       hash = "sha256-dNUNWvMESeDfbLVLymW9nvLuhQGJoV26JaL7V8NQvF0=";
     };
-    buildInputs = [pkgs.vimPlugins.plenary-nvim websocket-nvim];
+    buildInputs = [pkgs.vimPlugins.plenary-nvim pkgs.vimPlugins.nvim-treesitter websocket-nvim];
     nvimSkipModules = [
       "neopyter.neoconf"
       "neopyter.cmp"
