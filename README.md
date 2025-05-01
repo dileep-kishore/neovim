@@ -25,6 +25,9 @@
 This flake uses [nixvim](https://github.com/nix-community/nixvim) to configure neovim in a declarative manner.
 Since this configuration uses nixvim, this means that it is entirely written in [Nix](https://nixos.org/manual/nix/stable/language/index.html) with some custom Lua sprinkled in here and there.
 
+> [!NOTE]
+> I am no longer using this configuration, so I will not be maintaining it. Refer to [nyanvim](https://github.com/dileep-kishore/nyanvim) for my current neovim configuration.
+
 ## Running the flake
 
 To run this nix flake simply run the following command
